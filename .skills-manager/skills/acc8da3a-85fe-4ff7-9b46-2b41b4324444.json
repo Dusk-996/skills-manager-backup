@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "acc8da3a-85fe-4ff7-9b46-2b41b4324444",
+  "path": "devops-brainstorming",
+  "path_key": "devops-brainstorming",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

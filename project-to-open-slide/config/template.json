@@ -1,0 +1,7 @@
+{
+  "template_home": "J:\\skywalking\\open-slide-studio\\runtime",
+  "open_slide_version": "1.12.1",
+  "upstream_repository": "https://github.com/1weiho/open-slide.git",
+  "upstream_commit": "9a213fe75f7b13fcd2cb3c49a0ab8241617148a5",
+  "network_policy": "explicit-only"
+}

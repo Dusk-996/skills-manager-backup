@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "aa449891-7580-4ff9-a59f-467bc6fe52e2",
+  "path": "project-to-open-slide",
+  "path_key": "project-to-open-slide",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

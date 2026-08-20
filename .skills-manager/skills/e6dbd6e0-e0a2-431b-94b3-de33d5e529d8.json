@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e6dbd6e0-e0a2-431b-94b3-de33d5e529d8",
+  "path": "deployment-packager",
+  "path_key": "deployment-packager",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

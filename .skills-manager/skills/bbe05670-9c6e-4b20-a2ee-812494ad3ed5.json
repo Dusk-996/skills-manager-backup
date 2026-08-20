@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "bbe05670-9c6e-4b20-a2ee-812494ad3ed5",
+  "path": "devops-production-hardening",
+  "path_key": "devops-production-hardening",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

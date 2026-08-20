@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "095c958d-b012-4d70-ae33-c3a3e7aab858",
+  "path": "github-weekly-feishu",
+  "path_key": "github-weekly-feishu",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

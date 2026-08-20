@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "eca32197-6f77-4fc4-8076-86995b1d3983",
+  "path": "stack-selector",
+  "path_key": "stack-selector",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

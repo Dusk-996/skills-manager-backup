@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "GitHub 周报飞书版"
+  short_description: "生成适合飞书发布的 GitHub 热门项目中文周报。"
+  default_prompt: "整理本周 GitHub 热门项目，生成适合飞书发布的技术周报、配图方案和 Markdown 文档。"

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "560c7f5b-601a-494f-b65e-000f39823585",
+  "path": "devops-skill-router-zh",
+  "path_key": "devops-skill-router-zh",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "import",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project to Open Slide"
+  short_description: "将项目、文档、图片和网页资料转换为可验收的 Open Slide 与图片型 PPTX"
+  default_prompt: "使用 $project-to-open-slide 分析我提供的诉求和材料。先建立材料清单、补问关键决策并给出逐页设计方案；我确认后再询问输出目录并生成、验收和导出。"
