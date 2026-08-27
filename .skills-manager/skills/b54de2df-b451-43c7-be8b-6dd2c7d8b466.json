@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b54de2df-b451-43c7-be8b-6dd2c7d8b466",
+  "path": "prototype-parity-review",
+  "path_key": "prototype-parity-review",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\prototype-parity-review",
+    "branch": null
+  }
+}

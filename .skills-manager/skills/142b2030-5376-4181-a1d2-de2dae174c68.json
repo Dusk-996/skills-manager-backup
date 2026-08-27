@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "142b2030-5376-4181-a1d2-de2dae174c68",
+  "path": "ssh-remote-ops",
+  "path_key": "ssh-remote-ops",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\ssh-remote-ops",
+    "branch": null
+  }
+}

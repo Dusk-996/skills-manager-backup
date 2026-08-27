@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "d07be1c0-b41a-411b-95a9-9858b4db16bb",
+  "path": "learning-notes-builder",
+  "path_key": "learning-notes-builder",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\learning-notes-builder",
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "40695db7-b146-465b-9e64-f140bb47d5e2",
+  "path": "grilling",
+  "path_key": "grilling",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\grilling",
+    "branch": null
+  }
+}

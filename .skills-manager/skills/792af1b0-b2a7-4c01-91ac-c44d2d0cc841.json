@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "792af1b0-b2a7-4c01-91ac-c44d2d0cc841",
+  "path": "draw-io-diagram-generator",
+  "path_key": "draw-io-diagram-generator",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\draw-io-diagram-generator",
+    "branch": null
+  }
+}

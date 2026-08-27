@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "51be9a07-7e0c-496d-8b7e-1b32c1db7526",
+  "path": "grill-me",
+  "path_key": "grill-me",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\grill-me",
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "550ecfba-78a2-499c-a8eb-c31b40b3a544",
+  "path": "grafana-dashboards",
+  "path_key": "grafana-dashboards",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\grafana-dashboards",
+    "branch": null
+  }
+}

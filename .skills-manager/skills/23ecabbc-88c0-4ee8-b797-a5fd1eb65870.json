@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "23ecabbc-88c0-4ee8-b797-a5fd1eb65870",
+  "path": "code-review",
+  "path_key": "code-review",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\code-review",
+    "branch": null
+  }
+}

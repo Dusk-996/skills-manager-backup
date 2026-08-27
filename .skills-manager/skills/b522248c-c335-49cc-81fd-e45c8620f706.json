@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b522248c-c335-49cc-81fd-e45c8620f706",
+  "path": "setup-matt-pocock-skills",
+  "path_key": "setup-matt-pocock-skills",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\setup-matt-pocock-skills",
+    "branch": null
+  }
+}

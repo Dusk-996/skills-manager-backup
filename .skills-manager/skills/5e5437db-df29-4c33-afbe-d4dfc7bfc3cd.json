@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "5e5437db-df29-4c33-afbe-d4dfc7bfc3cd",
+  "path": "grill-with-docs",
+  "path_key": "grill-with-docs",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\grill-with-docs",
+    "branch": null
+  }
+}

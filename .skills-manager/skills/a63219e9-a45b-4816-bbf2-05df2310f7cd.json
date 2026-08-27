@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "a63219e9-a45b-4816-bbf2-05df2310f7cd",
+  "path": "baoyu-markdown-to-html",
+  "path_key": "baoyu-markdown-to-html",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\baoyu-markdown-to-html",
+    "branch": null
+  }
+}

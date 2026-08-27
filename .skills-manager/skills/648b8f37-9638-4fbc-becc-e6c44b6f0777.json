@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "648b8f37-9638-4fbc-becc-e6c44b6f0777",
+  "path": "baoyu-infographic",
+  "path_key": "baoyu-infographic",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\baoyu-infographic",
+    "branch": null
+  }
+}

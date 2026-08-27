@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b18a7a93-ee97-4ac7-b51b-f33d534ba945",
+  "path": "teach",
+  "path_key": "teach",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\teach",
+    "branch": null
+  }
+}

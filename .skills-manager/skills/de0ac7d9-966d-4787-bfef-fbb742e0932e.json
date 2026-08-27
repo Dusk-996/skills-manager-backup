@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "de0ac7d9-966d-4787-bfef-fbb742e0932e",
+  "path": "aliyun-asr",
+  "path_key": "aliyun-asr",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\aliyun-asr",
+    "branch": null
+  }
+}

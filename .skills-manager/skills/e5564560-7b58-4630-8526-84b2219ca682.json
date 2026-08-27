@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "e5564560-7b58-4630-8526-84b2219ca682",
+  "path": "playwright-cli",
+  "path_key": "playwright-cli",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\playwright-cli",
+    "branch": null
+  }
+}
