@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "3555772b-0e2a-43b4-b241-825243477735",
+  "path": "domain-modeling",
+  "path_key": "domain-modeling",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\domain-modeling",
+    "branch": null
+  }
+}

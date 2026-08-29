@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "75bbdacf-8439-48a2-9a1e-732b6164a44d",
+  "path": "stack-selector-2",
+  "path_key": "stack-selector-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\stack-selector",
+    "branch": null
+  }
+}

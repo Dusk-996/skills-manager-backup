@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "9b9a42af-6dfa-416c-a207-20798e504960",
+  "path": "handoff",
+  "path_key": "handoff",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\handoff",
+    "branch": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "5fe9d23a-b9a7-49e3-b2ec-153f597240b3",
+  "path": "to-tickets",
+  "path_key": "to-tickets",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\to-tickets",
+    "branch": null
+  }
+}

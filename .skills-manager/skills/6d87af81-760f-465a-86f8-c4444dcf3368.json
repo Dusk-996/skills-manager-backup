@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "6d87af81-760f-465a-86f8-c4444dcf3368",
+  "path": "tdd",
+  "path_key": "tdd",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\tdd",
+    "branch": null
+  }
+}

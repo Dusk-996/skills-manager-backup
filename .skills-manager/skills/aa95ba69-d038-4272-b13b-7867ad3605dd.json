@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "aa95ba69-d038-4272-b13b-7867ad3605dd",
+  "path": "k8s-troubleshoot",
+  "path_key": "k8s-troubleshoot",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\k8s-troubleshoot",
+    "branch": null
+  }
+}

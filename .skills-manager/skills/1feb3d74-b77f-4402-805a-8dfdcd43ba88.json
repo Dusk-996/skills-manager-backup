@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "1feb3d74-b77f-4402-805a-8dfdcd43ba88",
+  "path": "to-spec",
+  "path_key": "to-spec",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\to-spec",
+    "branch": null
+  }
+}

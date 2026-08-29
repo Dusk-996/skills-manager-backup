@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "b92d2fae-9b51-4a5f-bfe5-1504c9a16a11",
+  "path": "codebase-design",
+  "path_key": "codebase-design",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\codebase-design",
+    "branch": null
+  }
+}

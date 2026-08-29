@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "1446abd3-7854-4032-bd75-5a761bcbe82f",
+  "path": "frontend-design-3",
+  "path_key": "frontend-design-3",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\frontend-design",
+    "branch": null
+  }
+}

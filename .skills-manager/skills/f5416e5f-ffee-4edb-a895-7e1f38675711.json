@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "f5416e5f-ffee-4edb-a895-7e1f38675711",
+  "path": "learning-roadmap",
+  "path_key": "learning-roadmap",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\learning-roadmap",
+    "branch": null
+  }
+}

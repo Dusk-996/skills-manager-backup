@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "feb850ad-d620-4930-8d9f-1b23d1fafa79",
+  "path": "design-taste-frontend",
+  "path_key": "design-taste-frontend",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/luozijian1990/personal-skill.git",
+    "subpath": "skills\\design-taste-frontend",
+    "branch": null
+  }
+}
