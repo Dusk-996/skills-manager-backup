@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "c8b21f02-0307-44b5-802f-82b27093185e",
+  "path": "project-to-open-slide-2",
+  "path_key": "project-to-open-slide-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "project-to-open-slide",
+    "branch": null
+  }
+}

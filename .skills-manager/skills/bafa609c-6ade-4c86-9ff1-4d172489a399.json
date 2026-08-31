@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "bafa609c-6ade-4c86-9ff1-4d172489a399",
+  "path": "project-init-3",
+  "path_key": "project-init-3",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "project-init",
+    "branch": null
+  }
+}

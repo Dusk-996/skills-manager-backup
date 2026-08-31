@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "fc50fb05-beb4-43fe-b1a1-40f7aecd7c77",
+  "path": "find-skills-2",
+  "path_key": "find-skills-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "find-skills",
+    "branch": null
+  }
+}

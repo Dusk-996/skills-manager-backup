@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "caa65bf7-d39f-4a0c-bd70-4e02647e07df",
+  "path": "devops-writing-plans-2",
+  "path_key": "devops-writing-plans-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "devops-writing-plans",
+    "branch": null
+  }
+}

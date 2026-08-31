@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "81a8f1a6-6a67-436b-9463-b9c8c6f84eb4",
+  "path": "frontend-design-5",
+  "path_key": "frontend-design-5",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "frontend-design-2",
+    "branch": null
+  }
+}

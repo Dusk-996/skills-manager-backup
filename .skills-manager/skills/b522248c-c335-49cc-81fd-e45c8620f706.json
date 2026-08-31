@@ -7,8 +7,8 @@
   "tags": [],
   "source": {
     "type": "git",
-    "ref": "https://github.com/luozijian1990/personal-skill.git",
-    "subpath": "skills\\setup-matt-pocock-skills",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "setup-matt-pocock-skills",
     "branch": null
   }
 }

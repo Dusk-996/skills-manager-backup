@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "f39d4fc1-02b2-43e8-b12c-071883b91afb",
+  "path": "ui-ux-pro-max-2",
+  "path_key": "ui-ux-pro-max-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "ui-ux-pro-max",
+    "branch": null
+  }
+}

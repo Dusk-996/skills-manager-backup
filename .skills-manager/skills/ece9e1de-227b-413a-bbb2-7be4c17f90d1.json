@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ece9e1de-227b-413a-bbb2-7be4c17f90d1",
+  "path": "html-to-mui-react-3",
+  "path_key": "html-to-mui-react-3",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "html-to-mui-react",
+    "branch": null
+  }
+}

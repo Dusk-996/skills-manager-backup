@@ -7,7 +7,7 @@
   "tags": [],
   "source": {
     "type": "git",
-    "ref": "git@github.com:Dusk-996/skills-manager-backup.git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
     "subpath": "pptx",
     "branch": null
   }

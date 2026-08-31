@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "5dda676e-34b7-4445-aae7-a88cf7006be6",
+  "path": "skill-router-zh-2",
+  "path_key": "skill-router-zh-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "skill-router-zh",
+    "branch": null
+  }
+}

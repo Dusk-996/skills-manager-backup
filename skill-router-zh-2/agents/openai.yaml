@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill 中文导航"
+  short_description: "按中文场景推荐应该使用哪个 Codex skill。"
+  default_prompt: "我不知道该用哪个 skill，请根据中文场景帮我推荐。"

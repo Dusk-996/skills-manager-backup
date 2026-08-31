@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "eb3ae71a-62bf-4a49-8dad-bb497fe22296",
+  "path": "humanizer-zh-2",
+  "path_key": "humanizer-zh-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "humanizer-zh",
+    "branch": null
+  }
+}

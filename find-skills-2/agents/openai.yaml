@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "查找 Skill"
+  short_description: "查找、发现或安装适合当前任务的 agent skill。"
+  default_prompt: "我想完成一个任务，请帮我查找是否有合适的 skill。"

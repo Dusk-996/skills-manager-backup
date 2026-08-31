@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2902555e-f269-444f-9c78-bcc307b11282",
+  "path": "github-weekly-feishu-2",
+  "path_key": "github-weekly-feishu-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "github-weekly-feishu",
+    "branch": null
+  }
+}

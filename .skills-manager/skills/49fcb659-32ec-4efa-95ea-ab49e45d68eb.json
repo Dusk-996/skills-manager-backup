@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "49fcb659-32ec-4efa-95ea-ab49e45d68eb",
+  "path": "deployment-packager-2",
+  "path_key": "deployment-packager-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "deployment-packager",
+    "branch": null
+  }
+}

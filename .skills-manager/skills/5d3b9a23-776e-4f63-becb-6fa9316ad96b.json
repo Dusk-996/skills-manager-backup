@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "5d3b9a23-776e-4f63-becb-6fa9316ad96b",
+  "path": "stack-selector-3",
+  "path_key": "stack-selector-3",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "stack-selector",
+    "branch": null
+  }
+}

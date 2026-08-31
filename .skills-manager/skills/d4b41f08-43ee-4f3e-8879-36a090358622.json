@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "d4b41f08-43ee-4f3e-8879-36a090358622",
+  "path": "devops-requesting-code-review-2",
+  "path_key": "devops-requesting-code-review-2",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "devops-requesting-code-review",
+    "branch": null
+  }
+}
