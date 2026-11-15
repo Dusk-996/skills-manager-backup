@@ -1,8 +1,8 @@
 {
   "snapshot_date": "2026-11-15",
-  "skills": 81,
-  "files_skills": 67,
-  "inventory_only": 14,
+  "skills": 80,
+  "files_skills": 71,
+  "inventory_only": 9,
   "hash_scope": "Git提交中的文件内容，不含backup-manifest.json自身；Git可能规范文本换行",
   "files": [
     {
@@ -497,8 +497,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19196,
-      "sha256": "96f486612175a620aa2c97a35af3a5d68c7785f4b1041daece9a4d34243612ec"
+      "bytes": 11853,
+      "sha256": "d9c94a283fb1597e6374b5275b796188a325b00ce9b01d8df76cbe4b58516cbe"
     },
     {
       "path": "aliyun-asr/README.md",
@@ -2876,6 +2876,61 @@
       "sha256": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
     },
     {
+      "path": "codex-agent-config/SKILL.md",
+      "bytes": 3276,
+      "sha256": "37053cbfc981450879a306024e90393af57202711a9af2335e8fe630cd9e0053"
+    },
+    {
+      "path": "codex-agent-config/agents/openai.yaml",
+      "bytes": 289,
+      "sha256": "11309a78af79ee435020e799567dc6bb28509534345ea7eda59731f3f3abfb85"
+    },
+    {
+      "path": "codex-agent-config/assets/k8s-reviewer.toml",
+      "bytes": 676,
+      "sha256": "e314fd8447032604bfe1db56b8c83fe0ecdfac9007a2f7209bd1d834df2bc1d5"
+    },
+    {
+      "path": "codex-agent-config/references/agent-format.md",
+      "bytes": 1617,
+      "sha256": "63c87a97bb833dabe2fcb1275891a6804023ce880da11523e70f3a46a9e1c9cb"
+    },
+    {
+      "path": "codex-agent-config/scripts/check_agent.py",
+      "bytes": 1487,
+      "sha256": "d059033b3475cf39eab40ff80b95da556ff15f898c850b058bec450f2b48e396"
+    },
+    {
+      "path": "codex-config-manager/SKILL.md",
+      "bytes": 3652,
+      "sha256": "d25fec4443308a8742f2494335b70105ecf9cb357fa8abc7874c52ddd509227b"
+    },
+    {
+      "path": "codex-config-manager/agents/openai.yaml",
+      "bytes": 283,
+      "sha256": "871d7e748c1bf5dff3504e1f2dccbd2988f97fea7cdb8177dda9cb18b5e29ce0"
+    },
+    {
+      "path": "codex-config-manager/references/config-checks.md",
+      "bytes": 2701,
+      "sha256": "8ff274cde8f718765c68ef2e4fb54c8d539f503d5aba2b6addc0426018f8d820"
+    },
+    {
+      "path": "codex-project-rules/SKILL.md",
+      "bytes": 4088,
+      "sha256": "2b54c864a25ada2e12e19a316545b753eaf6b60b35a8d678887ea3336f38c685"
+    },
+    {
+      "path": "codex-project-rules/agents/openai.yaml",
+      "bytes": 323,
+      "sha256": "137248f3c261ffec80988e09256811517209fec221840299ae4dc91b410e92d1"
+    },
+    {
+      "path": "codex-project-rules/references/scope-and-verification.md",
+      "bytes": 2581,
+      "sha256": "38f7cf614b7a61b3a666ab04f19dc9856529b16b708eb1e7b62b4894de0c443a"
+    },
+    {
       "path": "darwin-skill/README.md",
       "bytes": 5189,
       "sha256": "5915b52df25cad785e114f6a2ca39fb0235feab2d355d35e25803613f7ac8521"
@@ -3117,8 +3172,8 @@
     },
     {
       "path": "devops-skill-router-zh/references/skills-zh-index.md",
-      "bytes": 2621,
-      "sha256": "6a481764715f019f3ad8988b6091f74b60f4ff137fac48e57e5d322c355600b1"
+      "bytes": 3070,
+      "sha256": "051fdcf300fa13b2c56eab751252acdb192c0736a7d195d25cb5bf9359cdf4bd"
     },
     {
       "path": "devops-writing-plans/SKILL.md",
@@ -3147,8 +3202,8 @@
     },
     {
       "path": "docs/RESTORE.md",
-      "bytes": 5720,
-      "sha256": "4295289e88be303cc417a6314edbf42a2124d7e9955a95662571d02c45405171"
+      "bytes": 7657,
+      "sha256": "616b3b19277029a80021713a0d5d07539ae3fbee16f3eee9bd48334d34d96762"
     },
     {
       "path": "domain-modeling/ADR-FORMAT.md",
@@ -5231,6 +5286,21 @@
       "sha256": "4ce230d7c2a103ae65a31fdede634d834eef80370c72a54c8e451d43ff2ea456"
     },
     {
+      "path": "migrate-to-codex/SKILL.md",
+      "bytes": 4553,
+      "sha256": "5be8b908adb3dc5b55e8e4c4add2cce7d543af1b90f4cc4ff2dc48b7a52e0515"
+    },
+    {
+      "path": "migrate-to-codex/agents/openai.yaml",
+      "bytes": 323,
+      "sha256": "c088adb52c9ea1ad19a9c624f900d3488ba255987b90703d72bf3e4a8ff66334"
+    },
+    {
+      "path": "migrate-to-codex/references/mapping-and-conflicts.md",
+      "bytes": 3053,
+      "sha256": "8415302badbe89c7e44f8a57186a115d66d695fbc81f140526dfe4683e800672"
+    },
+    {
       "path": "ops-readiness-review/README.md",
       "bytes": 2732,
       "sha256": "afb8457d684b9bee77bbba235d308ad9264998e10a099b797808c428a53db12a"
@@ -6052,8 +6122,8 @@
     },
     {
       "path": "skill-catalog.json",
-      "bytes": 22994,
-      "sha256": "9aff4609a414c6df6c84568a5be32ac0520e2bd7cb397b1e31b7afb2ac8ea854"
+      "bytes": 22113,
+      "sha256": "e10eedaffe52759776cc257fa96e5997028ecca82d13c4839d6969b931b639f5"
     },
     {
       "path": "skill-router-zh/SKILL.md",
@@ -6067,8 +6137,8 @@
     },
     {
       "path": "skill-router-zh/references/skills-zh-index.md",
-      "bytes": 2621,
-      "sha256": "6a481764715f019f3ad8988b6091f74b60f4ff137fac48e57e5d322c355600b1"
+      "bytes": 3070,
+      "sha256": "051fdcf300fa13b2c56eab751252acdb192c0736a7d195d25cb5bf9359cdf4bd"
     },
     {
       "path": "ssh-remote-ops/README.md",
@@ -6194,6 +6264,16 @@
       "path": "to-tickets/agents/openai.yaml",
       "bytes": 146,
       "sha256": "21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090"
+    },
+    {
+      "path": "tools/build_index.py",
+      "bytes": 4255,
+      "sha256": "b6cc62566d395cd78c71c7088699aa6c580b985ddf52780fd21d9895b7b16252"
+    },
+    {
+      "path": "tools/readme_builder.py",
+      "bytes": 4901,
+      "sha256": "a04d9e88c09c6cb936de99fc233dd92b17630cd634fe3aff14609e7bb493ed5a"
     },
     {
       "path": "ui-ux-pro-max/LICENSE",

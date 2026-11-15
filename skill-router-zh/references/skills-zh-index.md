@@ -26,3 +26,7 @@
 | 录音转文字 | `aliyun-asr` | 批量音视频 URL 转写 |
 | OpenAI 产品说明 | `openai-docs` | 使用当前可用官方文档与工具 |
 | 技能查找/安装/修改 | `find-skills` / `skill-installer` / `skill-creator` | 按任务选择，不把缓存当成已加载技能 |
+| Codex 项目与目录规则 | `codex-project-rules` | 维护 AGENTS.md；按工作目录检查规则作用域 |
+| Codex 子代理定义 | `codex-agent-config` | 维护代理 TOML，默认继承模型与权限 |
+| 规则、命令与工作流迁移 | `migrate-to-codex` | 分别迁入规则或技能，保留原件并报告重名冲突 |
+| Codex 个人与项目配置 | `codex-config-manager` | 最小修改已支持字段，验证并提供回滚 |

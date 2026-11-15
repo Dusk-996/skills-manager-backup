@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex 子代理配置"
+  short_description: "创建和检查 Codex 专用角色定义，保留父会话权限及现有配置"
+  default_prompt: "使用 $codex-agent-config 为当前项目创建一个职责明确的子代理，并检查配置与权限边界。"

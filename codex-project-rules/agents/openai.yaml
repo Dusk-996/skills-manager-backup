@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex 项目规则"
+  short_description: "按个人、项目或目录范围维护 Codex 指令，保留现有规则并验证作用范围"
+  default_prompt: "使用 $codex-project-rules 为当前项目整理规则，先检查已有指令和适用范围，再最小修改并说明验证方法。"

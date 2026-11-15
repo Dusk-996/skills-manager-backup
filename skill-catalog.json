@@ -1,8 +1,8 @@
 {
   "snapshot_date": "2026-11-15",
-  "total_skills": 81,
-  "files": 67,
-  "inventory_only": 14,
+  "total_skills": 80,
+  "files": 71,
+  "inventory_only": 9,
   "skills": [
     {
       "name": "aliyun-asr",
@@ -34,7 +34,7 @@
     },
     {
       "name": "brainstorming",
-      "purpose": "编码前澄清需求、比较方案并形成设计；属于 Superpowers 通用流程。",
+      "purpose": "编码前澄清需求、比较方案并形成设计。",
       "source_group": "superpowers",
       "status": "files",
       "path": "external-skills/superpowers/skills/brainstorming"
@@ -54,39 +54,33 @@
       "path": "codebase-design"
     },
     {
+      "name": "codex-agent-config",
+      "purpose": "创建、检查和更新 Codex 自定义代理 TOML，明确职责与指令并继承父会话权限。",
+      "source_group": "central",
+      "status": "files",
+      "path": "codex-agent-config"
+    },
+    {
+      "name": "codex-config-manager",
+      "purpose": "检查和最小修改 Codex 个人或项目配置，保留注释与无关字段，提供验证和回滚。",
+      "source_group": "central",
+      "status": "files",
+      "path": "codex-config-manager"
+    },
+    {
+      "name": "codex-project-rules",
+      "purpose": "创建和维护 Codex 的项目、目录或个人 AGENTS.md，保留规则作用域和现有约定。",
+      "source_group": "central",
+      "status": "files",
+      "path": "codex-project-rules"
+    },
+    {
       "name": "computer-use",
       "purpose": "通过当前可用的电脑操作工具读取和控制 Windows 应用、浏览器界面。",
       "source_group": "plugins",
       "status": "inventory_only",
       "path": "docs/RESTORE.md",
       "restore_source": "Codex 应用插件：openai-bundled/computer-use/26.1111.21308",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
-    },
-    {
-      "name": "create-rule",
-      "purpose": "创建 Cursor 项目规则和持久化编码约定。",
-      "source_group": "cursor-builtin",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Cursor 应用内置技能",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
-    },
-    {
-      "name": "create-skill",
-      "purpose": "创建适合 Cursor 调用的技能。",
-      "source_group": "cursor-builtin",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Cursor 应用内置技能",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
-    },
-    {
-      "name": "create-subagent",
-      "purpose": "创建 Cursor 的专用子代理。",
-      "source_group": "cursor-builtin",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Cursor 应用内置技能",
       "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
     },
     {
@@ -228,7 +222,7 @@
     },
     {
       "name": "frontend-design",
-      "purpose": "按新版 Anthropic 指令设计和实现页面与组件；ECC 工程检查表作为按需参考。",
+      "purpose": "设计和实现页面与组件，按需结合工程检查表进行验证。",
       "source_group": "central",
       "status": "files",
       "path": "frontend-design"
@@ -311,13 +305,11 @@
       "path": "learning-roadmap"
     },
     {
-      "name": "migrate-to-skills",
-      "purpose": "把 Cursor 的旧规则和斜杠命令迁移为技能。",
-      "source_group": "cursor-builtin",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Cursor 应用内置技能",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+      "name": "migrate-to-codex",
+      "purpose": "把已有规则、命令和工作流迁入 AGENTS.md 或 Codex 技能，保留原件并报告冲突。",
+      "source_group": "central",
+      "status": "files",
+      "path": "migrate-to-codex"
     },
     {
       "name": "openai-docs",
@@ -547,15 +539,6 @@
       "path": "ui-ux-pro-max"
     },
     {
-      "name": "update-cursor-settings",
-      "purpose": "修改 Cursor/VS Code 的用户设置。",
-      "source_group": "cursor-builtin",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Cursor 应用内置技能",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
-    },
-    {
       "name": "using-git-worktrees",
       "purpose": "为需要隔离的开发任务创建和使用 Git worktree。",
       "source_group": "superpowers",
@@ -564,7 +547,7 @@
     },
     {
       "name": "using-superpowers",
-      "purpose": "Superpowers 的总入口，规定技能发现、调用顺序和平台工具映射。",
+      "purpose": "发现和调用适合的开发技能，明确调用顺序与平台工具映射。",
       "source_group": "superpowers",
       "status": "files",
       "path": "external-skills/superpowers/skills/using-superpowers"
@@ -594,7 +577,7 @@
     },
     {
       "name": "writing-skills",
-      "purpose": "按 Superpowers 流程编写、验证和测试技能文档。",
+      "purpose": "编写、验证和测试技能文档，检查触发条件与实际工作效果。",
       "source_group": "superpowers",
       "status": "files",
       "path": "external-skills/superpowers/skills/writing-skills"

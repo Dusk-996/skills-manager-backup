@@ -1,0 +1,4 @@
+interface:
+  display_name: "迁移到 Codex"
+  short_description: "将既有规则和工作流迁入 Codex，保留原件、作用范围及明确的调用意图"
+  default_prompt: "使用 $migrate-to-codex 检查我指定的旧规则和命令，生成对应 Codex 内容并保留原文件，报告冲突和验证结果。"
