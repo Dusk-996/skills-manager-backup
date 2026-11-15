@@ -31,7 +31,7 @@ description: >
 React + Mock
 → stack-selector Pass 1
 → stack-selection.draft.md
-→ grill-me / grill-with-docs
+→ grilling（需要同步术语和 ADR 时搭配 domain-modeling）
 → stack-selector Pass 2（Finalize）
 → stack-selection.md
 → SDD
@@ -185,7 +185,7 @@ Draft 必须区分三类内容：
 - 数值阈值和实现参数写成“由 Grill/SDD 确认”，不要用看似合理的默认数伪装项目事实；
 - 会话回复只摘要输出落盘路径、最小组件关系、显式排除和 3–5 个关键 Grill 问题；完整字段写入 Draft 文件，避免把模板全文倾倒到聊天中。
 
-Draft 的一句话交接固定为“完成 Grill 后再 Finalize”，不能写“可进入 SDD”。产出 Draft 后停止，让用户选择 `grill-me` 或已有代码库中的 `grill-with-docs`。
+Draft 的一句话交接固定为“完成 Grill 后再 Finalize”，不能写“可进入 SDD”。产出 Draft 后进入 `grilling`；用户要求同步整理领域术语和架构决策时，使用其 `domain-modeling` 文档模式。
 
 **🔴 CHECKPOINT · 🛑 STOP：Draft 生成后等待 Grill 决策，不自动产出 Final。**
 
