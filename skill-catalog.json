@@ -1,0 +1,603 @@
+{
+  "snapshot_date": "2026-11-15",
+  "total_skills": 81,
+  "files": 67,
+  "inventory_only": 14,
+  "skills": [
+    {
+      "name": "aliyun-asr",
+      "purpose": "调用阿里云录音文件识别闲时版，把批量音视频 URL 转成文字和结构化结果。",
+      "source_group": "central",
+      "status": "files",
+      "path": "aliyun-asr"
+    },
+    {
+      "name": "archify",
+      "purpose": "生成可交互的独立 HTML 架构图、流程图、时序图、数据流和生命周期图。",
+      "source_group": "central",
+      "status": "files",
+      "path": "archify"
+    },
+    {
+      "name": "baoyu-infographic",
+      "purpose": "把内容整理为信息图，选择版式和视觉风格。",
+      "source_group": "central",
+      "status": "files",
+      "path": "baoyu-infographic"
+    },
+    {
+      "name": "baoyu-markdown-to-html",
+      "purpose": "把 Markdown 转成带主题样式的 HTML，适配微信公众号并支持代码、公式等。",
+      "source_group": "central",
+      "status": "files",
+      "path": "baoyu-markdown-to-html"
+    },
+    {
+      "name": "brainstorming",
+      "purpose": "编码前澄清需求、比较方案并形成设计；属于 Superpowers 通用流程。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/brainstorming"
+    },
+    {
+      "name": "code-review",
+      "purpose": "按仓库规范和原始需求两个维度审查某个基点之后的代码变更。",
+      "source_group": "central",
+      "status": "files",
+      "path": "code-review"
+    },
+    {
+      "name": "codebase-design",
+      "purpose": "设计模块接口、依赖边界和可测试性，建立“深模块”等共享设计词汇。",
+      "source_group": "central",
+      "status": "files",
+      "path": "codebase-design"
+    },
+    {
+      "name": "computer-use",
+      "purpose": "通过当前可用的电脑操作工具读取和控制 Windows 应用、浏览器界面。",
+      "source_group": "plugins",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用插件：openai-bundled/computer-use/26.1111.21308",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "create-rule",
+      "purpose": "创建 Cursor 项目规则和持久化编码约定。",
+      "source_group": "cursor-builtin",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Cursor 应用内置技能",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "create-skill",
+      "purpose": "创建适合 Cursor 调用的技能。",
+      "source_group": "cursor-builtin",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Cursor 应用内置技能",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "create-subagent",
+      "purpose": "创建 Cursor 的专用子代理。",
+      "source_group": "cursor-builtin",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Cursor 应用内置技能",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "darwin-skill",
+      "purpose": "按结构和效果评分，迭代优化 SKILL.md，并验证优化结果。",
+      "source_group": "central",
+      "status": "files",
+      "path": "darwin-skill"
+    },
+    {
+      "name": "deployment-packager",
+      "purpose": "生成 Dockerfile、Compose、K8s、systemd、Nginx 配置及部署、验证、回滚文档。",
+      "source_group": "central",
+      "status": "files",
+      "path": "deployment-packager-2"
+    },
+    {
+      "name": "design-taste-frontend",
+      "purpose": "为落地页、作品集和改版选择视觉方向，避免套模板式页面。",
+      "source_group": "central",
+      "status": "files",
+      "path": "design-taste-frontend"
+    },
+    {
+      "name": "devops-brainstorming",
+      "purpose": "把运维需求整理为可实现设计，澄清边界、运行约束与风险。",
+      "source_group": "central",
+      "status": "files",
+      "path": "devops-brainstorming"
+    },
+    {
+      "name": "devops-production-hardening",
+      "purpose": "给现有脚本、服务和部署补健康检查、日志、安全配置、备份及回滚。",
+      "source_group": "central",
+      "status": "files",
+      "path": "devops-production-hardening"
+    },
+    {
+      "name": "devops-requesting-code-review",
+      "purpose": "从运维实现、计划和生产约束等角度组织代码审查。",
+      "source_group": "central",
+      "status": "files",
+      "path": "devops-requesting-code-review"
+    },
+    {
+      "name": "devops-skill-router-zh",
+      "purpose": "面向中文运维任务选择最相关的 1～3 个技能。",
+      "source_group": "central",
+      "status": "files",
+      "path": "devops-skill-router-zh"
+    },
+    {
+      "name": "devops-writing-plans",
+      "purpose": "把已明确的需求拆为 DevOps 实施任务、验证步骤和交付计划。",
+      "source_group": "central",
+      "status": "files",
+      "path": "devops-writing-plans"
+    },
+    {
+      "name": "diagnosing-bugs",
+      "purpose": "对难复现故障、异常和性能回退循环提出假设、采集证据、定位根因。",
+      "source_group": "central",
+      "status": "files",
+      "path": "diagnosing-bugs"
+    },
+    {
+      "name": "diagnosing-superpowers",
+      "purpose": "读取会话记录，用证据解释 Superpowers 工作流失误、重复劳动、耗时或技能未触发等问题。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/diagnosing-superpowers"
+    },
+    {
+      "name": "dispatching-parallel-agents",
+      "purpose": "判断哪些独立任务适合并行分派代理。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/dispatching-parallel-agents"
+    },
+    {
+      "name": "documents",
+      "purpose": "创建、编辑、批注和修订 Word/DOCX，并渲染检查排版。",
+      "source_group": "plugins",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用插件：openai-primary-runtime/documents/26.1112.11217",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "domain-modeling",
+      "purpose": "维护项目领域术语、领域模型和架构决策记录。",
+      "source_group": "central",
+      "status": "files",
+      "path": "domain-modeling"
+    },
+    {
+      "name": "draw-io-diagram-generator",
+      "purpose": "生成和修改可继续编辑的 draw.io 图，包括架构、拓扑、流程、ER 和 UML 图。",
+      "source_group": "central",
+      "status": "files",
+      "path": "draw-io-diagram-generator"
+    },
+    {
+      "name": "excel-live-control",
+      "purpose": "通过已连接的 Excel 会话，直接操作打开的工作簿。",
+      "source_group": "plugins",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用插件：openai-primary-runtime/spreadsheets/26.1112.11217",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "executing-plans",
+      "purpose": "按已写好的计划执行，并在检查点核对结果。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/executing-plans"
+    },
+    {
+      "name": "fde-creator",
+      "purpose": "解释 FDE 课程、章节重点、相关代码和学习问题，不直接代写作业。",
+      "source_group": "local",
+      "status": "files",
+      "path": "external-skills/local/fde-creator"
+    },
+    {
+      "name": "find-skills",
+      "purpose": "发现可安装的第三方技能，按任务寻找扩展能力。",
+      "source_group": "central",
+      "status": "files",
+      "path": "find-skills"
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "purpose": "实现完成后处理合并、PR、工作树清理和交付方式。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/finishing-a-development-branch"
+    },
+    {
+      "name": "frontend-design",
+      "purpose": "按新版 Anthropic 指令设计和实现页面与组件；ECC 工程检查表作为按需参考。",
+      "source_group": "central",
+      "status": "files",
+      "path": "frontend-design"
+    },
+    {
+      "name": "frontend-slides",
+      "purpose": "创建带动画的 HTML 演示稿，或把 PPT 内容转换为网页演示。",
+      "source_group": "central",
+      "status": "files",
+      "path": "frontend-slides"
+    },
+    {
+      "name": "github-weekly-feishu",
+      "purpose": "整理当期 GitHub 热门项目，生成适合飞书阅读的中文技术周报和配图需求。",
+      "source_group": "central",
+      "status": "files",
+      "path": "github-weekly-feishu"
+    },
+    {
+      "name": "grafana-dashboards",
+      "purpose": "设计 Grafana 监控看板，覆盖基础设施、接口、数据库等指标和面板。",
+      "source_group": "central",
+      "status": "files",
+      "path": "grafana-dashboards"
+    },
+    {
+      "name": "grilling",
+      "purpose": "逐项追问方案假设、取舍和风险；需要同步术语或 ADR 时搭配 domain-modeling。",
+      "source_group": "central",
+      "status": "files",
+      "path": "grilling"
+    },
+    {
+      "name": "handoff",
+      "purpose": "把当前会话整理为供下一位代理继续工作的交接文档。",
+      "source_group": "central",
+      "status": "files",
+      "path": "handoff"
+    },
+    {
+      "name": "html-to-mui-react",
+      "purpose": "把批准的 HTML 原型保真转换为 Vite、React、TypeScript、MUI 和 Mock 工程。",
+      "source_group": "central",
+      "status": "files",
+      "path": "html-to-mui-react"
+    },
+    {
+      "name": "humanizer-zh",
+      "purpose": "润色中文，减少空泛表述、夸张语气、机械排比等常见 AI 文风。",
+      "source_group": "central",
+      "status": "files",
+      "path": "humanizer-zh"
+    },
+    {
+      "name": "imagegen",
+      "purpose": "生成或编辑照片、插画、贴图、透明素材等位图。",
+      "source_group": "codex-system",
+      "status": "files",
+      "path": "external-skills/codex-system/imagegen"
+    },
+    {
+      "name": "k8s-troubleshoot",
+      "purpose": "按 Pod、Service、Ingress、公网访问四层排查 Kubernetes 故障。",
+      "source_group": "central",
+      "status": "files",
+      "path": "k8s-troubleshoot"
+    },
+    {
+      "name": "learning-notes-builder",
+      "purpose": "把已经收集的文本、网页和课程资料整理为结构化中文 Markdown 学习笔记。",
+      "source_group": "central",
+      "status": "files",
+      "path": "learning-notes-builder"
+    },
+    {
+      "name": "learning-roadmap",
+      "purpose": "把学习笔记转成交互 HTML 路线图，支持进度和知识详情。",
+      "source_group": "central",
+      "status": "files",
+      "path": "learning-roadmap"
+    },
+    {
+      "name": "migrate-to-skills",
+      "purpose": "把 Cursor 的旧规则和斜杠命令迁移为技能。",
+      "source_group": "cursor-builtin",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Cursor 应用内置技能",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "openai-docs",
+      "purpose": "为 OpenAI API 入门及 Codex/Work 的用法、配置和行为提供官方资料入口。",
+      "source_group": "codex-system",
+      "status": "files",
+      "path": "external-skills/codex-system/openai-docs"
+    },
+    {
+      "name": "ops-readiness-review",
+      "purpose": "上线前检查危险操作、鉴权、Secret、任务可靠性、观测性和恢复能力，给出就绪结论。",
+      "source_group": "central",
+      "status": "files",
+      "path": "ops-readiness-review"
+    },
+    {
+      "name": "pdf",
+      "purpose": "读取、生成、渲染和检查 PDF，包括表单与版面。",
+      "source_group": "plugins",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用插件：openai-primary-runtime/pdf/26.1112.11217",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "playwright-cli",
+      "purpose": "使用 Playwright CLI 操作浏览器、检查网页并执行交互。",
+      "source_group": "central",
+      "status": "files",
+      "path": "playwright-cli"
+    },
+    {
+      "name": "playwright-e2e-debug-report",
+      "purpose": "按用户明确要求制定、执行浏览器 E2E/冒烟/回归测试，分流问题并输出报告。",
+      "source_group": "central",
+      "status": "files",
+      "path": "playwright-e2e-debug-report"
+    },
+    {
+      "name": "pptx",
+      "purpose": "读取、修改、合并、生成和验证 PowerPoint 文件，包含脚本和模板处理。",
+      "source_group": "central",
+      "status": "files",
+      "path": "pptx"
+    },
+    {
+      "name": "Presentations",
+      "purpose": "通过当前运行时和演示文稿工具创建、编辑 PowerPoint 或 Google Slides。",
+      "source_group": "plugins",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用插件：openai-primary-runtime/presentations/26.1112.11217",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "project-init",
+      "purpose": "初始化 Shell、Python、Go 运维项目，包含生产谨慎的目录、配置、日志与部署约定。",
+      "source_group": "central",
+      "status": "files",
+      "path": "project-init"
+    },
+    {
+      "name": "project-to-open-slide",
+      "purpose": "把本地项目、文档和网页材料转为中文 Open Slide 演示及图片型 PPTX。",
+      "source_group": "central",
+      "status": "files",
+      "path": "project-to-open-slide"
+    },
+    {
+      "name": "prototype-parity-review",
+      "purpose": "比较已批准 HTML 原型与 React Mock 的视觉、布局和交互一致性。",
+      "source_group": "central",
+      "status": "files",
+      "path": "prototype-parity-review"
+    },
+    {
+      "name": "question-gap-analyzer",
+      "purpose": "结合 Roadmap、岗位和已有题库，分析普通面试题、场景题的覆盖缺口。",
+      "source_group": "central",
+      "status": "files",
+      "path": "question-gap-analyzer"
+    },
+    {
+      "name": "receiving-code-review",
+      "purpose": "核查评审意见是否成立，再落实修改和验证。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/receiving-code-review"
+    },
+    {
+      "name": "requesting-code-review",
+      "purpose": "在任务或较大功能完成后组织通用代码审查。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/requesting-code-review"
+    },
+    {
+      "name": "review-agent",
+      "purpose": "供其他代理委派的只读代码缺陷审查入口。",
+      "source_group": "codex-system",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用内置系统技能",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "scenario-question-designer",
+      "purpose": "从知识点和生产经验设计场景面试题，先出题目简报再完善。",
+      "source_group": "central",
+      "status": "files",
+      "path": "scenario-question-designer"
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "purpose": "初始化工程技能依赖的 Issue 跟踪器、标签和领域文档约定。",
+      "source_group": "central",
+      "status": "files",
+      "path": "setup-matt-pocock-skills"
+    },
+    {
+      "name": "skill-creator",
+      "purpose": "创建或更新 Codex 技能，整理触发条件、指令和配套资源。",
+      "source_group": "codex-system",
+      "status": "files",
+      "path": "external-skills/codex-system/skill-creator"
+    },
+    {
+      "name": "skill-installer",
+      "purpose": "从指定 GitHub 仓库或 OpenAI 技能目录安装技能。",
+      "source_group": "codex-system",
+      "status": "files",
+      "path": "external-skills/codex-system/skill-installer"
+    },
+    {
+      "name": "skill-router-zh",
+      "purpose": "按中文场景为文档、前端、运维、图像等任务选择技能。",
+      "source_group": "central",
+      "status": "files",
+      "path": "skill-router-zh"
+    },
+    {
+      "name": "Spreadsheets",
+      "purpose": "读取、创建、分析和修改 Excel、CSV、TSV 或 Google Sheets，处理公式、表格和图表。",
+      "source_group": "plugins",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用插件：openai-primary-runtime/spreadsheets/26.1112.11217",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "ssh-remote-ops",
+      "purpose": "通过 SSH 巡检 Linux 主机，分析进程、日志、网络和磁盘；按授权执行受控变更。",
+      "source_group": "central",
+      "status": "files",
+      "path": "ssh-remote-ops"
+    },
+    {
+      "name": "stack-selector",
+      "purpose": "从 React Mock 和运行约束推导后端、Worker、Agent 等组件及技术栈，输出选型确认单。",
+      "source_group": "central",
+      "status": "files",
+      "path": "stack-selector"
+    },
+    {
+      "name": "subagent-driven-development",
+      "purpose": "按计划分派实现和审查子任务，适用于授权使用子代理的开发工作。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/subagent-driven-development"
+    },
+    {
+      "name": "systematic-debugging",
+      "purpose": "通用系统化排障流程：先调查根因，再验证假设和修复。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/systematic-debugging"
+    },
+    {
+      "name": "tdd",
+      "purpose": "另一套测试驱动开发指引，强调集成测试及按行为推进的实现过程。",
+      "source_group": "central",
+      "status": "files",
+      "path": "tdd"
+    },
+    {
+      "name": "teach",
+      "purpose": "在工作区内维护学习目标、课程状态和跨会话教学记录。",
+      "source_group": "central",
+      "status": "files",
+      "path": "teach"
+    },
+    {
+      "name": "template-creator",
+      "purpose": "把用户认可的产物和流程整理为可复用的个人模板技能。",
+      "source_group": "plugins",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用插件：openai-primary-runtime/template-creator/26.1112.11217",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "test-driven-development",
+      "purpose": "按先失败测试、再实现、再重构的顺序开发功能和修复。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/test-driven-development"
+    },
+    {
+      "name": "to-spec",
+      "purpose": "把已有讨论整理为需求规格，并发布到已配置的项目跟踪器。",
+      "source_group": "central",
+      "status": "files",
+      "path": "to-spec"
+    },
+    {
+      "name": "to-tickets",
+      "purpose": "把计划或规格拆为带阻塞关系的纵向开发任务。",
+      "source_group": "central",
+      "status": "files",
+      "path": "to-tickets"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "purpose": "按产品类型检索界面风格、配色、字体、交互和图表设计建议。",
+      "source_group": "central",
+      "status": "files",
+      "path": "ui-ux-pro-max"
+    },
+    {
+      "name": "update-cursor-settings",
+      "purpose": "修改 Cursor/VS Code 的用户设置。",
+      "source_group": "cursor-builtin",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Cursor 应用内置技能",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "using-git-worktrees",
+      "purpose": "为需要隔离的开发任务创建和使用 Git worktree。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/using-git-worktrees"
+    },
+    {
+      "name": "using-superpowers",
+      "purpose": "Superpowers 的总入口，规定技能发现、调用顺序和平台工具映射。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/using-superpowers"
+    },
+    {
+      "name": "verification-before-completion",
+      "purpose": "在声称完成、修复或通过前，要求运行验证并以实际输出为依据。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/verification-before-completion"
+    },
+    {
+      "name": "visualize",
+      "purpose": "在对话中制作交互可视化、解释工具和可操作的小型模型。",
+      "source_group": "plugins",
+      "status": "inventory_only",
+      "path": "docs/RESTORE.md",
+      "restore_source": "Codex 应用插件：openai-bundled/visualize/1.0.97",
+      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
+    },
+    {
+      "name": "writing-plans",
+      "purpose": "把设计写成可以逐项执行的实现计划。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/writing-plans"
+    },
+    {
+      "name": "writing-skills",
+      "purpose": "按 Superpowers 流程编写、验证和测试技能文档。",
+      "source_group": "superpowers",
+      "status": "files",
+      "path": "external-skills/superpowers/skills/writing-skills"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "FDE 学习分析"
+  short_description: "按原章节讲透知识、关键字段与代码关联，说明证据边界和能力延伸"
+  default_prompt: "使用 $fde-creator 只读分析我提供的目录或文件，按原章节讲清重点、关键字段与实现依据、条件变化及相关技术能力延伸，并说明理解标准，在对话中回答我的追问。"
