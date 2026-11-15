@@ -1,6 +1,11 @@
 # 脚手架模板
 
-生成"框架文件"（非业务页面）时复用这里的模板。只需替换 `{{PROJECT_NAME}}`、`{{ROUTES}}`、`{{MENU_ITEMS}}` 等占位符。
+生成“框架文件”（非业务页面）时复用这里的模板。先根据模式决定复用范围：
+
+- `fidelity`：复用 package、Vite、TypeScript、Router、环境和 API 层；`theme`、Layout 与业务样式必须从原型反推。
+- `mui-normalize`：可以直接使用下方 Theme 与 Layout 基线，再按页面功能调整。
+
+替换 `{{PROJECT_NAME}}`、`{{ROUTES}}`、`{{MENU_ITEMS}}` 等占位符。不要在 `fidelity` 模式中把示例 Theme 当成视觉规范。
 
 ## package.json
 
@@ -25,10 +30,10 @@
     "@mui/material": "^5.16.0",
     "@mui/icons-material": "^5.16.0",
     "@emotion/react": "^11.13.0",
-    "@emotion/styled": "^11.13.0",
-    "recharts": "^2.12.0"
+    "@emotion/styled": "^11.13.0"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.0",
@@ -107,11 +112,11 @@ export default defineConfig({
 
 ## index.html
 
-模板里**不要**写任何 Google Fonts / 字体 CDN 的 `<link>` 标签——保持 head 干净，字体走 fontsource 在 `main.tsx` 里 import。如果原型 HTML 有 `<link href="https://fonts.googleapis.com/...">`，删掉它。
+模板里**不要**写任何 Google Fonts / 字体 CDN 的 `<link>` 标签。`fidelity` 使用原型的语言标记；`mui-normalize` 在没有来源语言时可用 `zh-CN`。字体改成本地依赖时，只安装和导入原型实际使用的字体与字重，并同步写入 `package.json`。
 
 ```html
 <!doctype html>
-<html lang="zh-CN">
+<html lang="{{HTML_LANG}}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -124,71 +129,48 @@ export default defineConfig({
 </html>
 ```
 
-## nginx.conf（生产静态托管示例）
-
-```nginx
-server {
-    listen 80;
-    server_name _;
-
-    root /usr/share/nginx/html;
-    index index.html;
-
-    location / {
-        try_files $uri $uri/ /index.html;
-    }
-
-    location /api/ {
-        proxy_pass http://backend:8000/;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-
-    location ~* \.(js|css|png|jpg|jpeg|gif|svg|ico|woff2?)$ {
-        expires 7d;
-        add_header Cache-Control "public";
-    }
-}
-```
-
-生产检查：
-- `.env.production` 必须设置 `VITE_USE_MOCK=false`。
-- `VITE_API_BASE_URL` 不能保留 `https://api.example.com`。
-- 必须生成 `src/models`、`src/api`、`src/mock`、`src/pages`，并保证 API client 使用 `request<T>()`。
-- 前后端联调至少验证 `/health`、`/api/hosts`、`/api/tasks`。
-- 构建验证执行 `npm run build`，再把 `dist/` 放入 Nginx 镜像或静态目录。
-- 国内 npm 源可执行 `npm config set registry https://registry.npmmirror.com`，公司环境优先使用内网源。
-
 ## src/main.tsx
 
-如果原型用到自定义字体，在第一行 `import` 之后追加 `@fontsource/<字体名>/<字重>.css`，按实际用到的字重逐个 import（举例：DM Sans + DM Mono）。**没用到自定义字体就不要加，依赖 MUI 默认的 system stack 即可。**
+如果原型用到自定义字体，在第一行 `import` 之后按实际字重追加 `@fontsource/<字体名>/<字重>.css`，并把对应包加入依赖。没有使用就不要安装或导入。`CssBaseline` 只用于 `mui-normalize`，或经比对确认其 reset 与原型一致的 `fidelity` 项目；共享模板默认不启用它。图表库同样按需添加，不把 Recharts 等库放入基础依赖。
 
 ```tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
-import { ThemeProvider, CssBaseline } from '@mui/material';
-// 字体（按需 import，没用到就删掉这一段）
-import '@fontsource/dm-sans/300.css';
-import '@fontsource/dm-sans/400.css';
-import '@fontsource/dm-sans/500.css';
-import '@fontsource/dm-sans/600.css';
-import '@fontsource/dm-mono/400.css';
-import '@fontsource/dm-mono/500.css';
+import { ThemeProvider } from '@mui/material';
 import App from './App';
 import { theme } from './theme';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <CssBaseline />
       <HashRouter>
         <App />
       </HashRouter>
     </ThemeProvider>
   </React.StrictMode>
 );
+```
+
+`mui-normalize` 模式把共享模板中的 MUI import 和 `ThemeProvider` 内容替换为以下形式：
+
+```tsx
+import { CssBaseline, ThemeProvider } from '@mui/material';
+
+<ThemeProvider theme={theme}>
+  <CssBaseline />
+  <HashRouter><App /></HashRouter>
+</ThemeProvider>
+```
+
+按需依赖使用以下版本基线，不需要时不要加入 `package.json`：
+
+```json
+{
+  "recharts": "^2.12.0",
+  "@fontsource/dm-sans": "^5.0.0",
+  "@fontsource/dm-mono": "^5.0.0"
+}
 ```
 
 ## src/App.tsx
@@ -231,77 +213,9 @@ interface ImportMeta {
 }
 ```
 
-## src/models/ops.ts（运维平台前端模型）
-
-运维平台不能只生成页面组件，必须先建立模型层，后续 API、mock 和页面都引用这里的类型。
-
-```ts
-export type HostStatus = 'online' | 'offline' | 'maintenance';
-export type TaskStatus = 'success' | 'running' | 'failed' | 'pending';
-export type LogLevel = 'info' | 'warn' | 'error';
-
-export interface ApiListResponse<T> {
-  items: T[];
-  total: number;
-}
-
-export interface HealthResponse {
-  status: 'ok' | 'ready' | 'degraded';
-}
-
-export interface Host {
-  id: number;
-  hostname: string;
-  ip: string;
-  status: HostStatus;
-  role: string;
-}
-
-export interface Task {
-  id: number;
-  name: string;
-  status: TaskStatus;
-  operator: string;
-  target: string;
-}
-
-export interface LogEntry {
-  id: number;
-  time: string;
-  level: LogLevel;
-  source: string;
-  message: string;
-}
-```
-
-## src/api/ops.ts（运维平台 API client）
-
-页面组件只调用这里的函数，不能直接 `fetch()`。所有函数都通过 `request<T>()` 泛型绑定响应模型。
-
-```ts
-import { request } from './request';
-import type { ApiListResponse, HealthResponse, Host, LogEntry, Task } from '../models/ops';
-
-export function getHealth(): Promise<HealthResponse> {
-  return request<HealthResponse>('/health');
-}
-
-export function getHosts(): Promise<ApiListResponse<Host>> {
-  return request<ApiListResponse<Host>>('/api/hosts');
-}
-
-export function getTasks(): Promise<ApiListResponse<Task>> {
-  return request<ApiListResponse<Task>>('/api/tasks');
-}
-
-export function getLogs(): Promise<ApiListResponse<LogEntry>> {
-  return request<ApiListResponse<LogEntry>>('/api/logs');
-}
-```
-
 ## src/theme/index.ts
 
-干净白底、MUI 原生风格，轻微调整主色。
+以下是 `mui-normalize` 的干净白底 MUI 基线。`fidelity` 模式必须按原型重建 palette、typography、shape、shadow 和 component overrides，不直接复制本段。
 
 ```ts
 import { createTheme } from '@mui/material/styles';
@@ -404,7 +318,6 @@ export async function handleMock<T>(path: string, options: RequestOptions): Prom
 带侧边栏 + 顶栏的主布局，用 `<Outlet />` 渲染子路由。菜单项根据原型里出现的导航入口来填。
 
 ```tsx
-import { useState } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import {
   AppBar,
@@ -416,12 +329,10 @@ import {
   ListItemIcon,
   ListItemText,
   Box,
-  IconButton,
   Avatar
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import MenuIcon from '@mui/icons-material/Menu';
 
 const DRAWER_WIDTH = 220;
 
@@ -454,15 +365,10 @@ const menuItems = [
 export default function MainLayout() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [open] = useState(true);
-
   return (
     <LayoutRoot>
       <StyledAppBar position="fixed">
         <Toolbar>
-          <IconButton edge="start" sx={{ mr: 2 }}>
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             后台管理系统
           </Typography>
@@ -471,7 +377,7 @@ export default function MainLayout() {
       </StyledAppBar>
       <Drawer
         variant="persistent"
-        open={open}
+        open
         sx={{
           width: DRAWER_WIDTH,
           '& .MuiDrawer-paper': { width: DRAWER_WIDTH, boxSizing: 'border-box' }

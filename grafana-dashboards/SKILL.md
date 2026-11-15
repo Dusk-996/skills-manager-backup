@@ -380,3 +380,8 @@ resource "grafana_folder" "monitoring" {
 
 - `prometheus-configuration` - For metric collection
 - `slo-implementation` - For SLO dashboards
+
+
+## 随包看板模板
+
+`assets/api-dashboard.json` 使用 `http_requests_total`（状态标签为 `status`）和 `http_request_duration_seconds_bucket`；基础设施模板使用 node_exporter；数据库模板使用 mysqld_exporter。导入时选择 Prometheus 数据源，再按实际 job、instance 和应用标签调整查询。无数据时先在 Prometheus 检查指标是否存在，不能将无数据视为系统正常；模板未直接连接或修改线上 Grafana。

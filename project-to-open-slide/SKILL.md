@@ -71,7 +71,7 @@ scripts/bootstrap_target.ps1 -Target <输出目录>
 
 模板固定为：
 
-- `J:\skywalking\open-slide-studio\runtime`
+- `本技能目录下的 assets/runtime（可用 OPEN_SLIDE_TEMPLATE_HOME 或 -TemplateHome 覆盖）`
 - `@open-slide/core 1.12.1`
 - Git Commit `9a213fe75f7b13fcd2cb3c49a0ab8241617148a5`
 
@@ -101,8 +101,8 @@ exports/<id>/html/
 依次执行：
 
 ```powershell
-corepack pnpm install --frozen-lockfile
-corepack pnpm build
+pnpm install --frozen-lockfile
+pnpm build
 python scripts/validate_open_slide.py --slide-dir <slides/id> --ledger <ledger.json>
 node scripts/export_image_pptx.mjs --target <输出目录> --deck <id> --output <pptx>
 python scripts/verify_delivery.py --target <输出目录> --id <id> --expected-pages <页数>
@@ -123,3 +123,8 @@ python scripts/verify_delivery.py --target <输出目录> --id <id> --expected-p
 > 图片型 PPTX 与 Open Slide 视觉一致，但在 PowerPoint 中不能单独编辑文字和图形。
 
 同时报告扫描文件数、实际读取文件数、提问轮次、生成轮次和修复轮次。
+
+
+## 可移植模板与依赖安装
+
+模板随技能位于 `assets/runtime`；`-TemplateHome` 参数或 `OPEN_SLIDE_TEMPLATE_HOME` 可覆盖路径。`bootstrap_target.ps1 -Target <目录>` 默认只复制模板，不联网。用户明确要求安装依赖时使用 `-InstallDependencies`；已有完整离线缓存可追加 `-Offline`。复制的是项目专属 pnpm 锁文件，安装使用 frozen-lockfile；失败后检查项目 `.npmrc` 国内源，必要时经用户同意改为官方 npm 源。需要项目级 Open Slide 技能时，在依赖安装后运行 `pnpm exec open-slide sync:skills`。

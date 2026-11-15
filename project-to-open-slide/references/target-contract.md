@@ -13,10 +13,10 @@ Open Slide 项目至少应有 `package.json`、固定版本 `@open-slide/core` �
 
 ## 初始化复制
 
-仅复制 `package.json`、`pnpm-lock.yaml`、`open-slide.config.ts`、`tsconfig.json`、`.agents/skills/`。不复制 `node_modules`、`dist`、缓存和已有演示。
+仅复制 `package.json`、`pnpm-lock.yaml`、`open-slide.config.ts`、`tsconfig.json`、`.npmrc`。不复制 `node_modules`、`dist`、缓存和已有演示。
 
 依赖安装使用：
 
 ```powershell
-corepack pnpm install --frozen-lockfile
+pnpm install --frozen-lockfile
 ```

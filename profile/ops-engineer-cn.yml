@@ -1,0 +1,18 @@
+# 个人运维默认配置；项目明确要求优先于此默认值。
+languages:
+  simple_automation: shell
+  api_and_data_tools: python
+  distributed_agent: go
+deployment:
+  default: docker-compose
+  execute_production_changes: false
+safety:
+  require_impact_backup_verify_rollback: true
+  secrets_from_environment: true
+network:
+  pip_index: https://pypi.tuna.tsinghua.edu.cn/simple
+  npm_registry: https://registry.npmmirror.com
+  image_policy: 按目标环境确认可达镜像仓库，固定版本或 digest，提供离线导入路径
+verification:
+  default: static
+  missing_docker_or_kubectl: report_unverified

@@ -7,8 +7,8 @@
   "tags": [],
   "source": {
     "type": "git",
-    "ref": "git@github.com:Dusk-996/skills-manager-backup.git",
-    "subpath": "frontend-design",
-    "branch": null
+    "ref": "https://github.com/anthropics/skills.git",
+    "subpath": "skills/frontend-design",
+    "branch": "main"
   }
 }

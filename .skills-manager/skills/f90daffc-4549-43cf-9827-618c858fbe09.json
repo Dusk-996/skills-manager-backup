@@ -6,9 +6,9 @@
   "enabled": true,
   "tags": [],
   "source": {
-    "type": "skillssh",
-    "ref": "tt-a1i/archify/archify",
+    "type": "git",
+    "ref": "https://github.com/tt-a1i/archify.git",
     "subpath": "archify",
-    "branch": null
+    "branch": "v3.2.0"
   }
 }
