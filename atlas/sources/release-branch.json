@@ -1,0 +1,177 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "准备收尾或换人，怎么验证并交接？",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "docs/atlas/release-branch.html",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "已有材料"
+        },
+        "backend": {
+          "label": "执行技能"
+        },
+        "database": {
+          "label": "交付产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "验证与分支交付"
+    },
+    {
+      "id": "lane1",
+      "label": "随时交接"
+    }
+  ],
+  "mainPath": [
+    "work",
+    "verify",
+    "branch",
+    "finish"
+  ],
+  "nodes": [
+    {
+      "id": "work",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "已实现的改动",
+      "sublabel": "当前工作分支与验证命令",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/verification-before-completion/SKILL.md",
+          "line": 22,
+          "end_line": 35
+        }
+      ]
+    },
+    {
+      "id": "verify",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "verification-before-completion",
+      "sublabel": "读取本轮命令退出码和输出",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/verification-before-completion/SKILL.md",
+          "line": 22,
+          "end_line": 35
+        }
+      ]
+    },
+    {
+      "id": "branch",
+      "lane": "lane0",
+      "col": 2,
+      "type": "backend",
+      "label": "finishing-a-development-branch",
+      "sublabel": "按选择集成或保留分支",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/finishing-a-development-branch/SKILL.md",
+          "line": 53,
+          "end_line": 77
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "lane": "lane0",
+      "col": 3,
+      "type": "database",
+      "label": "分支处理结果",
+      "sublabel": "本地合并、PR 或保留",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/finishing-a-development-branch/SKILL.md",
+          "line": 84,
+          "end_line": 128
+        }
+      ]
+    },
+    {
+      "id": "handoff",
+      "lane": "lane1",
+      "col": 0,
+      "type": "backend",
+      "label": "handoff",
+      "sublabel": "提炼会话状态与后续工作",
+      "sources": [
+        {
+          "path": "handoff/SKILL.md",
+          "line": 9,
+          "end_line": 17
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "lane": "lane1",
+      "col": 1,
+      "type": "database",
+      "label": "交接文档",
+      "sublabel": "引用已有成果并脱敏",
+      "sources": [
+        {
+          "path": "handoff/SKILL.md",
+          "line": 9,
+          "end_line": 17
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "work",
+      "to": "verify",
+      "label": "运行验证",
+      "role": "main"
+    },
+    {
+      "from": "verify",
+      "to": "branch",
+      "label": "测试通过",
+      "role": "main"
+    },
+    {
+      "from": "branch",
+      "to": "finish",
+      "label": "用户选定",
+      "role": "main"
+    },
+    {
+      "from": "handoff",
+      "to": "context",
+      "label": "会话摘要",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "验证不通过时",
+      "items": [
+        "记录失败输出并继续定位。等相关测试通过后再处理分支。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "中途换人",
+      "items": [
+        "handoff 可独立使用。将当前工作和下一步写入临时目录中的交接文档。"
+      ]
+    }
+  ]
+}

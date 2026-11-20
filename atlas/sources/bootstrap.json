@@ -1,0 +1,187 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "确定做 Shell 工具或服务后，怎么开工？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/bootstrap.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "已有材料"
+        },
+        "backend": {
+          "label": "技能操作"
+        },
+        "database": {
+          "label": "交付物"
+        },
+        "security": {
+          "label": "人工确认"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "main",
+      "label": "选择工程形态"
+    },
+    {
+      "id": "alt",
+      "label": "验证与交付"
+    }
+  ],
+  "mainPath": [
+    "request",
+    "init",
+    "shell",
+    "verify"
+  ],
+  "nodes": [
+    {
+      "id": "request",
+      "lane": "main",
+      "col": 0,
+      "type": "external",
+      "label": "已确认的任务",
+      "sublabel": "准备语言、运行位置和目标",
+      "sources": [
+        {
+          "path": "project-init/SKILL.md",
+          "line": 18,
+          "end_line": 29
+        }
+      ]
+    },
+    {
+      "id": "init",
+      "lane": "main",
+      "col": 1,
+      "type": "backend",
+      "label": "project-init",
+      "sublabel": "按目标选择工程模板",
+      "sources": [
+        {
+          "path": "project-init/SKILL.md",
+          "line": 18,
+          "end_line": 39
+        },
+        {
+          "path": "project-init/SKILL.md",
+          "line": 59,
+          "end_line": 73
+        }
+      ]
+    },
+    {
+      "id": "shell",
+      "lane": "main",
+      "col": 2,
+      "type": "database",
+      "label": "Shell 工具骨架",
+      "sublabel": "参数校验、日志与试运行",
+      "sources": [
+        {
+          "path": "project-init/SKILL.md",
+          "line": 118,
+          "end_line": 125
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "lane": "alt",
+      "col": 1,
+      "type": "database",
+      "label": "服务或 Agent 骨架",
+      "sublabel": "按语言准备入口与配置",
+      "sources": [
+        {
+          "path": "project-init/SKILL.md",
+          "line": 18,
+          "end_line": 39
+        },
+        {
+          "path": "project-init/SKILL.md",
+          "line": 59,
+          "end_line": 73
+        }
+      ]
+    },
+    {
+      "id": "verify",
+      "lane": "alt",
+      "col": 2,
+      "type": "security",
+      "label": "验证初始工程",
+      "sublabel": "执行对应的启动或检查命令",
+      "sources": [
+        {
+          "path": "project-init/SKILL.md",
+          "line": 31,
+          "end_line": 35
+        },
+        {
+          "path": "project-init/SKILL.md",
+          "line": 160,
+          "end_line": 164
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "request",
+      "to": "init",
+      "label": "工程约束",
+      "role": "main"
+    },
+    {
+      "from": "init",
+      "to": "shell",
+      "label": "单机批处理",
+      "role": "main"
+    },
+    {
+      "from": "init",
+      "to": "service",
+      "label": "服务或代理",
+      "role": "branch",
+      "variant": "dashed"
+    },
+    {
+      "from": "shell",
+      "to": "verify",
+      "label": "脚本检查",
+      "role": "main"
+    },
+    {
+      "from": "service",
+      "to": "verify",
+      "label": "启动检查",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "语言与运行方式",
+      "items": [
+        "简单单机巡检可用 Shell；依赖 SDK 的内部 API 可考虑 Python，需主机分发的常驻 Agent 可考虑 Go。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "交付给下一步",
+      "items": [
+        "保留创建摘要与验证命令。确认工程能启动后，再补业务功能或准备部署包。"
+      ]
+    }
+  ]
+}

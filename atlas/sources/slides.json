@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "项目材料要做技术分享，交付网页还是 PPT？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/slides.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "起点或使用条件"
+        },
+        "backend": {
+          "label": "技能"
+        },
+        "frontend": {
+          "label": "工作产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "技术讲解与网页"
+    },
+    {
+      "id": "lane1",
+      "label": "可编辑演示文件"
+    }
+  ],
+  "mainPath": [
+    "case0",
+    "skill0"
+  ],
+  "nodes": [
+    {
+      "id": "case0",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "技术项目讲解",
+      "sublabel": "源码、文档或已有图稿",
+      "sources": [
+        {
+          "path": "project-to-open-slide/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "skill0",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "project-to-open-slide",
+      "sublabel": "中文讲解与图片型 PPTX",
+      "sources": [
+        {
+          "path": "project-to-open-slide/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "case1",
+      "lane": "lane0",
+      "col": 2,
+      "type": "external",
+      "label": "浏览器播放",
+      "sublabel": "从内容开始或已有 PPT",
+      "sources": [
+        {
+          "path": "frontend-slides/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "skill1",
+      "lane": "lane0",
+      "col": 3,
+      "type": "backend",
+      "label": "frontend-slides",
+      "sublabel": "可在浏览器播放的 HTML",
+      "sources": [
+        {
+          "path": "frontend-slides/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "case2",
+      "lane": "lane1",
+      "col": 0,
+      "type": "external",
+      "label": "编辑 PowerPoint",
+      "sublabel": "编辑页、备注或演示模板",
+      "sources": [
+        {
+          "path": "pptx/SKILL.md",
+          "line": 2,
+          "end_line": 7
+        }
+      ]
+    },
+    {
+      "id": "skill2",
+      "lane": "lane1",
+      "col": 1,
+      "type": "backend",
+      "label": "pptx",
+      "sublabel": "可继续修改的 PPTX",
+      "sources": [
+        {
+          "path": "pptx/SKILL.md",
+          "line": 2,
+          "end_line": 7
+        }
+      ]
+    },
+    {
+      "id": "case3",
+      "lane": "lane1",
+      "col": 2,
+      "type": "external",
+      "label": "应用内制作",
+      "sublabel": "已启用演示文稿运行时",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 62,
+          "end_line": 62
+        }
+      ]
+    },
+    {
+      "id": "skill3",
+      "lane": "lane1",
+      "col": 3,
+      "type": "backend",
+      "label": "Presentations",
+      "sublabel": "PowerPoint 或 Google Slides",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 62,
+          "end_line": 62
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "case0",
+      "to": "skill0",
+      "label": "技术材料"
+    },
+    {
+      "from": "case1",
+      "to": "skill1",
+      "label": "网页演示"
+    },
+    {
+      "from": "case2",
+      "to": "skill2",
+      "label": "文件编辑"
+    },
+    {
+      "from": "case3",
+      "to": "skill3",
+      "label": "应用可用"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "图片型 PPTX",
+      "items": [
+        "计划逐项修改图形或文字时，先明确是否需要可编辑的源文件。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "网页演示",
+      "items": [
+        "交付渠道是浏览器时，可以直接制作 HTML 演示稿，也可以从已有 PPT 转换。"
+      ]
+    }
+  ]
+}

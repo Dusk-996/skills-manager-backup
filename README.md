@@ -6,6 +6,21 @@
 
 安装、恢复、运行条件与许可说明见 [使用说明](docs/RESTORE.md)。
 
+## 按工作场景查找
+
+[浏览全部场景、已有材料和下一步](docs/atlas/README.md)
+
+| 工作流 | 从这里开始 |
+|---|---|
+| Vibe Coding · 构建运维工具 | [原型转 React Mock](docs/atlas/prototype-to-mock.md) · [从 Mock 确认后端选型](docs/atlas/mock-to-architecture.md) |
+| 协作开发与交接 | [执行既有计划](docs/atlas/execute-plan.md) · [验证与交接](docs/atlas/release-branch.md) |
+| 值班排障与观测 | [从异常定位故障](docs/atlas/incident.md) · [制作 Grafana 看板](docs/atlas/observability.md) |
+| 学习、复习与面试 | [从材料到学习路线图](docs/atlas/notes-roadmap.md) · [从笔记到面试题](docs/atlas/interview.md) |
+| 技术表达与办公交付 | [挑选图稿形式](docs/atlas/explain-visually.md) · [准备技术分享](docs/atlas/slides.md) |
+| 维护个人技能库和 Codex 环境 | [查找和安装技能](docs/atlas/find-install.md) · [迁移规则和配置](docs/atlas/codex-environment.md) |
+
+## 全部技能
+
 | 技能名称 | 中文用途 |
 |---|---|
 | [aliyun-asr](aliyun-asr/SKILL.md) | 调用阿里云录音文件识别闲时版，把批量音视频 URL 转成文字和结构化结果。 |

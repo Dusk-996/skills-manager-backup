@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "怎样迁移旧规则、配置 Codex 和专用代理？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/codex-environment.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "起点或使用条件"
+        },
+        "backend": {
+          "label": "技能"
+        },
+        "frontend": {
+          "label": "工作产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "迁移与项目规则"
+    },
+    {
+      "id": "lane1",
+      "label": "配置与角色"
+    }
+  ],
+  "mainPath": [
+    "case0",
+    "skill0"
+  ],
+  "nodes": [
+    {
+      "id": "case0",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "旧规则与斜杠命令",
+      "sublabel": "从其他编辑器迁入的材料",
+      "sources": [
+        {
+          "path": "migrate-to-codex/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "skill0",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "migrate-to-codex",
+      "sublabel": "按原用途迁移规则或技能",
+      "sources": [
+        {
+          "path": "migrate-to-codex/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "case1",
+      "lane": "lane0",
+      "col": 2,
+      "type": "external",
+      "label": "长期工作约定",
+      "sublabel": "要限定到个人、项目或目录",
+      "sources": [
+        {
+          "path": "codex-project-rules/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "skill1",
+      "lane": "lane0",
+      "col": 3,
+      "type": "backend",
+      "label": "codex-project-rules",
+      "sublabel": "在对应作用域维护 AGENTS.md",
+      "sources": [
+        {
+          "path": "codex-project-rules/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "case2",
+      "lane": "lane1",
+      "col": 0,
+      "type": "external",
+      "label": "已有配置需求",
+      "sublabel": "要更改可支持的设置",
+      "sources": [
+        {
+          "path": "codex-config-manager/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "skill2",
+      "lane": "lane1",
+      "col": 1,
+      "type": "backend",
+      "label": "codex-config-manager",
+      "sublabel": "校验 config.toml 并留回滚方式",
+      "sources": [
+        {
+          "path": "codex-config-manager/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "case3",
+      "lane": "lane1",
+      "col": 2,
+      "type": "external",
+      "label": "明确的代理职责",
+      "sublabel": "专用审查、排障或实现角色",
+      "sources": [
+        {
+          "path": "codex-agent-config/SKILL.md",
+          "line": 29,
+          "end_line": 41
+        }
+      ]
+    },
+    {
+      "id": "skill3",
+      "lane": "lane1",
+      "col": 3,
+      "type": "backend",
+      "label": "codex-agent-config",
+      "sublabel": "生成与验证代理 TOML",
+      "sources": [
+        {
+          "path": "codex-agent-config/SKILL.md",
+          "line": 29,
+          "end_line": 41
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "case0",
+      "to": "skill0",
+      "label": "迁移"
+    },
+    {
+      "from": "case1",
+      "to": "skill1",
+      "label": "持久规则"
+    },
+    {
+      "from": "case2",
+      "to": "skill2",
+      "label": "设置变更"
+    },
+    {
+      "from": "case3",
+      "to": "skill3",
+      "label": "配置角色"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "先看作用范围",
+      "items": [
+        "记录个人偏好或目录协作约定时，先确定在哪里需要生效。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "验证",
+      "items": [
+        "配置与角色定义各自核对改动和加载方式，保留可复原的原始配置。"
+      ]
+    }
+  ]
+}

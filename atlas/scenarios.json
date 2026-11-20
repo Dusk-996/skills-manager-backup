@@ -1,0 +1,712 @@
+[
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "ops-design",
+    "title": "想把巡检脚本做成工具，怎么确定需求和实现计划？",
+    "input": "运维痛点、部署环境与边界",
+    "output": "有验收条件的实施计划",
+    "next": [
+      "bootstrap",
+      "ui-prototype"
+    ],
+    "skills": [
+      {
+        "name": "devops-brainstorming",
+        "when": "需求还在讨论",
+        "result": "确认目标、运行约束和风险，形成设计"
+      },
+      {
+        "name": "devops-writing-plans",
+        "when": "设计已经确认",
+        "result": "按任务拆出实施、验证和交付步骤"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "bootstrap",
+    "title": "确定做 Shell 工具或服务后，怎么开工？",
+    "input": "已确认需求、语言和交付形态",
+    "output": "可运行和验证的初始工程",
+    "next": [
+      "build-feature",
+      "package"
+    ],
+    "skills": [
+      {
+        "name": "project-init",
+        "when": "新建 Shell、Python 或 Go 运维工程",
+        "result": "得到工程目录、配置、日志和验证入口"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "ui-prototype",
+    "title": "还没有页面，怎么确定运维平台原型？",
+    "input": "用户任务、核心操作和页面要求",
+    "output": "可供评审的页面原型",
+    "next": [
+      "prototype-to-mock"
+    ],
+    "skills": [
+      {
+        "name": "frontend-design",
+        "when": "要从用户任务搭出页面",
+        "result": "实现可以评审的布局、组件和交互"
+      },
+      {
+        "name": "ui-ux-pro-max",
+        "when": "需要检查配色、交互或可访问性",
+        "result": "检索有依据的设计建议供原型采用"
+      },
+      {
+        "name": "design-taste-frontend",
+        "when": "偏展示型页面、作品集或已有界面改版时可选",
+        "result": "形成视觉方向和页面实现"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "prototype-to-mock",
+    "title": "已有 HTML 原型，怎么做出可操作的页面？",
+    "input": "已确认的 HTML、关键交互和页面尺寸",
+    "output": "可运行的 React + Mock，按需取得一致性报告",
+    "next": [
+      "mock-to-architecture"
+    ],
+    "skills": [
+      {
+        "name": "html-to-mui-react",
+        "when": "把批准的原型工程化，先对齐转换契约",
+        "result": "交付 React、MUI 与 Mock 工程"
+      },
+      {
+        "name": "prototype-parity-review",
+        "when": "明确需要比对原型和 React Mock 时",
+        "result": "获得视觉与交互一致性结论及差异证据"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "mock-to-architecture",
+    "title": "已有 React Mock，怎么定后端架构？",
+    "input": "可运行的 Mock、数据字段和任务行为",
+    "output": "定稿的技术选型单，可交给 SDD 明确边界",
+    "next": [
+      "spec-tickets"
+    ],
+    "skills": [
+      {
+        "name": "stack-selector",
+        "when": "第一轮读取 Mock，第二轮消费草案及已确认的决策",
+        "result": "先出架构草案，再定稿后端选型单"
+      },
+      {
+        "name": "grilling",
+        "when": "草案仍有部署、规模或恢复问题",
+        "result": "逐项确认运行约束与取舍"
+      },
+      {
+        "name": "domain-modeling",
+        "when": "追问过程需要沉淀项目词汇或决策时可选",
+        "result": "留下领域词汇表或 ADR"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "spec-tickets",
+    "title": "需求讨论完，怎么拆出可领取的任务？",
+    "input": "已有讨论、目标、技术决策或现成规格",
+    "output": "可分派且有验收条件、依赖关系的任务",
+    "next": [
+      "build-feature"
+    ],
+    "skills": [
+      {
+        "name": "setup-matt-pocock-skills",
+        "when": "首次使用这组工程技能且尚未约定跟踪器与标签时",
+        "result": "记录项目任务跟踪方式"
+      },
+      {
+        "name": "to-spec",
+        "when": "已有讨论需要归纳成项目规格",
+        "result": "发布或登记可供拆解的规格"
+      },
+      {
+        "name": "to-tickets",
+        "when": "已有规格或计划可直接进入",
+        "result": "得到可独立验证的纵向任务及阻塞关系"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "build-feature",
+    "title": "拿到开发任务，怎么拆模块并用测试实现？",
+    "input": "功能要求、代码和验收行为",
+    "output": "有测试支撑的实现",
+    "next": [
+      "review-code",
+      "browser-check"
+    ],
+    "skills": [
+      {
+        "name": "codebase-design",
+        "when": "模块边界或测试接口需要先厘清时",
+        "result": "得到接口与可测性设计"
+      },
+      {
+        "name": "tdd",
+        "when": "采用侧重用户行为和集成测试的开发方法",
+        "result": "逐个行为红绿重构并留下回归测试"
+      },
+      {
+        "name": "test-driven-development",
+        "when": "项目使用 Superpowers 测试优先流程时选此入口",
+        "result": "先取得失败测试，再补实现和验证"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "review-code",
+    "title": "代码改完，怎么组织审查和处理意见？",
+    "input": "提交范围、Spec、实施计划和改动",
+    "output": "有依据的审查结果和处理记录",
+    "next": [
+      "browser-check",
+      "release-branch"
+    ],
+    "skills": [
+      {
+        "name": "devops-requesting-code-review",
+        "when": "运维项目需要对齐实施计划和生产约束",
+        "result": "形成审查上下文和针对性评审"
+      },
+      {
+        "name": "requesting-code-review",
+        "when": "通用开发任务需要发起审查",
+        "result": "按变更范围交接给评审者"
+      },
+      {
+        "name": "code-review",
+        "when": "有可比对的提交范围、标准和需求",
+        "result": "得到规范与需求符合性发现"
+      },
+      {
+        "name": "review-agent",
+        "when": "应用提供只读审查角色且可委派时选用",
+        "result": "取得带位置和触发条件的缺陷发现"
+      },
+      {
+        "name": "receiving-code-review",
+        "when": "收到意见后",
+        "result": "核对依据、修复成立的问题并验证"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "browser-check",
+    "title": "有了可运行页面，怎么验证关键用户路径？",
+    "input": "可访问的环境、测试账号或页面与业务路径",
+    "output": "浏览器验证证据或正式 E2E 报告",
+    "next": [
+      "package",
+      "release-branch"
+    ],
+    "skills": [
+      {
+        "name": "playwright-cli",
+        "when": "需要操作浏览器和检查特定页面",
+        "result": "取得页面状态、交互结果与证据"
+      },
+      {
+        "name": "playwright-e2e-debug-report",
+        "when": "明确要求 Playwright E2E、冒烟、回归或完整的人工确认测试报告时",
+        "result": "先给测试计划，确认后执行并交付问题与报告"
+      },
+      {
+        "name": "computer-use",
+        "when": "必须通过已连接的桌面或浏览器操作时可独立使用",
+        "result": "得到界面操作结果；需要应用会话"
+      }
+    ]
+  },
+  {
+    "group": "Vibe Coding · 构建和交付运维工具",
+    "id": "package",
+    "title": "巡检工具准备上线，怎么打包、加固和审查？",
+    "input": "服务入口、部署目标、现有配置与测试结果",
+    "output": "交付部署包，或得到上线就绪结论",
+    "next": [
+      "browser-check",
+      "release-branch"
+    ],
+    "skills": [
+      {
+        "name": "deployment-packager",
+        "when": "缺少交付包",
+        "result": "得到部署文件、验证命令与回滚步骤"
+      },
+      {
+        "name": "devops-production-hardening",
+        "when": "已有项目，需补齐具体生产运行缺口",
+        "result": "得到加固改动、验证与恢复方法"
+      },
+      {
+        "name": "ops-readiness-review",
+        "when": "要独立判断是否具备上线条件",
+        "result": "得到就绪结论、风险与证据缺口"
+      }
+    ]
+  },
+  {
+    "group": "协作开发与交接",
+    "id": "dev-plan",
+    "title": "团队使用 Superpowers，如何把想法变成可执行计划？",
+    "input": "待明确的通用功能或设计任务",
+    "output": "经讨论的设计与分步计划",
+    "next": [
+      "execute-plan"
+    ],
+    "skills": [
+      {
+        "name": "using-superpowers",
+        "when": "进入采用该套流程的会话",
+        "result": "识别当前适用的技能与调用顺序"
+      },
+      {
+        "name": "brainstorming",
+        "when": "需要明确用户意图与设计取舍",
+        "result": "得到可确认的设计"
+      },
+      {
+        "name": "writing-plans",
+        "when": "设计已定",
+        "result": "得到可逐项执行和验证的实施计划"
+      }
+    ]
+  },
+  {
+    "group": "协作开发与交接",
+    "id": "execute-plan",
+    "title": "计划已经写好，一个会话做还是并行做？",
+    "input": "实施计划、任务依赖与当前工作区",
+    "output": "实现结果、评审与任务验证记录",
+    "next": [
+      "review-code",
+      "release-branch"
+    ],
+    "skills": [
+      {
+        "name": "using-git-worktrees",
+        "when": "任务需要 Git 隔离时",
+        "result": "建立隔离工作区并验证基线"
+      },
+      {
+        "name": "executing-plans",
+        "when": "选定在当前会话自己执行",
+        "result": "按计划实施并核对结果"
+      },
+      {
+        "name": "subagent-driven-development",
+        "when": "计划可拆成独立实现与评审任务时",
+        "result": "分派事项并汇总实现和审查"
+      },
+      {
+        "name": "dispatching-parallel-agents",
+        "when": "多个子问题互不依赖时单独选用",
+        "result": "并行调查或处理并合并结果"
+      }
+    ]
+  },
+  {
+    "group": "协作开发与交接",
+    "id": "release-branch",
+    "title": "准备收尾或换人，怎么验证并交接？",
+    "input": "已实现改动、测试命令和工作分支",
+    "output": "完成证据、分支处理结果或交接文档",
+    "next": [],
+    "skills": [
+      {
+        "name": "verification-before-completion",
+        "when": "准备声称通过或完成前",
+        "result": "用最新命令输出证明结果"
+      },
+      {
+        "name": "finishing-a-development-branch",
+        "when": "测试通过，需要选择合并、PR 或保留分支",
+        "result": "完成选定的分支交付方式"
+      },
+      {
+        "name": "handoff",
+        "when": "任一阶段需要换会话或换人时",
+        "result": "将上下文、结论和待办整理成交接文件"
+      }
+    ]
+  },
+  {
+    "group": "值班排障与观测",
+    "id": "incident",
+    "title": "服务不通，从主机、K8s 还是应用查起？",
+    "input": "主机日志、Pod 状态或可复现的异常",
+    "output": "有证据支持的定位、修复和验证路径",
+    "next": [
+      "observability"
+    ],
+    "skills": [
+      {
+        "name": "ssh-remote-ops",
+        "when": "问题落在获授权的 Linux 主机上",
+        "result": "核对进程、日志、网络和磁盘证据"
+      },
+      {
+        "name": "k8s-troubleshoot",
+        "when": "问题指向 Pod、Service 或 Ingress",
+        "result": "沿 Kubernetes 访问链定位故障层级"
+      },
+      {
+        "name": "diagnosing-bugs",
+        "when": "有难复现或回归问题且能建立反馈循环",
+        "result": "形成最小复现、根因和回归验证"
+      },
+      {
+        "name": "systematic-debugging",
+        "when": "需要按 Superpowers 流程调查根因时",
+        "result": "得到假设、验证结果和修复证据"
+      }
+    ]
+  },
+  {
+    "group": "值班排障与观测",
+    "id": "observability",
+    "title": "定位瓶颈后，怎么做成 Grafana 看板？",
+    "input": "已确认的数据源、指标、标签与查询目标",
+    "output": "可导入的看板及对应查询",
+    "next": [],
+    "skills": [
+      {
+        "name": "grafana-dashboards",
+        "when": "要持续跟踪容量、错误或延迟",
+        "result": "得到面板、变量与指标查询"
+      }
+    ]
+  },
+  {
+    "group": "学习、复习与面试",
+    "id": "notes-roadmap",
+    "title": "课程录音和资料怎么整理成可复习的路线图？",
+    "input": "可访问的录音 URL 或已有同主题文本",
+    "output": "结构化笔记或可跟踪学习进度的网页",
+    "next": [
+      "interview"
+    ],
+    "skills": [
+      {
+        "name": "aliyun-asr",
+        "when": "资料是音频 URL 且有阿里云识别环境",
+        "result": "提交并轮询得到转写文本和结构化结果"
+      },
+      {
+        "name": "learning-notes-builder",
+        "when": "已经有同主题的学习资料",
+        "result": "整理出分章节的 Markdown 笔记"
+      },
+      {
+        "name": "learning-roadmap",
+        "when": "已经有层级清晰的学习笔记",
+        "result": "生成可跟踪进度的 HTML 路线图"
+      }
+    ]
+  },
+  {
+    "group": "学习、复习与面试",
+    "id": "course-study",
+    "title": "正在学一门课，怎么读懂这一章并接着学？",
+    "input": "FDE 章节材料或个人学习目标",
+    "output": "章节讲解，或可跨会话延续的教学记录",
+    "next": [
+      "notes-roadmap",
+      "interview"
+    ],
+    "skills": [
+      {
+        "name": "fde-creator",
+        "when": "需要理解 FDE 章节里的材料、代码与判断依据",
+        "result": "得到章节导学和有材料依据的答疑"
+      },
+      {
+        "name": "teach",
+        "when": "希望按目标持续学习并记录进度",
+        "result": "维护教学工作区和下一次学习任务"
+      }
+    ]
+  },
+  {
+    "group": "学习、复习与面试",
+    "id": "interview",
+    "title": "怎样把笔记或故障经验变成面试题？",
+    "input": "笔记、目标岗位、可选已有题库或脱敏案例",
+    "output": "确认后的普通题或场景题及追问",
+    "next": [],
+    "skills": [
+      {
+        "name": "question-gap-analyzer",
+        "when": "需要从知识点筛选候选，手头有题库时还可查缺口",
+        "result": "形成候选清单；普通题候选确认后可生成完整题目"
+      },
+      {
+        "name": "scenario-question-designer",
+        "when": "已有候选或脱敏故障素材",
+        "result": "先给场景确认稿，确认后交付题目与追问"
+      }
+    ]
+  },
+  {
+    "group": "技术表达与办公交付",
+    "id": "publish-article",
+    "title": "项目动态怎么整理成周报或公众号文章？",
+    "input": "GitHub 项目资料，或已有中文 Markdown",
+    "output": "可交给飞书的周报或公众号 HTML",
+    "next": [
+      "explain-visually"
+    ],
+    "skills": [
+      {
+        "name": "github-weekly-feishu",
+        "when": "要基于当期项目资料写中文技术周报",
+        "result": "交付适合飞书的文章和配图需求"
+      },
+      {
+        "name": "humanizer-zh",
+        "when": "已有草稿需要调整中文表达时",
+        "result": "得到保留事实与原意的润色稿"
+      },
+      {
+        "name": "baoyu-markdown-to-html",
+        "when": "目标是微信公众号或 HTML 排版时",
+        "result": "从 Markdown 输出带样式的 HTML"
+      }
+    ]
+  },
+  {
+    "group": "技术表达与办公交付",
+    "id": "explain-visually",
+    "title": "我要讲清一套系统，选交互图还是可编辑图？",
+    "input": "系统说明、仓库证据、讲解问题或图稿",
+    "output": "取决于读者的交互图、可编辑图或插图",
+    "next": [
+      "slides"
+    ],
+    "skills": [
+      {
+        "name": "archify",
+        "when": "要分享可探索、可核验的架构或流程",
+        "result": "生成独立 HTML 图并支持导出"
+      },
+      {
+        "name": "draw-io-diagram-generator",
+        "when": "接收方需要继续在 draw.io 编辑时",
+        "result": "交付可编辑图文件"
+      },
+      {
+        "name": "visualize",
+        "when": "解释要留在当前对话且运行时可交互时",
+        "result": "生成可操作的说明或图表"
+      },
+      {
+        "name": "baoyu-infographic",
+        "when": "要把资料浓缩成信息图时",
+        "result": "得到选定布局与风格的信息图"
+      },
+      {
+        "name": "imagegen",
+        "when": "需要照片、插画或透明背景素材时",
+        "result": "生成或编辑位图素材"
+      }
+    ]
+  },
+  {
+    "group": "技术表达与办公交付",
+    "id": "slides",
+    "title": "项目材料要做技术分享，交付网页还是 PPT？",
+    "input": "文档、已有幻灯片、受众与目标格式",
+    "output": "网页演示、图片型 PPTX 或可编辑幻灯片",
+    "next": [],
+    "skills": [
+      {
+        "name": "project-to-open-slide",
+        "when": "项目材料要转成中文技术讲解",
+        "result": "生成 Open Slide 演示与图片型 PPTX"
+      },
+      {
+        "name": "frontend-slides",
+        "when": "要求可在浏览器播放或由 PPT 转网页",
+        "result": "生成 HTML 演示稿"
+      },
+      {
+        "name": "pptx",
+        "when": "直接创建、编辑或检查 PowerPoint 文件",
+        "result": "得到所需的 PPTX 和检查结果"
+      },
+      {
+        "name": "Presentations",
+        "when": "希望用已连接的演示文稿工具制作时",
+        "result": "交付相应运行时支持的 PowerPoint 或 Google Slides"
+      }
+    ]
+  },
+  {
+    "group": "技术表达与办公交付",
+    "id": "office-files",
+    "title": "收到工作簿或文档，怎么分析和交付？",
+    "input": "Excel、CSV、Word、PDF 或已打开的工作簿",
+    "output": "处理后的工作簿、报告或经检查的文档",
+    "next": [
+      "slides"
+    ],
+    "skills": [
+      {
+        "name": "Spreadsheets",
+        "when": "操作表格文件或已支持的在线表格",
+        "result": "得到分析、公式、图表或工作簿"
+      },
+      {
+        "name": "excel-live-control",
+        "when": "必须在当前打开且已连接的 Excel 会话操作",
+        "result": "把修改应用到该工作簿"
+      },
+      {
+        "name": "documents",
+        "when": "报告需交付可编辑 Word 文档",
+        "result": "生成、修订并渲染检查 DOCX"
+      },
+      {
+        "name": "pdf",
+        "when": "要求 PDF 版面、表单或成品检查",
+        "result": "读取、生成或验证 PDF"
+      }
+    ]
+  },
+  {
+    "group": "维护个人技能库和 Codex 环境",
+    "id": "find-install",
+    "title": "这件事有现成 skill 吗，缺的怎么补？",
+    "input": "自然语言任务，或已选定的技能来源",
+    "output": "可用技能推荐或安装结果",
+    "next": [
+      "author-skill"
+    ],
+    "skills": [
+      {
+        "name": "devops-skill-router-zh",
+        "when": "先从已安装技能中选运维入口",
+        "result": "得到最多三个相关技能及分工"
+      },
+      {
+        "name": "skill-router-zh",
+        "when": "需要通用内容或技术技能时",
+        "result": "按任务匹配当前会话技能"
+      },
+      {
+        "name": "find-skills",
+        "when": "本机没有合适技能且需要发现外部候选",
+        "result": "得到可评估的技能来源"
+      },
+      {
+        "name": "skill-installer",
+        "when": "已选定要安装的技能或 GitHub 路径",
+        "result": "安装后可在适当会话验证"
+      }
+    ]
+  },
+  {
+    "group": "维护个人技能库和 Codex 环境",
+    "id": "author-skill",
+    "title": "怎么把重复工作变成技能并改进效果？",
+    "input": "可重复的任务或已认可的成品、已有技能",
+    "output": "可复用技能、个人模板或优化报告",
+    "next": [],
+    "skills": [
+      {
+        "name": "skill-creator",
+        "when": "需要创建或更新通用技能",
+        "result": "得到带触发条件和支持资源的技能包"
+      },
+      {
+        "name": "writing-skills",
+        "when": "要通过测试检验技能说明是否有效时",
+        "result": "形成经场景验证的技能指令"
+      },
+      {
+        "name": "template-creator",
+        "when": "想把认可的成品变为个人模板",
+        "result": "在支持的应用中产出模板技能"
+      },
+      {
+        "name": "darwin-skill",
+        "when": "已有技能要比较多个改进版本",
+        "result": "得到评估、版本改动与优化结论"
+      }
+    ]
+  },
+  {
+    "group": "维护个人技能库和 Codex 环境",
+    "id": "codex-environment",
+    "title": "怎样迁移旧规则、配置 Codex 和专用代理？",
+    "input": "旧规则或明确的工作习惯与配置目标",
+    "output": "在正确作用域生效的规则、配置或代理定义",
+    "next": [
+      "diagnose-workflow"
+    ],
+    "skills": [
+      {
+        "name": "migrate-to-codex",
+        "when": "从其他工具迁移已有规则与命令",
+        "result": "按用途映射到项目规则或技能"
+      },
+      {
+        "name": "codex-project-rules",
+        "when": "要持久记录目录或项目级协作约定",
+        "result": "形成相应作用域的 AGENTS.md"
+      },
+      {
+        "name": "codex-config-manager",
+        "when": "需要管理个人或项目支持的设置",
+        "result": "得到已验证的配置和回滚方式"
+      },
+      {
+        "name": "codex-agent-config",
+        "when": "需要可复用的专门代理角色",
+        "result": "生成或更新代理 TOML 定义"
+      }
+    ]
+  },
+  {
+    "group": "维护个人技能库和 Codex 环境",
+    "id": "diagnose-workflow",
+    "title": "会话为什么重复劳动，怎样核实工具行为？",
+    "input": "Superpowers 会话记录或 OpenAI 产品使用问题",
+    "output": "有证据的工作流诊断或官方使用依据",
+    "next": [
+      "codex-environment"
+    ],
+    "skills": [
+      {
+        "name": "diagnosing-superpowers",
+        "when": "需要复盘技能未触发、重复执行等问题",
+        "result": "形成带出处的会话证据与复盘报告，供维护者判断"
+      },
+      {
+        "name": "openai-docs",
+        "when": "需要核实 Codex 或 OpenAI 产品的行为和配置时",
+        "result": "定位当前官方资料与用法"
+      }
+    ]
+  }
+]

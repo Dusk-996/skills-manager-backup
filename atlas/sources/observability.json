@@ -1,0 +1,166 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "定位瓶颈后，怎么做成 Grafana 看板？",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "docs/atlas/observability.html",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "已有材料"
+        },
+        "backend": {
+          "label": "执行技能"
+        },
+        "database": {
+          "label": "交付产物"
+        },
+        "frontend": {
+          "label": "处理步骤"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "从监控问题到面板"
+    },
+    {
+      "id": "lane1",
+      "label": "排查无数据"
+    }
+  ],
+  "mainPath": [
+    "input",
+    "design",
+    "queries",
+    "dash"
+  ],
+  "nodes": [
+    {
+      "id": "input",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "已有数据源与指标",
+      "sublabel": "确认需要持续观察的现象",
+      "sources": [
+        {
+          "path": "grafana-dashboards/SKILL.md",
+          "line": 14,
+          "end_line": 24
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "grafana-dashboards",
+      "sublabel": "选择目标指标和面板类型",
+      "sources": [
+        {
+          "path": "grafana-dashboards/SKILL.md",
+          "line": 22,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "queries",
+      "lane": "lane0",
+      "col": 2,
+      "type": "frontend",
+      "label": "校对查询与变量",
+      "sublabel": "匹配实际指标和标签",
+      "sources": [
+        {
+          "path": "grafana-dashboards/SKILL.md",
+          "line": 214,
+          "end_line": 247
+        }
+      ]
+    },
+    {
+      "id": "dash",
+      "lane": "lane0",
+      "col": 3,
+      "type": "database",
+      "label": "可导入的看板",
+      "sublabel": "配套查询、面板和变量",
+      "sources": [
+        {
+          "path": "grafana-dashboards/SKILL.md",
+          "line": 380,
+          "end_line": 387
+        }
+      ]
+    },
+    {
+      "id": "nodata",
+      "lane": "lane1",
+      "col": 2,
+      "type": "frontend",
+      "label": "检查指标来源",
+      "sublabel": "在 Prometheus 中核实指标",
+      "sources": [
+        {
+          "path": "grafana-dashboards/SKILL.md",
+          "line": 383,
+          "end_line": 387
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "input",
+      "to": "design",
+      "label": "监控目标",
+      "role": "main"
+    },
+    {
+      "from": "design",
+      "to": "queries",
+      "label": "选定面板",
+      "role": "main"
+    },
+    {
+      "from": "queries",
+      "to": "dash",
+      "label": "标签已核对",
+      "role": "main"
+    },
+    {
+      "from": "queries",
+      "to": "nodata",
+      "label": "查询无数据",
+      "role": "branch",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "如何选指标",
+      "items": [
+        "服务看请求量、错误率和耗时；基础设施看资源使用、饱和度和错误。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "导入后没有曲线",
+      "items": [
+        "先确认 Prometheus 存有该指标，再核对 job、instance 和应用的实际标签。"
+      ]
+    }
+  ]
+}

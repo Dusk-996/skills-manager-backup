@@ -1,0 +1,127 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "会话为什么重复劳动，怎样核实工具行为？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/diagnose-workflow.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "起点或使用条件"
+        },
+        "backend": {
+          "label": "技能"
+        },
+        "frontend": {
+          "label": "工作产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "选择证据来源"
+    }
+  ],
+  "mainPath": [
+    "case0",
+    "skill0"
+  ],
+  "nodes": [
+    {
+      "id": "case0",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "一次失效的会话",
+      "sublabel": "重复执行、跳过计划或技能未触发",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/diagnosing-superpowers/SKILL.md",
+          "line": 2,
+          "end_line": 16
+        }
+      ]
+    },
+    {
+      "id": "skill0",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "diagnosing-superpowers",
+      "sublabel": "提交有行号出处的会话复盘",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/diagnosing-superpowers/SKILL.md",
+          "line": 2,
+          "end_line": 16
+        }
+      ]
+    },
+    {
+      "id": "case1",
+      "lane": "lane0",
+      "col": 2,
+      "type": "external",
+      "label": "产品行为疑问",
+      "sublabel": "功能、配置或工具可用性",
+      "sources": [
+        {
+          "path": "external-skills/codex-system/openai-docs/SKILL.md",
+          "line": 8,
+          "end_line": 18
+        }
+      ]
+    },
+    {
+      "id": "skill1",
+      "lane": "lane0",
+      "col": 3,
+      "type": "backend",
+      "label": "openai-docs",
+      "sublabel": "依据对应版本的官方资料作答",
+      "sources": [
+        {
+          "path": "external-skills/codex-system/openai-docs/SKILL.md",
+          "line": 8,
+          "end_line": 18
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "case0",
+      "to": "skill0",
+      "label": "查会话"
+    },
+    {
+      "from": "case1",
+      "to": "skill1",
+      "label": "核实用法"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "复盘会话",
+      "items": [
+        "列出实际动作、发生时间与记录行号，供维护者核实和判断。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "核实产品行为",
+      "items": [
+        "结论依赖某个界面或版本时，核对该产品对应的官方说明与更新记录。"
+      ]
+    }
+  ]
+}

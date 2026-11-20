@@ -1,0 +1,217 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "有了可运行页面，怎么验证关键用户路径？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/browser-check.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "技能操作"
+        },
+        "security": {
+          "label": "人工确认"
+        },
+        "frontend": {
+          "label": "页面操作"
+        },
+        "database": {
+          "label": "交付物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "main",
+      "label": "需要正式测试报告"
+    },
+    {
+      "id": "alt",
+      "label": "独立验证界面"
+    }
+  ],
+  "mainPath": [
+    "plan",
+    "gate",
+    "cli",
+    "report"
+  ],
+  "nodes": [
+    {
+      "id": "plan",
+      "lane": "main",
+      "col": 0,
+      "type": "backend",
+      "label": "playwright-e2e-debug-report",
+      "sublabel": "从设计与任务拟订测试范围",
+      "sources": [
+        {
+          "path": "playwright-e2e-debug-report/SKILL.md",
+          "line": 3,
+          "end_line": 16
+        },
+        {
+          "path": "playwright-e2e-debug-report/SKILL.md",
+          "line": 24,
+          "end_line": 36
+        }
+      ]
+    },
+    {
+      "id": "gate",
+      "lane": "main",
+      "col": 1,
+      "type": "security",
+      "label": "确认测试任务",
+      "sublabel": "对齐路径、目标环境与授权",
+      "sources": [
+        {
+          "path": "playwright-e2e-debug-report/SKILL.md",
+          "line": 14,
+          "end_line": 22
+        },
+        {
+          "path": "playwright-e2e-debug-report/SKILL.md",
+          "line": 31,
+          "end_line": 41
+        }
+      ]
+    },
+    {
+      "id": "cli",
+      "lane": "main",
+      "col": 2,
+      "type": "frontend",
+      "label": "playwright-cli",
+      "sublabel": "操作浏览器并采集证据",
+      "sources": [
+        {
+          "path": "playwright-cli/SKILL.md",
+          "line": 9,
+          "end_line": 25
+        },
+        {
+          "path": "playwright-e2e-debug-report/SKILL.md",
+          "line": 38,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "lane": "main",
+      "col": 3,
+      "type": "database",
+      "label": "E2E 验证报告",
+      "sublabel": "记录结果、失败原因与复验",
+      "sources": [
+        {
+          "path": "playwright-e2e-debug-report/SKILL.md",
+          "line": 44,
+          "end_line": 59
+        },
+        {
+          "path": "playwright-e2e-debug-report/SKILL.md",
+          "line": 80,
+          "end_line": 88
+        }
+      ]
+    },
+    {
+      "id": "desktop",
+      "lane": "alt",
+      "col": 1,
+      "type": "frontend",
+      "label": "computer-use",
+      "sublabel": "需要控制已连接的界面时",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 55,
+          "end_line": 59
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "lane": "alt",
+      "col": 2,
+      "type": "database",
+      "label": "界面检查结果",
+      "sublabel": "状态、截图或交互记录",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 55,
+          "end_line": 59
+        },
+        {
+          "path": "playwright-cli/SKILL.md",
+          "line": 234,
+          "end_line": 246
+        },
+        {
+          "path": "playwright-e2e-debug-report/SKILL.md",
+          "line": 38,
+          "end_line": 48
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "plan",
+      "to": "gate",
+      "label": "测试矩阵",
+      "role": "main"
+    },
+    {
+      "from": "gate",
+      "to": "cli",
+      "label": "已确认任务",
+      "role": "main"
+    },
+    {
+      "from": "cli",
+      "to": "report",
+      "label": "测试记录",
+      "role": "main"
+    },
+    {
+      "from": "cli",
+      "to": "evidence",
+      "label": "单项验证",
+      "role": "branch",
+      "variant": "dashed"
+    },
+    {
+      "from": "desktop",
+      "to": "evidence",
+      "label": "界面操作",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "选择入口",
+      "items": [
+        "单查一个页面时可直接用 playwright-cli。显式要求 Playwright E2E、冒烟、回归或完整测试报告时，先确认测试任务。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "哪些动作另行约定",
+      "items": [
+        "自动修复、清理数据与破坏性流程分别按测试任务中的批准范围执行。computer-use 需要应用提供对应连接。"
+      ]
+    }
+  ]
+}

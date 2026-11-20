@@ -14,7 +14,7 @@ import re
 import sys
 from urllib.parse import unquote, urlsplit
 
-from readme_builder import EXPECTED_SKILL_COUNT, REPOSITORY_URL, build_readme
+from readme_builder import ATLAS_NAVIGATION, EXPECTED_SKILL_COUNT, REPOSITORY_URL, build_readme
 
 
 def validate_relative_links(readme: str, repo_root: Path) -> int:
@@ -36,8 +36,10 @@ def validate_relative_links(readme: str, repo_root: Path) -> int:
         if not resolved.is_file():
             raise ValueError(f"README 链接不是文件：{target}")
         count += 1
-    if count != EXPECTED_SKILL_COUNT + 1:
-        raise ValueError(f"README 应含 {EXPECTED_SKILL_COUNT + 1} 个相对链接，实际为 {count} 个")
+    # 恢复说明与场景目录各占一个入口，保留对丢失链接的检查。
+    expected = EXPECTED_SKILL_COUNT + 2 + sum(len(entries) for _, entries in ATLAS_NAVIGATION)
+    if count != expected:
+        raise ValueError(f"README 应含 {expected} 个相对链接，实际为 {count} 个")
     return count
 
 

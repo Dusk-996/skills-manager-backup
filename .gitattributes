@@ -1,0 +1,4 @@
+# 让 Windows 和 Linux 检出同一份已验证的 Archify 成品。
+atlas/sources/*.json text eol=lf
+docs/atlas/*.html text eol=lf
+docs/atlas/*.svg text eol=lf

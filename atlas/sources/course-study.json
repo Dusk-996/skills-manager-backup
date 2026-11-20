@@ -1,0 +1,176 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "正在学一门课，怎么读懂这一章并接着学？",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "docs/atlas/course-study.html",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "已有材料"
+        },
+        "backend": {
+          "label": "执行技能"
+        },
+        "database": {
+          "label": "交付产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "解读 FDE 章节"
+    },
+    {
+      "id": "lane1",
+      "label": "按目标跨会话学习"
+    }
+  ],
+  "mainPath": [
+    "chapter",
+    "fde",
+    "answer"
+  ],
+  "nodes": [
+    {
+      "id": "chapter",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "FDE 章节材料",
+      "sublabel": "任务书、附件、代码和测试",
+      "sources": [
+        {
+          "path": "external-skills/local/fde-creator/SKILL.md",
+          "line": 20,
+          "end_line": 25
+        }
+      ]
+    },
+    {
+      "id": "fde",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "fde-creator",
+      "sublabel": "把章节判断与材料证据对应",
+      "sources": [
+        {
+          "path": "external-skills/local/fde-creator/SKILL.md",
+          "line": 20,
+          "end_line": 37
+        }
+      ]
+    },
+    {
+      "id": "answer",
+      "lane": "lane0",
+      "col": 2,
+      "type": "database",
+      "label": "章节导学与答疑",
+      "sublabel": "按章节解释依据与关联",
+      "sources": [
+        {
+          "path": "external-skills/local/fde-creator/SKILL.md",
+          "line": 68,
+          "end_line": 82
+        }
+      ]
+    },
+    {
+      "id": "goal",
+      "lane": "lane1",
+      "col": 0,
+      "type": "external",
+      "label": "个人学习目标",
+      "sublabel": "希望跨会话掌握的技能",
+      "sources": [
+        {
+          "path": "teach/SKILL.md",
+          "line": 3,
+          "end_line": 15
+        }
+      ]
+    },
+    {
+      "id": "teach",
+      "lane": "lane1",
+      "col": 1,
+      "type": "backend",
+      "label": "teach",
+      "sublabel": "按目标维护课程和学习记录",
+      "sources": [
+        {
+          "path": "teach/SKILL.md",
+          "line": 11,
+          "end_line": 21
+        }
+      ]
+    },
+    {
+      "id": "records",
+      "lane": "lane1",
+      "col": 2,
+      "type": "database",
+      "label": "教学工作区",
+      "sublabel": "保存课程、参考材料与记录",
+      "sources": [
+        {
+          "path": "teach/SKILL.md",
+          "line": 11,
+          "end_line": 21
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "chapter",
+      "to": "fde",
+      "label": "本章材料",
+      "role": "main"
+    },
+    {
+      "from": "fde",
+      "to": "answer",
+      "label": "证据与判断",
+      "role": "main"
+    },
+    {
+      "from": "goal",
+      "to": "teach",
+      "label": "学习意图",
+      "role": "main"
+    },
+    {
+      "from": "teach",
+      "to": "records",
+      "label": "课程与记录",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "从材料进入",
+      "items": [
+        "FDE 导学默认在对话中解释真实材料，标清未读和待核实部分。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "从目标进入",
+      "items": [
+        "需要多次学习时，直接使用 teach，后续根据教学记录安排课程。"
+      ]
+    }
+  ]
+}

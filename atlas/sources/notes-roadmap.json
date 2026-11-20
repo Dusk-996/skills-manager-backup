@@ -1,0 +1,205 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "课程录音和资料怎么整理成可复习的路线图？",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "docs/atlas/notes-roadmap.html",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "已有材料"
+        },
+        "backend": {
+          "label": "执行技能"
+        },
+        "database": {
+          "label": "交付产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "从同主题材料制作学习路线图"
+    },
+    {
+      "id": "lane1",
+      "label": "从课程录音进入"
+    }
+  ],
+  "mainPath": [
+    "docs",
+    "notes",
+    "md",
+    "road",
+    "html"
+  ],
+  "nodes": [
+    {
+      "id": "docs",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "同主题文本",
+      "sublabel": "课程文稿、网页或资料目录",
+      "sources": [
+        {
+          "path": "learning-notes-builder/SKILL.md",
+          "line": 3,
+          "end_line": 16
+        }
+      ]
+    },
+    {
+      "id": "notes",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "learning-notes-builder",
+      "sublabel": "确认大纲后按章整理笔记",
+      "sources": [
+        {
+          "path": "learning-notes-builder/SKILL.md",
+          "line": 23,
+          "end_line": 49
+        }
+      ]
+    },
+    {
+      "id": "md",
+      "lane": "lane0",
+      "col": 2,
+      "type": "database",
+      "label": "分级 Markdown 笔记",
+      "sublabel": "章节与小节结构清晰",
+      "sources": [
+        {
+          "path": "learning-notes-builder/SKILL.md",
+          "line": 103,
+          "end_line": 123
+        }
+      ]
+    },
+    {
+      "id": "road",
+      "lane": "lane0",
+      "col": 3,
+      "type": "backend",
+      "label": "learning-roadmap",
+      "sublabel": "解析章节生成交互页面",
+      "sources": [
+        {
+          "path": "learning-roadmap/SKILL.md",
+          "line": 45,
+          "end_line": 58
+        }
+      ]
+    },
+    {
+      "id": "html",
+      "lane": "lane0",
+      "col": 4,
+      "type": "database",
+      "label": "学习路线图",
+      "sublabel": "逐节阅读并记录进度",
+      "sources": [
+        {
+          "path": "learning-roadmap/SKILL.md",
+          "line": 3,
+          "end_line": 14
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "lane": "lane1",
+      "col": 0,
+      "type": "external",
+      "label": "课程录音 URL",
+      "sublabel": "确认源可访问和识别环境",
+      "sources": [
+        {
+          "path": "aliyun-asr/SKILL.md",
+          "line": 14,
+          "end_line": 36
+        }
+      ]
+    },
+    {
+      "id": "asr",
+      "lane": "lane1",
+      "col": 1,
+      "type": "backend",
+      "label": "aliyun-asr",
+      "sublabel": "提交识别并轮询结果",
+      "sources": [
+        {
+          "path": "aliyun-asr/SKILL.md",
+          "line": 90,
+          "end_line": 125
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "docs",
+      "to": "notes",
+      "label": "已有材料",
+      "role": "main"
+    },
+    {
+      "from": "notes",
+      "to": "md",
+      "label": "大纲已确认",
+      "role": "main"
+    },
+    {
+      "from": "md",
+      "to": "road",
+      "label": "要跟踪进度",
+      "role": "main"
+    },
+    {
+      "from": "road",
+      "to": "html",
+      "label": "网页",
+      "role": "main"
+    },
+    {
+      "from": "audio",
+      "to": "asr",
+      "label": "可识别音频",
+      "role": "main"
+    },
+    {
+      "from": "asr",
+      "to": "notes",
+      "label": "转写文本",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "从中间进入",
+      "items": [
+        "已有符合标题层级的 Markdown 时，可以直接生成网页。只需复习笔记时，停在 Markdown 即可。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "录音输入",
+      "items": [
+        "先准备可访问的 URL 与阿里云识别环境。拿到转写文本后再交给笔记整理步骤。"
+      ]
+    }
+  ]
+}

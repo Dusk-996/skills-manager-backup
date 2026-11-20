@@ -1,0 +1,240 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "我要讲清一套系统，选交互图还是可编辑图？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/explain-visually.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "起点或使用条件"
+        },
+        "backend": {
+          "label": "技能"
+        },
+        "frontend": {
+          "label": "工作产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "系统关系"
+    },
+    {
+      "id": "lane1",
+      "label": "对话与传播"
+    },
+    {
+      "id": "lane2",
+      "label": "图像素材"
+    }
+  ],
+  "mainPath": [
+    "case0",
+    "skill0"
+  ],
+  "nodes": [
+    {
+      "id": "case0",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "系统结构与流程",
+      "sublabel": "读者要检查节点与证据",
+      "sources": [
+        {
+          "path": "archify/SKILL.md",
+          "line": 2,
+          "end_line": 3
+        }
+      ]
+    },
+    {
+      "id": "skill0",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "archify",
+      "sublabel": "独立 HTML 与整图导出",
+      "sources": [
+        {
+          "path": "archify/SKILL.md",
+          "line": 2,
+          "end_line": 3
+        }
+      ]
+    },
+    {
+      "id": "case1",
+      "lane": "lane0",
+      "col": 2,
+      "type": "external",
+      "label": "接手修改图稿",
+      "sublabel": "需要保留形状和连线",
+      "sources": [
+        {
+          "path": "draw-io-diagram-generator/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "skill1",
+      "lane": "lane0",
+      "col": 3,
+      "type": "backend",
+      "label": "draw-io-diagram-generator",
+      "sublabel": "可继续编辑的 draw.io 文件",
+      "sources": [
+        {
+          "path": "draw-io-diagram-generator/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "case2",
+      "lane": "lane1",
+      "col": 0,
+      "type": "external",
+      "label": "在对话中解释",
+      "sublabel": "已连接可视化运行时",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 66,
+          "end_line": 66
+        }
+      ]
+    },
+    {
+      "id": "skill2",
+      "lane": "lane1",
+      "col": 1,
+      "type": "backend",
+      "label": "visualize",
+      "sublabel": "当前对话里的演示或图表",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 66,
+          "end_line": 66
+        }
+      ]
+    },
+    {
+      "id": "case3",
+      "lane": "lane1",
+      "col": 2,
+      "type": "external",
+      "label": "提炼材料要点",
+      "sublabel": "需要一张完整信息图",
+      "sources": [
+        {
+          "path": "baoyu-infographic/SKILL.md",
+          "line": 2,
+          "end_line": 3
+        }
+      ]
+    },
+    {
+      "id": "skill3",
+      "lane": "lane1",
+      "col": 3,
+      "type": "backend",
+      "label": "baoyu-infographic",
+      "sublabel": "带版式与风格的信息图",
+      "sources": [
+        {
+          "path": "baoyu-infographic/SKILL.md",
+          "line": 2,
+          "end_line": 3
+        }
+      ]
+    },
+    {
+      "id": "case4",
+      "lane": "lane2",
+      "col": 0,
+      "type": "external",
+      "label": "照片、插画或贴图",
+      "sublabel": "已有文字描述或参考图",
+      "sources": [
+        {
+          "path": "external-skills/codex-system/imagegen/SKILL.md",
+          "line": 2,
+          "end_line": 3
+        }
+      ]
+    },
+    {
+      "id": "skill4",
+      "lane": "lane2",
+      "col": 1,
+      "type": "backend",
+      "label": "imagegen",
+      "sublabel": "照相风格插画或透明素材",
+      "sources": [
+        {
+          "path": "external-skills/codex-system/imagegen/SKILL.md",
+          "line": 2,
+          "end_line": 3
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "case0",
+      "to": "skill0",
+      "label": "可探索"
+    },
+    {
+      "from": "case1",
+      "to": "skill1",
+      "label": "可编辑"
+    },
+    {
+      "from": "case2",
+      "to": "skill2",
+      "label": "交互演示"
+    },
+    {
+      "from": "case3",
+      "to": "skill3",
+      "label": "整合要点"
+    },
+    {
+      "from": "case4",
+      "to": "skill4",
+      "label": "生成位图"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "交付给维护者",
+      "items": [
+        "对方需要改图形和连线时，选择可编辑的 draw.io 文件。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "交付给读者",
+      "items": [
+        "希望读者追踪路径、查看来源时，适合发 Archify 交互页。"
+      ]
+    }
+  ]
+}

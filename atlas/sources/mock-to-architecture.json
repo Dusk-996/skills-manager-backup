@@ -1,0 +1,104 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "已有 React Mock，怎么定后端架构？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/mock-to-architecture.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": { "label": "已有材料" },
+        "backend": { "label": "选型工作" },
+        "security": { "label": "人工确认" },
+        "database": { "label": "选型产物" }
+      }
+    }
+  },
+  "lanes": [
+    { "id": "selection", "label": "从页面到选型定稿" },
+    { "id": "pending", "label": "按需记录与补充" }
+  ],
+  "mainPath": ["mock", "draft", "interview", "finalize", "sdd"],
+  "nodes": [
+    {
+      "id": "mock", "lane": "selection", "col": 0, "type": "external",
+      "label": "React + Mock", "sublabel": "可运行的页面和交互",
+      "sources": [
+        { "path": "stack-selector/SKILL.md", "line": 28, "end_line": 41 }
+      ]
+    },
+    {
+      "id": "draft", "lane": "selection", "col": 1, "type": "backend",
+      "label": "stack-selector", "sublabel": "首轮拟定候选架构",
+      "sources": [
+        { "path": "stack-selector/SKILL.md", "line": 61, "end_line": 80 },
+        { "path": "stack-selector/SKILL.md", "line": 167, "end_line": 179 }
+      ]
+    },
+    {
+      "id": "interview", "lane": "selection", "col": 2, "type": "security",
+      "label": "grilling", "sublabel": "逐项确认运行约束",
+      "sources": [
+        { "path": "grilling/SKILL.md", "line": 6, "end_line": 12 },
+        { "path": "stack-selector/SKILL.md", "line": 82, "end_line": 96 },
+        { "path": "stack-selector/SKILL.md", "line": 186, "end_line": 190 }
+      ]
+    },
+    {
+      "id": "finalize", "lane": "selection", "col": 3, "type": "backend",
+      "label": "stack-selector", "sublabel": "复核组件与部署单元",
+      "sources": [
+        { "path": "stack-selector/SKILL.md", "line": 192, "end_line": 203 }
+      ]
+    },
+    {
+      "id": "sdd", "lane": "selection", "col": 4, "type": "database",
+      "label": "选型定稿单", "sublabel": "交给 SDD 明确实现边界",
+      "sources": [
+        { "path": "stack-selector/SKILL.md", "line": 4, "end_line": 11 },
+        { "path": "stack-selector/SKILL.md", "line": 199, "end_line": 205 }
+      ]
+    },
+    {
+      "id": "terms", "lane": "pending", "col": 2, "type": "backend",
+      "label": "domain-modeling", "sublabel": "记录共同术语或 ADR",
+      "sources": [
+        { "path": "stack-selector/SKILL.md", "line": 25, "end_line": 35 },
+        { "path": "domain-modeling/SKILL.md", "line": 41, "end_line": 65 }
+      ]
+    },
+    {
+      "id": "hold", "lane": "pending", "col": 3, "type": "database",
+      "label": "更新草案", "sublabel": "记录余下问题，等待答复",
+      "sources": [
+        { "path": "stack-selector/SKILL.md", "line": 199, "end_line": 201 },
+        { "path": "stack-selector/SKILL.md", "line": 209, "end_line": 213 }
+      ]
+    }
+  ],
+  "edges": [
+    { "from": "mock", "to": "draft", "label": "页面能力", "role": "main" },
+    { "from": "draft", "to": "interview", "label": "草案与问题", "role": "main" },
+    { "from": "interview", "to": "finalize", "label": "确认记录", "role": "main" },
+    { "from": "interview", "to": "terms", "label": "需统一术语", "variant": "dashed", "role": "branch" },
+    { "from": "finalize", "to": "sdd", "label": "约束已确认", "role": "main" },
+    { "from": "finalize", "to": "hold", "label": "仍有关键疑问", "variant": "dashed", "role": "branch" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan", "title": "拿着现有材料从哪里开始", "items": [
+        "只有 Mock 时先提取能力与未知项。已有同版本草案时，可直接带着草案的问题逐项确认。"
+      ]
+    },
+    {
+      "dot": "amber", "title": "哪些答案会改变后端架构", "items": [
+        "确认任务时长、部署位置和重启后的恢复要求。若有关键项待定，更新草案，补齐答复后再定稿。"
+      ]
+    }
+  ]
+}

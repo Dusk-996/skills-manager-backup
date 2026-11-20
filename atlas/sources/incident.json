@@ -1,0 +1,202 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "服务不通，从主机、K8s 还是应用查起？",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "docs/atlas/incident.html",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "执行技能"
+        },
+        "database": {
+          "label": "交付产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "主机或集群现场"
+    },
+    {
+      "id": "lane1",
+      "label": "代码缺陷与回归"
+    }
+  ],
+  "mainPath": [
+    "ssh",
+    "host"
+  ],
+  "nodes": [
+    {
+      "id": "ssh",
+      "lane": "lane0",
+      "col": 0,
+      "type": "backend",
+      "label": "ssh-remote-ops",
+      "sublabel": "已获授权的远程主机",
+      "sources": [
+        {
+          "path": "ssh-remote-ops/SKILL.md",
+          "line": 12,
+          "end_line": 23
+        }
+      ]
+    },
+    {
+      "id": "host",
+      "lane": "lane0",
+      "col": 1,
+      "type": "database",
+      "label": "主机状态与日志",
+      "sublabel": "形成可证伪的定位判断",
+      "sources": [
+        {
+          "path": "ssh-remote-ops/SKILL.md",
+          "line": 57,
+          "end_line": 100
+        }
+      ]
+    },
+    {
+      "id": "cluster",
+      "lane": "lane0",
+      "col": 2,
+      "type": "backend",
+      "label": "k8s-troubleshoot",
+      "sublabel": "Pod、Service 或入口不通",
+      "sources": [
+        {
+          "path": "k8s-troubleshoot/SKILL.md",
+          "line": 24,
+          "end_line": 34
+        }
+      ]
+    },
+    {
+      "id": "layer",
+      "lane": "lane0",
+      "col": 3,
+      "type": "database",
+      "label": "故障所在层",
+      "sublabel": "逐层核对访问链及事件",
+      "sources": [
+        {
+          "path": "k8s-troubleshoot/SKILL.md",
+          "line": 24,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "lane": "lane1",
+      "col": 0,
+      "type": "backend",
+      "label": "diagnosing-bugs",
+      "sublabel": "构建可重复反馈循环",
+      "sources": [
+        {
+          "path": "diagnosing-bugs/SKILL.md",
+          "line": 12,
+          "end_line": 29
+        }
+      ]
+    },
+    {
+      "id": "case",
+      "lane": "lane1",
+      "col": 1,
+      "type": "database",
+      "label": "最小复现与回归验证",
+      "sublabel": "比较修复前后反馈",
+      "sources": [
+        {
+          "path": "diagnosing-bugs/SKILL.md",
+          "line": 62,
+          "end_line": 83
+        }
+      ]
+    },
+    {
+      "id": "sp",
+      "lane": "lane1",
+      "col": 2,
+      "type": "backend",
+      "label": "systematic-debugging",
+      "sublabel": "按阶段收集证据与检验假设",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/systematic-debugging/SKILL.md",
+          "line": 44,
+          "end_line": 73
+        }
+      ]
+    },
+    {
+      "id": "cause",
+      "lane": "lane1",
+      "col": 3,
+      "type": "database",
+      "label": "根因与验证",
+      "sublabel": "按已验证的假设处理",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/systematic-debugging/SKILL.md",
+          "line": 143,
+          "end_line": 177
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ssh",
+      "to": "host",
+      "label": "只读取证",
+      "role": "main"
+    },
+    {
+      "from": "cluster",
+      "to": "layer",
+      "label": "集群异常",
+      "role": "main"
+    },
+    {
+      "from": "loop",
+      "to": "case",
+      "label": "反馈可重复",
+      "role": "main"
+    },
+    {
+      "from": "sp",
+      "to": "cause",
+      "label": "假设可证伪",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "四个可独立进入的路径",
+      "items": [
+        "从手头证据选择其一：主机状态、集群访问链、可重复的代码缺陷，或通用系统化调查。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "主机与集群",
+      "items": [
+        "先确认目标和访问范围。若要实施生产变更，依据现场证据明确影响、回滚和验证。"
+      ]
+    }
+  ]
+}

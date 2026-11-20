@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>技能场景图</title>
+  <style>
+    :root { color-scheme:light dark; --paper:#f7f9fc; --card:#fff; --ink:#17232d; --muted:#475c69; --line:#c7d5dc; --link:#006172 }
+    @media (prefers-color-scheme:dark) {
+      :root { --paper:#10181d; --card:#182329; --ink:#e8f0f4; --muted:#bed0da; --line:#42535c; --link:#74d4dd }
+    }
+    * { box-sizing:border-box }
+    body { margin:0; background:var(--paper); color:var(--ink); font:1rem/1.65 Inter,"Microsoft YaHei",sans-serif }
+    main { max-width:75rem; margin:auto; padding:clamp(1.25rem,5vw,4rem) }
+    header { display:flex; flex-wrap:wrap; gap:.6rem 1.5rem; align-items:baseline; justify-content:space-between; padding-bottom:1rem; border-bottom:2px solid var(--link) }
+    h1,h2,h3,p { margin:0 }
+    h1 { font-size:clamp(2rem,5vw,3.75rem); line-height:1.2 }
+    h2 { font-size:1.35rem; margin:2rem 0 1rem }
+    a { color:var(--link); text-underline-offset:.2em }
+    a:focus-visible { outline:3px solid var(--link); outline-offset:3px }
+    ul { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(24rem,100%),1fr)); gap:1rem; list-style:none; padding:0; margin:0 }
+    nav { display:flex; flex-wrap:wrap; gap:.5rem 1rem; margin:1rem 0 }
+    li { background:var(--card); border:1px solid var(--line); border-radius:.55rem; padding:1rem }
+    li:focus-within,li:hover { border-color:var(--link) }
+    li a:first-child { display:block; text-decoration:none }
+    li .usage { display:inline-block; font-size:.9rem; margin-top:.65rem }
+    img { display:block; width:100%; height:auto; aspect-ratio:2.5; object-fit:contain; margin-bottom:.7rem }
+    h3 { font-size:1.05rem }
+    li p { margin-top:.3rem; color:var(--muted); font-size:.9rem }
+  </style>
+</head>
+<body>
+<main>
+  <header><h1>技能场景图</h1>
+  <a href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/README.md">在 GitHub 查看全部 26 个场景</a></header>
+  <nav aria-label="工作流"><a href="#group-1">Vibe Coding · 构建和交付运维工具</a> <a href="#group-2">协作开发与交接</a> <a href="#group-3">值班排障与观测</a> <a href="#group-4">学习、复习与面试</a> <a href="#group-5">技术表达与办公交付</a> <a href="#group-6">维护个人技能库和 Codex 环境</a></nav>
+  <section id="group-1"><h2>Vibe Coding · 构建和交付运维工具</h2>
+    <ul>
+      <li><a href="atlas/ops-design.html">
+        <img src="atlas/ops-design.svg" alt="" loading="lazy" decoding="async">
+        <h3>想把巡检脚本做成工具，怎么确定需求和实现计划？</h3>
+        <p>运维痛点、部署环境与边界 → 有验收条件的实施计划</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/ops-design.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/bootstrap.html">
+        <img src="atlas/bootstrap.svg" alt="" loading="lazy" decoding="async">
+        <h3>确定做 Shell 工具或服务后，怎么开工？</h3>
+        <p>已确认需求、语言和交付形态 → 可运行和验证的初始工程</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/bootstrap.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/ui-prototype.html">
+        <img src="atlas/ui-prototype.svg" alt="" loading="lazy" decoding="async">
+        <h3>还没有页面，怎么确定运维平台原型？</h3>
+        <p>用户任务、核心操作和页面要求 → 可供评审的页面原型</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/ui-prototype.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/prototype-to-mock.html">
+        <img src="atlas/prototype-to-mock.svg" alt="" loading="lazy" decoding="async">
+        <h3>已有 HTML 原型，怎么做出可操作的页面？</h3>
+        <p>已确认的 HTML、关键交互和页面尺寸 → 可运行的 React + Mock，按需取得一致性报告</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/prototype-to-mock.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/mock-to-architecture.html">
+        <img src="atlas/mock-to-architecture.svg" alt="" loading="lazy" decoding="async">
+        <h3>已有 React Mock，怎么定后端架构？</h3>
+        <p>可运行的 Mock、数据字段和任务行为 → 定稿的技术选型单，可交给 SDD 明确边界</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/mock-to-architecture.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/spec-tickets.html">
+        <img src="atlas/spec-tickets.svg" alt="" loading="lazy" decoding="async">
+        <h3>需求讨论完，怎么拆出可领取的任务？</h3>
+        <p>已有讨论、目标、技术决策或现成规格 → 可分派且有验收条件、依赖关系的任务</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/spec-tickets.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/build-feature.html">
+        <img src="atlas/build-feature.svg" alt="" loading="lazy" decoding="async">
+        <h3>拿到开发任务，怎么拆模块并用测试实现？</h3>
+        <p>功能要求、代码和验收行为 → 有测试支撑的实现</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/build-feature.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/review-code.html">
+        <img src="atlas/review-code.svg" alt="" loading="lazy" decoding="async">
+        <h3>代码改完，怎么组织审查和处理意见？</h3>
+        <p>提交范围、Spec、实施计划和改动 → 有依据的审查结果和处理记录</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/review-code.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/browser-check.html">
+        <img src="atlas/browser-check.svg" alt="" loading="lazy" decoding="async">
+        <h3>有了可运行页面，怎么验证关键用户路径？</h3>
+        <p>可访问的环境、测试账号或页面与业务路径 → 浏览器验证证据或正式 E2E 报告</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/browser-check.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/package.html">
+        <img src="atlas/package.svg" alt="" loading="lazy" decoding="async">
+        <h3>巡检工具准备上线，怎么打包、加固和审查？</h3>
+        <p>服务入口、部署目标、现有配置与测试结果 → 交付部署包，或得到上线就绪结论</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/package.md">技能用法与后续场景</a></li>
+    </ul>
+  </section>
+  <section id="group-2"><h2>协作开发与交接</h2>
+    <ul>
+      <li><a href="atlas/dev-plan.html">
+        <img src="atlas/dev-plan.svg" alt="" loading="lazy" decoding="async">
+        <h3>团队使用 Superpowers，如何把想法变成可执行计划？</h3>
+        <p>待明确的通用功能或设计任务 → 经讨论的设计与分步计划</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/dev-plan.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/execute-plan.html">
+        <img src="atlas/execute-plan.svg" alt="" loading="lazy" decoding="async">
+        <h3>计划已经写好，一个会话做还是并行做？</h3>
+        <p>实施计划、任务依赖与当前工作区 → 实现结果、评审与任务验证记录</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/execute-plan.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/release-branch.html">
+        <img src="atlas/release-branch.svg" alt="" loading="lazy" decoding="async">
+        <h3>准备收尾或换人，怎么验证并交接？</h3>
+        <p>已实现改动、测试命令和工作分支 → 完成证据、分支处理结果或交接文档</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/release-branch.md">技能用法与后续场景</a></li>
+    </ul>
+  </section>
+  <section id="group-3"><h2>值班排障与观测</h2>
+    <ul>
+      <li><a href="atlas/incident.html">
+        <img src="atlas/incident.svg" alt="" loading="lazy" decoding="async">
+        <h3>服务不通，从主机、K8s 还是应用查起？</h3>
+        <p>主机日志、Pod 状态或可复现的异常 → 有证据支持的定位、修复和验证路径</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/incident.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/observability.html">
+        <img src="atlas/observability.svg" alt="" loading="lazy" decoding="async">
+        <h3>定位瓶颈后，怎么做成 Grafana 看板？</h3>
+        <p>已确认的数据源、指标、标签与查询目标 → 可导入的看板及对应查询</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/observability.md">技能用法与后续场景</a></li>
+    </ul>
+  </section>
+  <section id="group-4"><h2>学习、复习与面试</h2>
+    <ul>
+      <li><a href="atlas/notes-roadmap.html">
+        <img src="atlas/notes-roadmap.svg" alt="" loading="lazy" decoding="async">
+        <h3>课程录音和资料怎么整理成可复习的路线图？</h3>
+        <p>可访问的录音 URL 或已有同主题文本 → 结构化笔记或可跟踪学习进度的网页</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/notes-roadmap.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/course-study.html">
+        <img src="atlas/course-study.svg" alt="" loading="lazy" decoding="async">
+        <h3>正在学一门课，怎么读懂这一章并接着学？</h3>
+        <p>FDE 章节材料或个人学习目标 → 章节讲解，或可跨会话延续的教学记录</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/course-study.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/interview.html">
+        <img src="atlas/interview.svg" alt="" loading="lazy" decoding="async">
+        <h3>怎样把笔记或故障经验变成面试题？</h3>
+        <p>笔记、目标岗位、可选已有题库或脱敏案例 → 确认后的普通题或场景题及追问</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/interview.md">技能用法与后续场景</a></li>
+    </ul>
+  </section>
+  <section id="group-5"><h2>技术表达与办公交付</h2>
+    <ul>
+      <li><a href="atlas/publish-article.html">
+        <img src="atlas/publish-article.svg" alt="" loading="lazy" decoding="async">
+        <h3>项目动态怎么整理成周报或公众号文章？</h3>
+        <p>GitHub 项目资料，或已有中文 Markdown → 可交给飞书的周报或公众号 HTML</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/publish-article.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/explain-visually.html">
+        <img src="atlas/explain-visually.svg" alt="" loading="lazy" decoding="async">
+        <h3>我要讲清一套系统，选交互图还是可编辑图？</h3>
+        <p>系统说明、仓库证据、讲解问题或图稿 → 取决于读者的交互图、可编辑图或插图</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/explain-visually.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/slides.html">
+        <img src="atlas/slides.svg" alt="" loading="lazy" decoding="async">
+        <h3>项目材料要做技术分享，交付网页还是 PPT？</h3>
+        <p>文档、已有幻灯片、受众与目标格式 → 网页演示、图片型 PPTX 或可编辑幻灯片</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/slides.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/office-files.html">
+        <img src="atlas/office-files.svg" alt="" loading="lazy" decoding="async">
+        <h3>收到工作簿或文档，怎么分析和交付？</h3>
+        <p>Excel、CSV、Word、PDF 或已打开的工作簿 → 处理后的工作簿、报告或经检查的文档</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/office-files.md">技能用法与后续场景</a></li>
+    </ul>
+  </section>
+  <section id="group-6"><h2>维护个人技能库和 Codex 环境</h2>
+    <ul>
+      <li><a href="atlas/find-install.html">
+        <img src="atlas/find-install.svg" alt="" loading="lazy" decoding="async">
+        <h3>这件事有现成 skill 吗，缺的怎么补？</h3>
+        <p>自然语言任务，或已选定的技能来源 → 可用技能推荐或安装结果</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/find-install.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/author-skill.html">
+        <img src="atlas/author-skill.svg" alt="" loading="lazy" decoding="async">
+        <h3>怎么把重复工作变成技能并改进效果？</h3>
+        <p>可重复的任务或已认可的成品、已有技能 → 可复用技能、个人模板或优化报告</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/author-skill.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/codex-environment.html">
+        <img src="atlas/codex-environment.svg" alt="" loading="lazy" decoding="async">
+        <h3>怎样迁移旧规则、配置 Codex 和专用代理？</h3>
+        <p>旧规则或明确的工作习惯与配置目标 → 在正确作用域生效的规则、配置或代理定义</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/codex-environment.md">技能用法与后续场景</a></li>
+      <li><a href="atlas/diagnose-workflow.html">
+        <img src="atlas/diagnose-workflow.svg" alt="" loading="lazy" decoding="async">
+        <h3>会话为什么重复劳动，怎样核实工具行为？</h3>
+        <p>Superpowers 会话记录或 OpenAI 产品使用问题 → 有证据的工作流诊断或官方使用依据</p>
+      </a>
+      <a class="usage" href="https://github.com/Dusk-996/skills-manager-backup/blob/main/docs/atlas/diagnose-workflow.md">技能用法与后续场景</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,163 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "团队使用 Superpowers，如何把想法变成可执行计划？",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "docs/atlas/dev-plan.html",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "执行技能"
+        },
+        "security": {
+          "label": "判断与确认"
+        },
+        "database": {
+          "label": "交付产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "从功能想法到实施计划"
+    },
+    {
+      "id": "lane1",
+      "label": "人工确认设计"
+    }
+  ],
+  "mainPath": [
+    "start",
+    "explore",
+    "approve",
+    "plan",
+    "ready"
+  ],
+  "nodes": [
+    {
+      "id": "start",
+      "lane": "lane0",
+      "col": 0,
+      "type": "backend",
+      "label": "using-superpowers",
+      "sublabel": "识别当前适用技能",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/using-superpowers/SKILL.md",
+          "line": 18,
+          "end_line": 32
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "brainstorming",
+      "sublabel": "讨论目标与可行方案",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/brainstorming/SKILL.md",
+          "line": 17,
+          "end_line": 33
+        }
+      ]
+    },
+    {
+      "id": "approve",
+      "lane": "lane1",
+      "col": 1,
+      "type": "security",
+      "label": "确认书面设计",
+      "sublabel": "核对目标、边界和取舍",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/brainstorming/SKILL.md",
+          "line": 27,
+          "end_line": 32
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "lane": "lane1",
+      "col": 2,
+      "type": "backend",
+      "label": "writing-plans",
+      "sublabel": "拆成可逐项执行的步骤",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/writing-plans/SKILL.md",
+          "line": 34,
+          "end_line": 51
+        }
+      ]
+    },
+    {
+      "id": "ready",
+      "lane": "lane1",
+      "col": 3,
+      "type": "database",
+      "label": "实施计划",
+      "sublabel": "包含验证方式和交接入口",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/writing-plans/SKILL.md",
+          "line": 163,
+          "end_line": 185
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "explore",
+      "label": "待明确的想法",
+      "role": "main"
+    },
+    {
+      "from": "explore",
+      "to": "approve",
+      "label": "设计草案",
+      "role": "main"
+    },
+    {
+      "from": "approve",
+      "to": "plan",
+      "label": "设计已确认",
+      "role": "main"
+    },
+    {
+      "from": "plan",
+      "to": "ready",
+      "label": "计划已复核",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "已有规格",
+      "items": [
+        "已确认的设计可以直接进入 writing-plans。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "下一步",
+      "items": [
+        "计划应说明每项改动怎样验证，再按任务依赖选择执行方式。"
+      ]
+    }
+  ]
+}

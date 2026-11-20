@@ -1,0 +1,186 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "还没有页面，怎么确定运维平台原型？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/ui-prototype.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "已有材料"
+        },
+        "frontend": {
+          "label": "页面操作"
+        },
+        "database": {
+          "label": "交付物"
+        },
+        "backend": {
+          "label": "技能操作"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "main",
+      "label": "运维产品页"
+    },
+    {
+      "id": "alt",
+      "label": "按页面性质选用"
+    }
+  ],
+  "mainPath": [
+    "brief",
+    "build",
+    "preview"
+  ],
+  "nodes": [
+    {
+      "id": "brief",
+      "lane": "main",
+      "col": 0,
+      "type": "external",
+      "label": "页面任务",
+      "sublabel": "列出主要角色和操作",
+      "sources": [
+        {
+          "path": "frontend-design/SKILL.md",
+          "line": 36,
+          "end_line": 53
+        },
+        {
+          "path": "ui-ux-pro-max/SKILL.md",
+          "line": 67,
+          "end_line": 77
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "lane": "main",
+      "col": 1,
+      "type": "frontend",
+      "label": "frontend-design",
+      "sublabel": "实现页面布局和交互",
+      "sources": [
+        {
+          "path": "frontend-design/SKILL.md",
+          "line": 36,
+          "end_line": 59
+        }
+      ]
+    },
+    {
+      "id": "preview",
+      "lane": "main",
+      "col": 2,
+      "type": "database",
+      "label": "可评审的原型",
+      "sublabel": "核对关键操作与响应式布局",
+      "sources": [
+        {
+          "path": "frontend-design/SKILL.md",
+          "line": 53,
+          "end_line": 59
+        },
+        {
+          "path": "html-to-mui-react/SKILL.md",
+          "line": 19,
+          "end_line": 27
+        }
+      ]
+    },
+    {
+      "id": "query",
+      "lane": "alt",
+      "col": 1,
+      "type": "backend",
+      "label": "ui-ux-pro-max",
+      "sublabel": "查询配色和可访问性建议",
+      "sources": [
+        {
+          "path": "ui-ux-pro-max/SKILL.md",
+          "line": 10,
+          "end_line": 16
+        },
+        {
+          "path": "ui-ux-pro-max/SKILL.md",
+          "line": 49,
+          "end_line": 65
+        }
+      ]
+    },
+    {
+      "id": "landing",
+      "lane": "alt",
+      "col": 2,
+      "type": "backend",
+      "label": "design-taste-frontend",
+      "sublabel": "为展示页或作品集定视觉方向",
+      "sources": [
+        {
+          "path": "design-taste-frontend/SKILL.md",
+          "line": 3,
+          "end_line": 9
+        },
+        {
+          "path": "design-taste-frontend/SKILL.md",
+          "line": 15,
+          "end_line": 29
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "brief",
+      "to": "build",
+      "label": "页面目标",
+      "role": "main"
+    },
+    {
+      "from": "build",
+      "to": "preview",
+      "label": "页面实现",
+      "role": "main"
+    },
+    {
+      "from": "query",
+      "to": "build",
+      "label": "适用建议",
+      "role": "branch",
+      "variant": "dashed"
+    },
+    {
+      "from": "landing",
+      "to": "preview",
+      "label": "展示页草稿",
+      "role": "branch",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "选产品界面路线",
+      "items": [
+        "任务表格、筛选和批量操作属于运维产品页，可用 frontend-design；需要设计依据时再查询 ui-ux-pro-max。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "准备下一阶段",
+      "items": [
+        "若产物为已确认的 HTML 原型，可以进入 React + Mock 工程化。展示页或作品集也可以单独交付。"
+      ]
+    }
+  ]
+}

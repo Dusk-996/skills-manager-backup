@@ -1,0 +1,208 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "这件事有现成 skill 吗，缺的怎么补？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/find-install.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "起点或使用条件"
+        },
+        "backend": {
+          "label": "技能"
+        },
+        "frontend": {
+          "label": "工作产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "运维或一般任务"
+    },
+    {
+      "id": "lane1",
+      "label": "发现并安装"
+    }
+  ],
+  "mainPath": [
+    "missing",
+    "find",
+    "install",
+    "ready"
+  ],
+  "nodes": [
+    {
+      "id": "ops",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "运维任务",
+      "sublabel": "主机、部署与故障排查",
+      "sources": [
+        {
+          "path": "devops-skill-router-zh/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "opsroute",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "devops-skill-router-zh",
+      "sublabel": "按任务选 1～3 个可用技能",
+      "sources": [
+        {
+          "path": "devops-skill-router-zh/SKILL.md",
+          "line": 6,
+          "end_line": 11
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "lane": "lane0",
+      "col": 2,
+      "type": "external",
+      "label": "文档或学习任务",
+      "sublabel": "内容、可视化和通用技术任务",
+      "sources": [
+        {
+          "path": "skill-router-zh/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "route",
+      "lane": "lane0",
+      "col": 3,
+      "type": "backend",
+      "label": "skill-router-zh",
+      "sublabel": "在当前会话里查找入口",
+      "sources": [
+        {
+          "path": "skill-router-zh/SKILL.md",
+          "line": 6,
+          "end_line": 11
+        }
+      ]
+    },
+    {
+      "id": "missing",
+      "lane": "lane1",
+      "col": 0,
+      "type": "external",
+      "label": "缺少适用技能",
+      "sublabel": "准备检索新的可安装能力",
+      "sources": [
+        {
+          "path": "find-skills/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "find",
+      "lane": "lane1",
+      "col": 1,
+      "type": "backend",
+      "label": "find-skills",
+      "sublabel": "寻找并比较外部技能来源",
+      "sources": [
+        {
+          "path": "find-skills/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "install",
+      "lane": "lane1",
+      "col": 2,
+      "type": "backend",
+      "label": "skill-installer",
+      "sublabel": "从选定的仓库或路径安装",
+      "sources": [
+        {
+          "path": "external-skills/codex-system/skill-installer/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "ready",
+      "lane": "lane1",
+      "col": 3,
+      "type": "frontend",
+      "label": "已安装的技能",
+      "sublabel": "下轮对话核对可用性",
+      "sources": [
+        {
+          "path": "external-skills/codex-system/skill-installer/SKILL.md",
+          "line": 30,
+          "end_line": 30
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ops",
+      "to": "opsroute",
+      "label": "运维场景"
+    },
+    {
+      "from": "other",
+      "to": "route",
+      "label": "一般任务"
+    },
+    {
+      "from": "missing",
+      "to": "find",
+      "label": "检索需求"
+    },
+    {
+      "from": "find",
+      "to": "install",
+      "label": "选定来源"
+    },
+    {
+      "from": "install",
+      "to": "ready",
+      "label": "安装结果"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "已安装",
+      "items": [
+        "先根据任务类型选择一个中文路由。找到合适且已加载的技能后即可使用。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "缺少入口",
+      "items": [
+        "需要扩充能力时转到发现与安装。已选定 GitHub 仓库和技能路径时可直接安装。"
+      ]
+    }
+  ]
+}

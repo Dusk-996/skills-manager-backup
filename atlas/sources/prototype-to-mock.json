@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "已有 HTML 原型，怎么做出可操作的页面？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/prototype-to-mock.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": { "label": "已有材料" },
+        "frontend": { "label": "前端实现" },
+        "security": { "label": "一致性审查" },
+        "database": { "label": "审查产物" }
+      }
+    }
+  },
+  "lanes": [
+    { "id": "implementation", "label": "原型转为可操作页面" },
+    { "id": "comparison", "label": "按需核对原型" }
+  ],
+  "mainPath": ["prototype", "convert", "mock"],
+  "nodes": [
+    {
+      "id": "prototype", "lane": "implementation", "col": 0, "type": "external",
+      "label": "已确认的 HTML 原型", "sublabel": "页面、关键操作和目标视口",
+      "sources": [{ "path": "html-to-mui-react/SKILL.md", "line": 19, "end_line": 27 }]
+    },
+    {
+      "id": "convert", "lane": "implementation", "col": 1, "type": "frontend",
+      "label": "html-to-mui-react", "sublabel": "按确认的契约实现页面",
+      "sources": [
+        { "path": "html-to-mui-react/SKILL.md", "line": 45, "end_line": 59 },
+        { "path": "html-to-mui-react/SKILL.md", "line": 96, "end_line": 112 }
+      ]
+    },
+    {
+      "id": "mock", "lane": "implementation", "col": 2, "type": "frontend",
+      "label": "React + Mock", "sublabel": "可操作的演示页面",
+      "sources": [
+        { "path": "html-to-mui-react/SKILL.md", "line": 6, "end_line": 8 },
+        { "path": "html-to-mui-react/SKILL.md", "line": 124, "end_line": 133 },
+        { "path": "stack-selector/SKILL.md", "line": 4, "end_line": 11 }
+      ]
+    },
+    {
+      "id": "review", "lane": "comparison", "col": 2, "type": "security",
+      "label": "prototype-parity-review", "sublabel": "逐项对照视觉和关键操作",
+      "sources": [
+        { "path": "prototype-parity-review/SKILL.md", "line": 2, "end_line": 10 },
+        { "path": "prototype-parity-review/SKILL.md", "line": 24, "end_line": 33 }
+      ]
+    },
+    {
+      "id": "report", "lane": "comparison", "col": 3, "type": "database",
+      "label": "一致性审查报告", "sublabel": "结论、差异和实测证据",
+      "sources": [
+        { "path": "prototype-parity-review/SKILL.md", "line": 102, "end_line": 120 },
+        { "path": "prototype-parity-review/SKILL.md", "line": 15, "end_line": 22 }
+      ]
+    }
+  ],
+  "edges": [
+    { "from": "prototype", "to": "convert", "label": "页面范围", "role": "main" },
+    { "from": "convert", "to": "mock", "label": "构建与验证", "role": "main" },
+    { "from": "mock", "to": "review", "label": "明确要求核对", "role": "branch", "variant": "dashed" },
+    { "from": "review", "to": "report", "label": "核对结果" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "准备演示", "items": ["用 Mock 数据走完已确认的关键操作，记录构建与浏览器验证结果。"] },
+    { "dot": "amber", "title": "准备后端选型", "items": ["将可运行的页面和 Mock 字段交给后端选型。若已启动一致性审查且结果为 FAIL，先处理差异。"] }
+  ]
+}

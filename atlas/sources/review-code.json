@@ -1,0 +1,228 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "代码改完，怎么组织审查和处理意见？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/review-code.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "技能操作"
+        },
+        "database": {
+          "label": "交付物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "main",
+      "label": "审查运维实现"
+    },
+    {
+      "id": "alt",
+      "label": "通用评审入口"
+    },
+    {
+      "id": "other",
+      "label": "按特定目标审查"
+    }
+  ],
+  "mainPath": [
+    "devops",
+    "notes",
+    "receive",
+    "verified"
+  ],
+  "nodes": [
+    {
+      "id": "devops",
+      "lane": "main",
+      "col": 0,
+      "type": "backend",
+      "label": "devops-requesting-code-review",
+      "sublabel": "结合实施计划评审改动",
+      "sources": [
+        {
+          "path": "devops-requesting-code-review/SKILL.md",
+          "line": 12,
+          "end_line": 37
+        },
+        {
+          "path": "devops-requesting-code-review/SKILL.md",
+          "line": 111,
+          "end_line": 130
+        }
+      ]
+    },
+    {
+      "id": "notes",
+      "lane": "main",
+      "col": 1,
+      "type": "database",
+      "label": "审查意见",
+      "sublabel": "列出问题依据与影响",
+      "sources": [
+        {
+          "path": "devops-requesting-code-review/SKILL.md",
+          "line": 38,
+          "end_line": 48
+        },
+        {
+          "path": "external-skills/superpowers/skills/receiving-code-review/SKILL.md",
+          "line": 14,
+          "end_line": 25
+        }
+      ]
+    },
+    {
+      "id": "receive",
+      "lane": "main",
+      "col": 2,
+      "type": "backend",
+      "label": "receiving-code-review",
+      "sublabel": "逐项核实并验证修复",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/receiving-code-review/SKILL.md",
+          "line": 14,
+          "end_line": 25
+        },
+        {
+          "path": "external-skills/superpowers/skills/receiving-code-review/SKILL.md",
+          "line": 100,
+          "end_line": 111
+        }
+      ]
+    },
+    {
+      "id": "verified",
+      "lane": "main",
+      "col": 3,
+      "type": "database",
+      "label": "处理记录",
+      "sublabel": "保留修复证据或异议理由",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/receiving-code-review/SKILL.md",
+          "line": 100,
+          "end_line": 125
+        }
+      ]
+    },
+    {
+      "id": "request",
+      "lane": "alt",
+      "col": 0,
+      "type": "backend",
+      "label": "requesting-code-review",
+      "sublabel": "给评审者提供变更范围",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/requesting-code-review/SKILL.md",
+          "line": 12,
+          "end_line": 46
+        }
+      ]
+    },
+    {
+      "id": "optional",
+      "lane": "alt",
+      "col": 2,
+      "type": "backend",
+      "label": "review-agent",
+      "sublabel": "应用内可委派的只读审查",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 61,
+          "end_line": 64
+        }
+      ]
+    },
+    {
+      "id": "spec",
+      "lane": "other",
+      "col": 1,
+      "type": "backend",
+      "label": "code-review",
+      "sublabel": "对比代码规范与需求规格",
+      "sources": [
+        {
+          "path": "code-review/SKILL.md",
+          "line": 3,
+          "end_line": 13
+        },
+        {
+          "path": "code-review/SKILL.md",
+          "line": 17,
+          "end_line": 30
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "devops",
+      "to": "notes",
+      "label": "问题清单",
+      "role": "main"
+    },
+    {
+      "from": "notes",
+      "to": "receive",
+      "label": "评审反馈",
+      "role": "main"
+    },
+    {
+      "from": "receive",
+      "to": "verified",
+      "label": "验证结果",
+      "role": "main"
+    },
+    {
+      "from": "request",
+      "to": "notes",
+      "label": "通用评审",
+      "role": "branch",
+      "variant": "dashed"
+    },
+    {
+      "from": "optional",
+      "to": "receive",
+      "label": "只读发现",
+      "role": "branch",
+      "variant": "dashed"
+    },
+    {
+      "from": "spec",
+      "to": "notes",
+      "label": "双维发现",
+      "role": "branch",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "按目的进入",
+      "items": [
+        "运维计划配套审查可用 devops-requesting-code-review。通用功能变更可用 requesting-code-review；需对照规范与需求时，用 code-review 指明比较基点。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "收到意见后",
+      "items": [
+        "应用提供 review-agent 时，也可单独委派只读缺陷审查。收到任何评审意见后，先在当前代码和约束下验证，再处理。"
+      ]
+    }
+  ]
+}

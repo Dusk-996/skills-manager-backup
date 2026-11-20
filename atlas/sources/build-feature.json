@@ -1,0 +1,188 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "拿到开发任务，怎么拆模块并用测试实现？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/build-feature.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "已有材料"
+        },
+        "backend": {
+          "label": "技能操作"
+        },
+        "database": {
+          "label": "交付物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "main",
+      "label": "按用户行为实现"
+    },
+    {
+      "id": "alt",
+      "label": "使用 Superpowers 时"
+    }
+  ],
+  "mainPath": [
+    "task",
+    "design",
+    "tdd",
+    "complete"
+  ],
+  "nodes": [
+    {
+      "id": "task",
+      "lane": "main",
+      "col": 0,
+      "type": "external",
+      "label": "功能任务",
+      "sublabel": "约定要观察的行为",
+      "sources": [
+        {
+          "path": "tdd/SKILL.md",
+          "line": 8,
+          "end_line": 24
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "lane": "main",
+      "col": 1,
+      "type": "backend",
+      "label": "codebase-design",
+      "sublabel": "需要时确定模块测试接口",
+      "sources": [
+        {
+          "path": "codebase-design/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        },
+        {
+          "path": "codebase-design/SKILL.md",
+          "line": 14,
+          "end_line": 24
+        }
+      ]
+    },
+    {
+      "id": "tdd",
+      "lane": "main",
+      "col": 2,
+      "type": "backend",
+      "label": "tdd",
+      "sublabel": "从公开接口验证用户行为",
+      "sources": [
+        {
+          "path": "tdd/SKILL.md",
+          "line": 12,
+          "end_line": 24
+        },
+        {
+          "path": "tdd/SKILL.md",
+          "line": 26,
+          "end_line": 36
+        }
+      ]
+    },
+    {
+      "id": "complete",
+      "lane": "main",
+      "col": 3,
+      "type": "database",
+      "label": "经测试的实现",
+      "sublabel": "保留覆盖目标行为的回归测试",
+      "sources": [
+        {
+          "path": "tdd/SKILL.md",
+          "line": 6,
+          "end_line": 16
+        },
+        {
+          "path": "external-skills/superpowers/skills/test-driven-development/SKILL.md",
+          "line": 168,
+          "end_line": 189
+        }
+      ]
+    },
+    {
+      "id": "super",
+      "lane": "alt",
+      "col": 2,
+      "type": "backend",
+      "label": "test-driven-development",
+      "sublabel": "先看到失败，再做最小实现",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/test-driven-development/SKILL.md",
+          "line": 8,
+          "end_line": 16
+        },
+        {
+          "path": "external-skills/superpowers/skills/test-driven-development/SKILL.md",
+          "line": 113,
+          "end_line": 132
+        },
+        {
+          "path": "external-skills/superpowers/skills/test-driven-development/SKILL.md",
+          "line": 195,
+          "end_line": 206
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "task",
+      "to": "design",
+      "label": "接口未定",
+      "role": "main"
+    },
+    {
+      "from": "design",
+      "to": "tdd",
+      "label": "测试边界",
+      "role": "main"
+    },
+    {
+      "from": "tdd",
+      "to": "complete",
+      "label": "通过测试",
+      "role": "main"
+    },
+    {
+      "from": "super",
+      "to": "complete",
+      "label": "回归结果",
+      "role": "branch",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "接口已明确",
+      "items": [
+        "已有公开接口和验收行为时，可直接进入测试循环。用 tdd 时先确认本轮要测试的接口。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "选择测试方式",
+      "items": [
+        "使用 Superpowers 的项目可直接用 test-driven-development。每轮观察红灯、完成最小实现、验证绿灯后再重构。"
+      ]
+    }
+  ]
+}

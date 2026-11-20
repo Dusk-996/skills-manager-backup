@@ -1,0 +1,210 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "怎么把重复工作变成技能并改进效果？",
+    "locale": "zh-CN",
+    "output": "docs/atlas/author-skill.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "起点或使用条件"
+        },
+        "backend": {
+          "label": "技能"
+        },
+        "frontend": {
+          "label": "工作产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "通用技能"
+    },
+    {
+      "id": "lane1",
+      "label": "模板与优化"
+    }
+  ],
+  "mainPath": [
+    "work",
+    "new",
+    "test",
+    "proven"
+  ],
+  "nodes": [
+    {
+      "id": "work",
+      "lane": "lane0",
+      "col": 0,
+      "type": "external",
+      "label": "可重复的任务",
+      "sublabel": "已有触发条件或输入样例",
+      "sources": [
+        {
+          "path": "external-skills/codex-system/skill-creator/SKILL.md",
+          "line": 2,
+          "end_line": 9
+        }
+      ]
+    },
+    {
+      "id": "new",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "skill-creator",
+      "sublabel": "编写技能说明和配套资源",
+      "sources": [
+        {
+          "path": "external-skills/codex-system/skill-creator/SKILL.md",
+          "line": 2,
+          "end_line": 9
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "lane": "lane0",
+      "col": 2,
+      "type": "backend",
+      "label": "writing-skills",
+      "sublabel": "用压力场景测试触发与执行",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/writing-skills/SKILL.md",
+          "line": 10,
+          "end_line": 18
+        }
+      ]
+    },
+    {
+      "id": "proven",
+      "lane": "lane0",
+      "col": 3,
+      "type": "frontend",
+      "label": "经验证的技能",
+      "sublabel": "记录可复现的行为结果",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/writing-skills/SKILL.md",
+          "line": 10,
+          "end_line": 18
+        }
+      ]
+    },
+    {
+      "id": "sample",
+      "lane": "lane1",
+      "col": 0,
+      "type": "external",
+      "label": "认可的成品",
+      "sublabel": "需要在应用里复用同类模板",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 65,
+          "end_line": 65
+        }
+      ]
+    },
+    {
+      "id": "template",
+      "lane": "lane1",
+      "col": 1,
+      "type": "backend",
+      "label": "template-creator",
+      "sublabel": "在模板插件中创建个人模板",
+      "sources": [
+        {
+          "path": "docs/RESTORE.md",
+          "line": 65,
+          "end_line": 65
+        }
+      ]
+    },
+    {
+      "id": "old",
+      "lane": "lane1",
+      "col": 2,
+      "type": "external",
+      "label": "已有技能",
+      "sublabel": "希望比较多个改进版本",
+      "sources": [
+        {
+          "path": "darwin-skill/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    },
+    {
+      "id": "opt",
+      "lane": "lane1",
+      "col": 3,
+      "type": "backend",
+      "label": "darwin-skill",
+      "sublabel": "评分、迭代并检验改进",
+      "sources": [
+        {
+          "path": "darwin-skill/SKILL.md",
+          "line": 2,
+          "end_line": 8
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "work",
+      "to": "new",
+      "label": "任务说明"
+    },
+    {
+      "from": "new",
+      "to": "test",
+      "label": "需要验证",
+      "role": "branch",
+      "variant": "dashed"
+    },
+    {
+      "from": "test",
+      "to": "proven",
+      "label": "测试记录"
+    },
+    {
+      "from": "sample",
+      "to": "template",
+      "label": "复用成品"
+    },
+    {
+      "from": "old",
+      "to": "opt",
+      "label": "比较版本"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "已有成品",
+      "items": [
+        "需要把已认可文档或演示的做法变成个人模板时，先启用对应模板插件。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "已有技能",
+      "items": [
+        "已开始日常使用的技能也可以直接做压力测试，或借助版本对照判断改动是否有效。"
+      ]
+    }
+  ]
+}

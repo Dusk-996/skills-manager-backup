@@ -1,0 +1,195 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "计划已经写好，一个会话做还是并行做？",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "docs/atlas/execute-plan.html",
+    "repository": {
+      "url": "https://github.com/Dusk-996/skills-manager-backup.git",
+      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+    },
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "执行技能"
+        },
+        "database": {
+          "label": "交付产物"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "lane0",
+      "label": "自己执行或委派实现"
+    },
+    {
+      "id": "lane1",
+      "label": "独立问题的并行调查"
+    }
+  ],
+  "mainPath": [
+    "area",
+    "inline",
+    "single"
+  ],
+  "nodes": [
+    {
+      "id": "area",
+      "lane": "lane0",
+      "col": 0,
+      "type": "backend",
+      "label": "using-git-worktrees",
+      "sublabel": "需要隔离时核对工作区基线",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/using-git-worktrees/SKILL.md",
+          "line": 10,
+          "end_line": 24
+        }
+      ]
+    },
+    {
+      "id": "inline",
+      "lane": "lane0",
+      "col": 1,
+      "type": "backend",
+      "label": "executing-plans",
+      "sublabel": "在当前会话实施并验证",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/executing-plans/SKILL.md",
+          "line": 45,
+          "end_line": 65
+        }
+      ]
+    },
+    {
+      "id": "single",
+      "lane": "lane0",
+      "col": 2,
+      "type": "database",
+      "label": "任务验证记录",
+      "sublabel": "按计划核对完成条件",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/executing-plans/SKILL.md",
+          "line": 209,
+          "end_line": 235
+        }
+      ]
+    },
+    {
+      "id": "batch",
+      "lane": "lane1",
+      "col": 1,
+      "type": "backend",
+      "label": "subagent-driven-development",
+      "sublabel": "按独立任务分派与审查",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/subagent-driven-development/SKILL.md",
+          "line": 6,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "lane": "lane1",
+      "col": 2,
+      "type": "database",
+      "label": "实现与审查结果",
+      "sublabel": "核对规格、质量及整体改动",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/subagent-driven-development/SKILL.md",
+          "line": 251,
+          "end_line": 265
+        }
+      ]
+    },
+    {
+      "id": "invest",
+      "lane": "lane1",
+      "col": 3,
+      "type": "backend",
+      "label": "dispatching-parallel-agents",
+      "sublabel": "互不依赖的问题可同时调查",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/dispatching-parallel-agents/SKILL.md",
+          "line": 16,
+          "end_line": 41
+        }
+      ]
+    },
+    {
+      "id": "findings",
+      "lane": "lane1",
+      "col": 4,
+      "type": "database",
+      "label": "汇总调查结论",
+      "sublabel": "核对分歧后整合结果",
+      "sources": [
+        {
+          "path": "external-skills/superpowers/skills/dispatching-parallel-agents/SKILL.md",
+          "line": 74,
+          "end_line": 86
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "area",
+      "to": "inline",
+      "label": "自己执行",
+      "role": "main"
+    },
+    {
+      "from": "inline",
+      "to": "single",
+      "label": "完成任务",
+      "role": "main"
+    },
+    {
+      "from": "area",
+      "to": "batch",
+      "label": "独立实施",
+      "role": "branch",
+      "variant": "dashed"
+    },
+    {
+      "from": "batch",
+      "to": "review",
+      "label": "任务评审",
+      "role": "main"
+    },
+    {
+      "from": "invest",
+      "to": "findings",
+      "label": "独立反馈",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "选择执行入口",
+      "items": [
+        "需要隔离时先检查现有工作树。已有合适工作区，可以直接选择在当前会话实施，或为独立事项分派实现与审查。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "并行调查",
+      "items": [
+        "两个问题的输入、状态和改动范围可以独立时，再并行调查并核对整合所得结果。"
+      ]
+    }
+  ]
+}
