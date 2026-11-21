@@ -1,6 +1,6 @@
 ---
 name: codex-project-rules
-description: 为 Codex 创建、合并或审查个人、项目及目录级 AGENTS.md；在用户要求持久编码规范、运维约定或限定目录的工作规则时使用。可复用任务流程的封装使用 skill-creator，模型或工具配置使用 codex-config-manager。
+description: 为 Codex 创建、合并或审查个人、项目及目录级 AGENTS.md；在用户要求持久编码规范、运维约定或限定目录的工作规则时使用。可复用任务流程的封装使用 skill-creator。模型或工具配置按 Codex 配置文档单独处理。
 ---
 
 # Codex 项目规则

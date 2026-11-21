@@ -2,13 +2,13 @@
   "schema_version": 2,
   "diagram_type": "workflow",
   "meta": {
-    "title": "收到工作簿或文档，怎么分析和交付？",
+    "title": "收到工作簿，怎么分析数据并交付？",
     "locale": "zh-CN",
     "output": "docs/atlas/office-files.html",
     "quality_profile": "showcase",
     "repository": {
       "url": "https://github.com/Dusk-996/skills-manager-backup.git",
-      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+      "revision": "0bcc2be18d6ea1f3512511d66a93bfd3ddc72da4"
     },
     "legend": {
       "entries": {
@@ -28,15 +28,12 @@
     {
       "id": "lane0",
       "label": "处理工作簿"
-    },
-    {
-      "id": "lane1",
-      "label": "撰写与核对文档"
     }
   ],
   "mainPath": [
     "case0",
-    "skill0"
+    "skill0",
+    "workbook"
   ],
   "nodes": [
     {
@@ -45,7 +42,7 @@
       "col": 0,
       "type": "external",
       "label": "表格文件或在线表",
-      "sublabel": "Excel、CSV 或已连接表格",
+      "sublabel": "Excel、CSV、TSV 或 Google Sheets",
       "sources": [
         {
           "path": "docs/RESTORE.md",
@@ -60,7 +57,7 @@
       "col": 1,
       "type": "backend",
       "label": "Spreadsheets",
-      "sublabel": "计算、分析、图表或工作簿",
+      "sublabel": "用公式、汇总或图表分析数据",
       "sources": [
         {
           "path": "docs/RESTORE.md",
@@ -70,92 +67,17 @@
       ]
     },
     {
-      "id": "case1",
+      "id": "workbook",
       "lane": "lane0",
       "col": 2,
-      "type": "external",
-      "label": "当前工作簿",
-      "sublabel": "已打开并连接 Excel 会话",
+      "type": "frontend",
+      "label": "分析工作簿",
+      "sublabel": "保留数据、计算结果或图表",
       "sources": [
         {
           "path": "docs/RESTORE.md",
-          "line": 60,
-          "end_line": 60
-        }
-      ]
-    },
-    {
-      "id": "skill1",
-      "lane": "lane0",
-      "col": 3,
-      "type": "backend",
-      "label": "excel-live-control",
-      "sublabel": "在当前会话中更新工作簿",
-      "sources": [
-        {
-          "path": "docs/RESTORE.md",
-          "line": 60,
-          "end_line": 60
-        }
-      ]
-    },
-    {
-      "id": "case2",
-      "lane": "lane1",
-      "col": 0,
-      "type": "external",
-      "label": "可编辑报告",
-      "sublabel": "需交付 DOCX 或修订稿",
-      "sources": [
-        {
-          "path": "docs/RESTORE.md",
-          "line": 59,
-          "end_line": 59
-        }
-      ]
-    },
-    {
-      "id": "skill2",
-      "lane": "lane1",
-      "col": 1,
-      "type": "backend",
-      "label": "documents",
-      "sublabel": "可编辑 Word 文档与排版检查",
-      "sources": [
-        {
-          "path": "docs/RESTORE.md",
-          "line": 59,
-          "end_line": 59
-        }
-      ]
-    },
-    {
-      "id": "case3",
-      "lane": "lane1",
-      "col": 2,
-      "type": "external",
-      "label": "PDF 成品",
-      "sublabel": "要核对页面、表单或版式",
-      "sources": [
-        {
-          "path": "docs/RESTORE.md",
-          "line": 61,
-          "end_line": 61
-        }
-      ]
-    },
-    {
-      "id": "skill3",
-      "lane": "lane1",
-      "col": 3,
-      "type": "backend",
-      "label": "pdf",
-      "sublabel": "渲染检查或生成 PDF",
-      "sources": [
-        {
-          "path": "docs/RESTORE.md",
-          "line": 61,
-          "end_line": 61
+          "line": 64,
+          "end_line": 64
         }
       ]
     }
@@ -164,37 +86,29 @@
     {
       "from": "case0",
       "to": "skill0",
-      "label": "分析数据"
+      "label": "分析数据",
+      "role": "main"
     },
     {
-      "from": "case1",
-      "to": "skill1",
-      "label": "就地操作"
-    },
-    {
-      "from": "case2",
-      "to": "skill2",
-      "label": "编辑文档"
-    },
-    {
-      "from": "case3",
-      "to": "skill3",
-      "label": "检查版面"
+      "from": "skill0",
+      "to": "workbook",
+      "label": "输出表格",
+      "role": "main"
     }
   ],
   "cards": [
     {
       "dot": "cyan",
-      "title": "运行条件",
+      "title": "可用材料",
       "items": [
-        "四项能力均由对应 Codex 应用或插件提供。操作当前工作簿时，先确认已连接对应 Excel 会话。"
+        "导入表格文件，或选择受支持的 Google Sheets。"
       ]
     },
     {
       "dot": "amber",
-      "title": "交付选择",
+      "title": "交付内容",
       "items": [
-        "需要继续修订正文时使用 Word。重点在固定版式或表单时使用 PDF。"
+        "需要复算时保留公式，需要展示数据对比时生成图表。"
       ]
     }
   ]

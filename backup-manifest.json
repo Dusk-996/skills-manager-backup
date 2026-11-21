@@ -1,8 +1,8 @@
 {
   "snapshot_date": "2026-11-21",
-  "skills": 81,
-  "files_skills": 72,
-  "inventory_only": 9,
+  "skills": 68,
+  "files_skills": 64,
+  "inventory_only": 4,
   "hash_scope": "Git提交中的文件内容，不含backup-manifest.json自身；Git可能规范文本换行",
   "files": [
     {
@@ -41,11 +41,6 @@
       "sha256": "ea596dc7cf285c4f61fd6df338fe0159b3cfdcb1e525f477bbeaf10fa9b25e67"
     },
     {
-      "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/1f499741-6429-4ddc-a032-a83ae0385de0.json",
-      "bytes": 288,
-      "sha256": "47f5b89d8fb9d9fc22a787719c16300d924d7b194879a7d088b6d904a22faa28"
-    },
-    {
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/1feb3d74-b77f-4402-805a-8dfdcd43ba88.json",
       "bytes": 288,
       "sha256": "d7b5e7ca1b6c18636c9966f8f67dc72a3eb7a04a6b5afbc7e4da392b4b4d71f1"
@@ -81,19 +76,9 @@
       "sha256": "bf5ae433f708494dc0a3dccca7ab04396502029c3209b91d81a4d471cc0b145b"
     },
     {
-      "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/49fcb659-32ec-4efa-95ea-ab49e45d68eb.json",
-      "bytes": 287,
-      "sha256": "83da2642c22c3ac28de091f591ba8bf18e55be88bc92d2cc2d4f4b4de1c51b01"
-    },
-    {
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/550ecfba-78a2-499c-a8eb-c31b40b3a544.json",
       "bytes": 288,
       "sha256": "d3cc35ac5f8abc9e859bf8e1ab30a45ee05bb3f94ccc29be99805a9079f90b09"
-    },
-    {
-      "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/560c7f5b-601a-494f-b65e-000f39823585.json",
-      "bytes": 288,
-      "sha256": "4a3bf5990524c5ec5ee772777572affd32aa7ce04f3f8944c6af6acdfca7f629"
     },
     {
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/5cc1fe54-90cf-4b01-96fe-b4062e690029.json",
@@ -166,11 +151,6 @@
       "sha256": "27495ea24d9980954eca5cd89c532379dc8091df193e16a4f49136caaadcae0d"
     },
     {
-      "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/b18a7a93-ee97-4ac7-b51b-f33d534ba945.json",
-      "bytes": 288,
-      "sha256": "6437422d7cb4f708cc148a341620654a3de051fbc4b1455f4b165e2437d02795"
-    },
-    {
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/b522248c-c335-49cc-81fd-e45c8620f706.json",
       "bytes": 288,
       "sha256": "4473359d58258464f9e96cef83b76bf801967c7269ebdcfadb7645c82ab06c1c"
@@ -184,11 +164,6 @@
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/b92d2fae-9b51-4a5f-bfe5-1504c9a16a11.json",
       "bytes": 287,
       "sha256": "989e41a9da14dc783825f4cd06ff22199c40efe96df4a7daad771e1e5da05978"
-    },
-    {
-      "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/bbe05670-9c6e-4b20-a2ee-812494ad3ed5.json",
-      "bytes": 288,
-      "sha256": "7eeaad8ae7d3bc69cb48370532a855c03251bb5a17795f58fcaad8986a908d75"
     },
     {
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/ce2a4db8-80fc-4c34-8bc6-d11eb901b09b.json",
@@ -241,11 +216,6 @@
       "sha256": "8c914b5cf9e19d9c3f51817804cb1bb416692553fca1f3b156d75c593fc7e0e5"
     },
     {
-      "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/fa65867b-eed2-49c9-8e66-a94fedff5721.json",
-      "bytes": 288,
-      "sha256": "ccdb2b47ac2d59a7e9d745dad6dac00f349aa9357623536ce8bb792914bec80d"
-    },
-    {
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/fcee86af-c9df-41bd-a0e0-f523c419ea11.json",
       "bytes": 288,
       "sha256": "71c6e792b6bf6ee4c7d602f70f81b40615c26751435b98efd791a1859eb26f88"
@@ -286,11 +256,6 @@
       "sha256": "f1bde791dcf1afde85606c0150728fd01dba82b3b979b74215a6dc64be2e9663"
     },
     {
-      "path": ".skills-manager/skills/1f499741-6429-4ddc-a032-a83ae0385de0.json",
-      "bytes": 352,
-      "sha256": "c01cb362fd50930d94f24607d5034f2e288192dc53b05438acddb6f8e1d2aa35"
-    },
-    {
       "path": ".skills-manager/skills/1feb3d74-b77f-4402-805a-8dfdcd43ba88.json",
       "bytes": 310,
       "sha256": "d033a432d7a1260d1284b6eb2908fd8b73da6faa3d50686877aea8dc8575b340"
@@ -326,19 +291,9 @@
       "sha256": "e2e9768193a4d3eae686d19fc82354ac5922ae427b8bf993b2f9f7b92dcc8337"
     },
     {
-      "path": ".skills-manager/skills/49fcb659-32ec-4efa-95ea-ab49e45d68eb.json",
-      "bytes": 352,
-      "sha256": "ecc44ff740784377a28f34c333ece9e1fb28923e25ee6f6e2ffd2af13ff19780"
-    },
-    {
       "path": ".skills-manager/skills/550ecfba-78a2-499c-a8eb-c31b40b3a544.json",
       "bytes": 343,
       "sha256": "809a6181125563574bde8f53873708350155e60fb641eb3daf5d5367ec34ad6b"
-    },
-    {
-      "path": ".skills-manager/skills/560c7f5b-601a-494f-b65e-000f39823585.json",
-      "bytes": 355,
-      "sha256": "e141c820e1e91e8772a415f5b0236d64afaed88366f03902b47cf6d5bcbbd309"
     },
     {
       "path": ".skills-manager/skills/5cc1fe54-90cf-4b01-96fe-b4062e690029.json",
@@ -411,11 +366,6 @@
       "sha256": "fb928ea4729a5a2ae7ae15acfc1121652917933128cca6906ebf5de2168a5b7f"
     },
     {
-      "path": ".skills-manager/skills/b18a7a93-ee97-4ac7-b51b-f33d534ba945.json",
-      "bytes": 304,
-      "sha256": "503fe1753952eb490ee1662028403c09eb5b55b071c6733d2a9ec515879a1e83"
-    },
-    {
       "path": ".skills-manager/skills/b522248c-c335-49cc-81fd-e45c8620f706.json",
       "bytes": 361,
       "sha256": "9b4aa7fc984dc2d2294d6b9e9c74c0d53cde1b33b08075655868247c4fbe6e1d"
@@ -429,11 +379,6 @@
       "path": ".skills-manager/skills/b92d2fae-9b51-4a5f-bfe5-1504c9a16a11.json",
       "bytes": 334,
       "sha256": "83e763c1036b00d42346d3095e248e302dea599060a3dac4f587f805b626b729"
-    },
-    {
-      "path": ".skills-manager/skills/bbe05670-9c6e-4b20-a2ee-812494ad3ed5.json",
-      "bytes": 370,
-      "sha256": "c4ef0554025794c2d9780ac17ed1f0eac7db0d6a8466aff45b0b7c287986dc46"
     },
     {
       "path": ".skills-manager/skills/ce2a4db8-80fc-4c34-8bc6-d11eb901b09b.json",
@@ -486,11 +431,6 @@
       "sha256": "ac4acfba0923e5a67d90e89f345629fd806ae44222511f069aa626a7a474c58e"
     },
     {
-      "path": ".skills-manager/skills/fa65867b-eed2-49c9-8e66-a94fedff5721.json",
-      "bytes": 367,
-      "sha256": "319e459b1ac782e025e64bff3f7d70b3256c819d8b8aba004be357928e234664"
-    },
-    {
       "path": ".skills-manager/skills/fcee86af-c9df-41bd-a0e0-f523c419ea11.json",
       "bytes": 340,
       "sha256": "af2d3a45ccaebc55bb0af5be188f2d0eb5864e7abbc1c1bac31d64b83ebd5732"
@@ -502,8 +442,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13069,
-      "sha256": "baf36bf363127625bb42c4fa0b0f4890c603a6fc6f87d97ca7f53d6b42c68141"
+      "bytes": 11262,
+      "sha256": "cc7ff4d24d00e83528ee70fd0552f18b7eda4d41ba67651fd781d9ee19b157cc"
     },
     {
       "path": "aliyun-asr/README.md",
@@ -2592,13 +2532,13 @@
     },
     {
       "path": "atlas/scenarios.json",
-      "bytes": 23821,
-      "sha256": "8765893e1918ed188ec73f575b9e0b415bba72962122a5ea99c36b67d6c50437"
+      "bytes": 21062,
+      "sha256": "bb4aa73296865be01d21c1ace2f2a83953d266b7f9cd8a822a0837bc5a311720"
     },
     {
       "path": "atlas/sources/author-skill.json",
-      "bytes": 4517,
-      "sha256": "8fbd2ec1cdd0b8f3167e2284a773f9084e88c12e2730802021709b0341fb218c"
+      "bytes": 3772,
+      "sha256": "4795af5a226a9b205448909b9d25fe53f3a8465f1816b30771a5a725dc38d4b6"
     },
     {
       "path": "atlas/sources/bootstrap.json",
@@ -2607,8 +2547,8 @@
     },
     {
       "path": "atlas/sources/browser-check.json",
-      "bytes": 4819,
-      "sha256": "bada1c16d5e9771f2df3f094ce591446cf26d83493707336e680bfce7eb7d8f0"
+      "bytes": 4234,
+      "sha256": "57a2fdc8714b4834b7842e766ed2824193c0bf00e976a1d7dd9d1e0479b236eb"
     },
     {
       "path": "atlas/sources/build-feature.json",
@@ -2617,13 +2557,13 @@
     },
     {
       "path": "atlas/sources/codex-environment.json",
-      "bytes": 4305,
-      "sha256": "fb6ccd68cca8d0ad21d7efea77640879550ec05050cfe3149489bd99a92907d0"
+      "bytes": 3546,
+      "sha256": "f2e9194be94e58cf3179ee39c7d0e3006826460df267dd91cd4bc6973a2b02aa"
     },
     {
       "path": "atlas/sources/course-study.json",
-      "bytes": 3740,
-      "sha256": "39a4001dc5676b8e6446348f50125a90e2411238e3c8e7f29217851ecec72470"
+      "bytes": 2624,
+      "sha256": "0a0f39c005718e5537b369cdfa1f13a0f8d26717e5615c4980a94f935958af9a"
     },
     {
       "path": "atlas/sources/dev-plan.json",
@@ -2632,8 +2572,8 @@
     },
     {
       "path": "atlas/sources/diagnose-workflow.json",
-      "bytes": 2881,
-      "sha256": "63e38ce85835e01df4be2cef747ddd005983d26470f610b2b7b3298539ad2fa5"
+      "bytes": 2558,
+      "sha256": "2ea907b1b2a5dd4cc248a56b0ea880ad790f7fa57edd2c9d67c11a06d29c494f"
     },
     {
       "path": "atlas/sources/execute-plan.json",
@@ -2647,18 +2587,13 @@
     },
     {
       "path": "atlas/sources/find-install.json",
-      "bytes": 4461,
-      "sha256": "d1d8fe22a5bb2b3576c1219aa2c1c1cb572e760e834ea3bd753db49bfccab777"
+      "bytes": 3683,
+      "sha256": "5649cb3c5e2d4f56745befc6b33d48b0ade73475ac40a85c47c2723f2b08baa3"
     },
     {
       "path": "atlas/sources/incident.json",
       "bytes": 4412,
       "sha256": "25264426643842712f75c2570f3f2eed5b17809ae4723cb47e8bf758f32ac0db"
-    },
-    {
-      "path": "atlas/sources/interview.json",
-      "bytes": 3974,
-      "sha256": "4c006727eab3ba2e611e8001aeea92284968047eb1dc40a7a07e762bd5dbc6f1"
     },
     {
       "path": "atlas/sources/mock-to-architecture.json",
@@ -2677,8 +2612,8 @@
     },
     {
       "path": "atlas/sources/office-files.json",
-      "bytes": 4198,
-      "sha256": "956b2dec1a338c00503e99c2105c9b4a424a2473f26dc808ee737885a1e1893d"
+      "bytes": 2383,
+      "sha256": "51a1ffa36778fe8278e083989fddeec055043db65885a44f97a942965aa1aac2"
     },
     {
       "path": "atlas/sources/ops-design.json",
@@ -2687,8 +2622,8 @@
     },
     {
       "path": "atlas/sources/package.json",
-      "bytes": 4403,
-      "sha256": "b3a075a5d4474907ed7d16dbbaba4ab3a110a778ea233aa37638dcb3b521e258"
+      "bytes": 2622,
+      "sha256": "b41cfc749900d06ce91115ec5e28b94e4461668d8e74214a6dfe4eb88f6e01be"
     },
     {
       "path": "atlas/sources/prototype-to-mock.json",
@@ -3022,8 +2957,8 @@
     },
     {
       "path": "codex-agent-config/SKILL.md",
-      "bytes": 3276,
-      "sha256": "37053cbfc981450879a306024e90393af57202711a9af2335e8fe630cd9e0053"
+      "bytes": 3248,
+      "sha256": "b3430a311dc258d6d92e5157778af1fcd043fedda7a09f4bd79dbe1ba17bdd33"
     },
     {
       "path": "codex-agent-config/agents/openai.yaml",
@@ -3046,24 +2981,9 @@
       "sha256": "d059033b3475cf39eab40ff80b95da556ff15f898c850b058bec450f2b48e396"
     },
     {
-      "path": "codex-config-manager/SKILL.md",
-      "bytes": 3652,
-      "sha256": "d25fec4443308a8742f2494335b70105ecf9cb357fa8abc7874c52ddd509227b"
-    },
-    {
-      "path": "codex-config-manager/agents/openai.yaml",
-      "bytes": 283,
-      "sha256": "871d7e748c1bf5dff3504e1f2dccbd2988f97fea7cdb8177dda9cb18b5e29ce0"
-    },
-    {
-      "path": "codex-config-manager/references/config-checks.md",
-      "bytes": 2701,
-      "sha256": "8ff274cde8f718765c68ef2e4fb54c8d539f503d5aba2b6addc0426018f8d820"
-    },
-    {
       "path": "codex-project-rules/SKILL.md",
-      "bytes": 4088,
-      "sha256": "2b54c864a25ada2e12e19a316545b753eaf6b60b35a8d678887ea3336f38c685"
+      "bytes": 4095,
+      "sha256": "2a05a9dde67a807f0f5a6ffe2654cfcf292e6c5758ff808679c3bbce238d8a66"
     },
     {
       "path": "codex-project-rules/agents/openai.yaml",
@@ -3231,31 +3151,6 @@
       "sha256": "841d9c30602f0de5a165918efddd9aa01a7f7bcb3902d8cb95b3e37a1f22b2f9"
     },
     {
-      "path": "deployment-packager-2/SKILL.md",
-      "bytes": 2102,
-      "sha256": "eaace38a45f0b9c7ce641ad3045fcd869db9442c21fbae26f29e3a091fb1f903"
-    },
-    {
-      "path": "deployment-packager-2/references/docker-compose.md",
-      "bytes": 726,
-      "sha256": "cc99de88c3f31f2fb38fe7b2e100ad044a17b119fae314c15cd8a0df795e06d6"
-    },
-    {
-      "path": "deployment-packager-2/references/kubernetes.md",
-      "bytes": 1823,
-      "sha256": "7eb11fe40756ff40fed29cb454ffa0dc0c77e21497ecd97a53b32075b86504a8"
-    },
-    {
-      "path": "deployment-packager-2/references/nginx-frontend.md",
-      "bytes": 928,
-      "sha256": "20696ad34565fe97a4a3d96d1e2cd88c824e5b7611289217b52f5603f8c036f4"
-    },
-    {
-      "path": "deployment-packager-2/references/systemd.md",
-      "bytes": 879,
-      "sha256": "5be09f8fb682e18a9f7af74d7551d151aba7f42d609de211825fefd7cc449089"
-    },
-    {
       "path": "design-taste-frontend/SKILL.md",
       "bytes": 87253,
       "sha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
@@ -3276,21 +3171,6 @@
       "sha256": "cb13b4648cd74e2da51a5ebaf837ef66f53e8e90292781a2035c97ca84347794"
     },
     {
-      "path": "devops-production-hardening/SKILL.md",
-      "bytes": 2469,
-      "sha256": "9885a2b1c259ee344084691e737eaa0a1c90975430899fbbece9cf1332728fdc"
-    },
-    {
-      "path": "devops-production-hardening/references/dangerous-operations.md",
-      "bytes": 988,
-      "sha256": "7754498d87a9be1b920de5f67e838e69c0824a0b652593524bb34255ac6a4c91"
-    },
-    {
-      "path": "devops-production-hardening/references/hardening-checklist.md",
-      "bytes": 1820,
-      "sha256": "ef06cb06ec7f75315a2c657e108d0d2fef92e633a60b1c94ac60270d51b16f9d"
-    },
-    {
       "path": "devops-requesting-code-review/SKILL.md",
       "bytes": 8198,
       "sha256": "9e6535c8ed45832ccc155b8c23491b379e769892d6ade75938730491041cac23"
@@ -3304,21 +3184,6 @@
       "path": "devops-requesting-code-review/plan-scorecard-reviewer.md",
       "bytes": 6737,
       "sha256": "764f716cb176e3ee90f3e990e35f905b588b39d7ef939a891aa5eb991d5b59d4"
-    },
-    {
-      "path": "devops-skill-router-zh/SKILL.md",
-      "bytes": 1308,
-      "sha256": "2da35f795574e1567497e5de9595f2bf088c66e3709e19ca978d60c910e99d8c"
-    },
-    {
-      "path": "devops-skill-router-zh/agents/openai.yaml",
-      "bytes": 283,
-      "sha256": "2b08cdc3dc75cffb127fffde00b0f1e0cb6cd37769202e5824e8b522ab7f15c5"
-    },
-    {
-      "path": "devops-skill-router-zh/references/skills-zh-index.md",
-      "bytes": 3070,
-      "sha256": "051fdcf300fa13b2c56eab751252acdb192c0736a7d195d25cb5bf9359cdf4bd"
     },
     {
       "path": "devops-writing-plans/SKILL.md",
@@ -3352,28 +3217,28 @@
     },
     {
       "path": "docs/RESTORE.md",
-      "bytes": 7706,
-      "sha256": "4318e72c23a7d1efb9847c007828c5c7e5346c3d5d3f5691d1d5b9bde622b319"
+      "bytes": 6229,
+      "sha256": "8c9cbb5b21a935d2a1deac32f8b99beba823110bb1726a03150b1b6fdf25957a"
     },
     {
       "path": "docs/atlas/README.md",
-      "bytes": 10273,
-      "sha256": "87d68edc5d760677b424675e5df574364c554a4ccac89466c8c62b24f141de9d"
+      "bytes": 9556,
+      "sha256": "65aea46e68d549c0646ad44c86e7dfb7f2afbe2a7c03b058be9477507b94c122"
     },
     {
       "path": "docs/atlas/author-skill.html",
-      "bytes": 819526,
-      "sha256": "6046fdda05f213362ea59f34b4cc36375546e6739f146f913b4178fc83be06c9"
+      "bytes": 815466,
+      "sha256": "c4a23d64d3faab4e618a2c42c631286fd42bec64168a4ee1dc221b7d3ce51445"
     },
     {
       "path": "docs/atlas/author-skill.md",
-      "bytes": 1413,
-      "sha256": "befd0380adb21af5ba645f3f987546d8e958682b377ccedd95d196c58f847f56"
+      "bytes": 1012,
+      "sha256": "e2138b27dee6c58a753f9e1de6a74b7fa01d26721745f6a8e4458249b832cf42"
     },
     {
       "path": "docs/atlas/author-skill.svg",
-      "bytes": 164446,
-      "sha256": "aa0ed48d2dac5ecf61d96bf77a1ba280d739f461cc0ce4ee635b2ee6dae437b8"
+      "bytes": 159432,
+      "sha256": "21b939ebed3b9b942de7a434cc29110e1ef89e0b3a14f7271fe38aebc369cb22"
     },
     {
       "path": "docs/atlas/bootstrap.html",
@@ -3382,8 +3247,8 @@
     },
     {
       "path": "docs/atlas/bootstrap.md",
-      "bytes": 985,
-      "sha256": "898433b6269df95d850ce607a2951ac5377cb769ba0d573ab37eb5f31b85b223"
+      "bytes": 979,
+      "sha256": "098b4a525f5f675bfa0dffe9f11bfe8c6df740f637a3abadd5382cf29dc2e545"
     },
     {
       "path": "docs/atlas/bootstrap.svg",
@@ -3392,18 +3257,18 @@
     },
     {
       "path": "docs/atlas/browser-check.html",
-      "bytes": 818434,
-      "sha256": "4df34c32e7d8fd1599fffe66796276cda97453c74f2cc681427f7c237ccc7a2f"
+      "bytes": 815951,
+      "sha256": "f7326da1ab3579274557635e24fd4aa50da35800c13431d75fa2e04674c4018e"
     },
     {
       "path": "docs/atlas/browser-check.md",
-      "bytes": 1651,
-      "sha256": "f16a50b53fcbd2d6149504c45ceaae51a7d895a6613c1203a8adb41446688e0c"
+      "bytes": 1252,
+      "sha256": "f73163452a6be74708ee92f74a7984a6389bc04bd962d5be33db5d1d66f26d5c"
     },
     {
       "path": "docs/atlas/browser-check.svg",
-      "bytes": 161795,
-      "sha256": "af6aaaf27448b256191a419148265b95dd36ac214aff219216ad0fbc85062454"
+      "bytes": 158737,
+      "sha256": "d159308f6d09574498a207df8809f33f6d98a41a831db4125d95b8b19ff70d02"
     },
     {
       "path": "docs/atlas/build-feature.html",
@@ -3422,33 +3287,33 @@
     },
     {
       "path": "docs/atlas/codex-environment.html",
-      "bytes": 818099,
-      "sha256": "c3850dc43a6111afedec2c08db86dff56b3da9c3002fbe75174f347dd66728ff"
+      "bytes": 814497,
+      "sha256": "9833aa6db0c8a688ddede46058bf1502ecebd4272fa7ae28e2e00b0e78288b37"
     },
     {
       "path": "docs/atlas/codex-environment.md",
-      "bytes": 1339,
-      "sha256": "320a56b2372c9beadd068c46ed959eaebcc97ea2e2bdccf5f1c2f239296c434d"
+      "bytes": 1201,
+      "sha256": "09efbae0fec8d9f0eece7e3692dd8c5179564f26fc455c7e9dbd85bd73c8585a"
     },
     {
       "path": "docs/atlas/codex-environment.svg",
-      "bytes": 162689,
-      "sha256": "967dd53bfc0de41a19b2ff25ac8eca9875a8a6a5f5db6ca365f0e698cf92c13f"
+      "bytes": 158182,
+      "sha256": "6278e10c06436f303cd8da802b6f20850fae712c4cb072fe635b8049f078394d"
     },
     {
       "path": "docs/atlas/course-study.html",
-      "bytes": 815631,
-      "sha256": "30a7be8923a9e58911ef270a630757463b75a90c535263af5e8d281e2790a91c"
+      "bytes": 809711,
+      "sha256": "ca5f19a458df3ca3f3b90e8586f406e661c3baf4c9a3e34bca03ea6e68de217e"
     },
     {
       "path": "docs/atlas/course-study.md",
-      "bytes": 1165,
-      "sha256": "8878821b1107b6e00e7235462b15ae4e58eeac41e007eb3472c2966b64810789"
+      "bytes": 843,
+      "sha256": "82000a18cfd48ea4eb3b61364044ea52393589948ef554f85a6b0e2c399ada93"
     },
     {
       "path": "docs/atlas/course-study.svg",
-      "bytes": 159925,
-      "sha256": "493f574a016e38ccfa4363338df0d94221058e4a7004002978a73d0f814eef6a"
+      "bytes": 152003,
+      "sha256": "5c1beb59610fba4e783625206103810ee4ec641324f8f5625c727a1be6f2564f"
     },
     {
       "path": "docs/atlas/dev-plan.html",
@@ -3467,18 +3332,18 @@
     },
     {
       "path": "docs/atlas/diagnose-workflow.html",
-      "bytes": 810726,
-      "sha256": "cd362291c97b7b4fedb84502ded8626f4e663786c73b61fa3aac00c83a0a0e5b"
+      "bytes": 810002,
+      "sha256": "1b1c39074eb52607ba41aa011075047f114436194f51e469aa6a89145ca81942"
     },
     {
       "path": "docs/atlas/diagnose-workflow.md",
-      "bytes": 1153,
-      "sha256": "986647d7247da428c9da87d26d4b931c3cbfeaf925b4459344144cb73badc95b"
+      "bytes": 985,
+      "sha256": "964608bd44961d0572e8ac459c262e59afb0457a8a5947ac094324fb02cefa36"
     },
     {
       "path": "docs/atlas/diagnose-workflow.svg",
-      "bytes": 153236,
-      "sha256": "a76c9a31ea6ee8dd1d08182a03b111f8f9607d4e89826e15e6a1901dc2d5ee4f"
+      "bytes": 152385,
+      "sha256": "0daf301f0df919e157fa0a6b7a958c3f81b22cfd8f779a0c9d451fd7486c9373"
     },
     {
       "path": "docs/atlas/execute-plan.html",
@@ -3512,18 +3377,18 @@
     },
     {
       "path": "docs/atlas/find-install.html",
-      "bytes": 819283,
-      "sha256": "a1960a914a481238c7a9f796cb378b132f3bb36657d194d6c965e797329d1995"
+      "bytes": 815519,
+      "sha256": "397fc6f0be5ef5011c672c1cae822bb00ac50e624ae322a23e7c7fdc6e7e6a65"
     },
     {
       "path": "docs/atlas/find-install.md",
-      "bytes": 1432,
-      "sha256": "ad3dea43ca05342411500c7ae77661fd8d43fae18c7e1c03e89432482b11664b"
+      "bytes": 1283,
+      "sha256": "c71ffd69e2bd43fdd15e3ab8bcc55ff689f61b1542adba4194fd34cad209a6ee"
     },
     {
       "path": "docs/atlas/find-install.svg",
-      "bytes": 164418,
-      "sha256": "aa3b026d79dd82d63316cf2dbf2851690dcd12bbd7171286aa842b32a6ce6bcd"
+      "bytes": 159760,
+      "sha256": "1c83b452efd758d976da414d98e2ad1a14a48a91f85b0c42b086f9558b8c9cd3"
     },
     {
       "path": "docs/atlas/incident.html",
@@ -3539,21 +3404,6 @@
       "path": "docs/atlas/incident.svg",
       "bytes": 162385,
       "sha256": "a6d3c95775e13409b5caeb9eca36d4b4b095d4589195c128823aa52186cbc866"
-    },
-    {
-      "path": "docs/atlas/interview.html",
-      "bytes": 816651,
-      "sha256": "f1761be3da2d877ab93e3bf7de87b01c5481b17faaeee674b6fd18214b256783"
-    },
-    {
-      "path": "docs/atlas/interview.md",
-      "bytes": 900,
-      "sha256": "15d29059cbb5a12ccbeeabce840392eebf9d781d14e6ec8fc2f1fae15ed5e37e"
-    },
-    {
-      "path": "docs/atlas/interview.svg",
-      "bytes": 161411,
-      "sha256": "7b9cf9b50b23792798a7c814e3215d34d8a8de36583f15dd23e5c1fb3cb1b0e5"
     },
     {
       "path": "docs/atlas/mock-to-architecture.html",
@@ -3577,8 +3427,8 @@
     },
     {
       "path": "docs/atlas/notes-roadmap.md",
-      "bytes": 1154,
-      "sha256": "5f8c41c3d8265b8e2c01f0bc5115848c4a3b7346338fd1e960ed9d155393d555"
+      "bytes": 979,
+      "sha256": "13ef5c3958148d94a8fa5e658cbe5af619498557a92afc0109d565c05ed3c008"
     },
     {
       "path": "docs/atlas/notes-roadmap.svg",
@@ -3602,18 +3452,18 @@
     },
     {
       "path": "docs/atlas/office-files.html",
-      "bytes": 817670,
-      "sha256": "626706ffc2fefb44d1c41e27e6e4667098751f28cc8c2bc5f1d833af8209d8f6"
+      "bytes": 809425,
+      "sha256": "00d982f42764ad36acca31bc4079696bf2e5b3637ae0c01ada87c5b0f7bed6b3"
     },
     {
       "path": "docs/atlas/office-files.md",
-      "bytes": 1708,
-      "sha256": "e4393c867ba57f91ba9d03da1d45fce2b1a0db3eda85bc7057e67425b724af15"
+      "bytes": 1068,
+      "sha256": "6b9abb427813d31e4a71032642b8e4aa8cfc99d89f3f9926b8f238d1679f4a8a"
     },
     {
       "path": "docs/atlas/office-files.svg",
-      "bytes": 162431,
-      "sha256": "fb861838a4feba923394cab7b5c67b65bc3208e7f1bcf9ae4f99d008ee059429"
+      "bytes": 152157,
+      "sha256": "dd7c5dd1f79b8689d0ae98f5bfcd6766e1cc664791304c6e7caeeb0ce63d2bb2"
     },
     {
       "path": "docs/atlas/ops-design.html",
@@ -3632,18 +3482,18 @@
     },
     {
       "path": "docs/atlas/package.html",
-      "bytes": 817007,
-      "sha256": "8ee129955d7dd6e0ee794dfaf47b3bac9523da404db76a03d3eb26b545a7c2a0"
+      "bytes": 809845,
+      "sha256": "09e1b70af91e13dd3c90f7758ca6125cb011c26c4fe5071540b135097a80a0ba"
     },
     {
       "path": "docs/atlas/package.md",
-      "bytes": 1341,
-      "sha256": "6bd7afe5a5daaf48d88645c242e7b2aae6ad7e00bf79b16cc9b54f2b11eec140"
+      "bytes": 1019,
+      "sha256": "a809d4fe8c36888efb63bdf3799ed836e5a40825ff755e731aed8e5cdfd28035"
     },
     {
       "path": "docs/atlas/package.svg",
-      "bytes": 160981,
-      "sha256": "42f45edfb8b9a2211103cab866c05764015f7d6a31d6aaefc8a92e321f4e58d5"
+      "bytes": 152184,
+      "sha256": "d112da288408600f58e27ce90e032edfaae76b6eb925df7e0c8df22aa7822763"
     },
     {
       "path": "docs/atlas/prototype-to-mock.html",
@@ -3757,8 +3607,8 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 15391,
-      "sha256": "d1582c85c26cee3056533b252933c9e09b1e938b413dfc405ad3f972e19d513c"
+      "bytes": 14835,
+      "sha256": "4ce574c33994090398f08bdb5ef022578f330de0a54fdef799ff59e07c9b8275"
     },
     {
       "path": "domain-modeling/ADR-FORMAT.md",
@@ -3899,91 +3749,6 @@
       "path": "external-skills/codex-system/imagegen/scripts/remove_chroma_key.py",
       "bytes": 13905,
       "sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/LICENSE.txt",
-      "bytes": 10776,
-      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/SKILL.md",
-      "bytes": 2652,
-      "sha256": "208bb19dcdfa7cdcae5e6766ff3fd6bf7268d235c12a426869c8151a33e5c3ab"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/agents/openai.yaml",
-      "bytes": 361,
-      "sha256": "50c24c61ca46129bd3f555c37a0e4da6ad179eea2debf9176a5deba23d8a9869"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/assets/openai-small.svg",
-      "bytes": 1091,
-      "sha256": "45be1f0757eb18889eefb1e7db79668ef46a275dc4e0e78e8df5ebd7f6cdeadc"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/assets/openai.png",
-      "bytes": 1429,
-      "sha256": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/codex-self-knowledge.md",
-      "bytes": 7417,
-      "sha256": "8c8fb00e6e5cb1977924f5164684a6095427fa828bbc765225f17d9aeb79a912"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/latest-model.md",
-      "bytes": 1339,
-      "sha256": "7e5b9437c6ad98a73da46ba3f7f5c86f88aea2a15242318f32c487eb28a90852"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/mcp-diagnostics.md",
-      "bytes": 2318,
-      "sha256": "49bbd2f73df7bbd7f86c80425dea4da2d301c22046080399a36bfc0ca49509e9"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/model-migration.md",
-      "bytes": 5930,
-      "sha256": "b0c21d509bd03f3fbc90b64a206437923a0c6b8433059274b45384513c01676c"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/model-selection.md",
-      "bytes": 1344,
-      "sha256": "ba2d164abbca30435a460a0bc3a7d82398dce2bdf092705c98ba55b3f3af38a8"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/official-docs.md",
-      "bytes": 3337,
-      "sha256": "7962f2dce55089b93bde4115bb89fd42f20993c1597a2b13edd4956f463875b9"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/prompting-guide.md",
-      "bytes": 10128,
-      "sha256": "5c791edd5bfc9363cb4251ac3ccd3b1dbac3bb2a6654f78606a9d2357c97c172"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/upgrade-guide.md",
-      "bytes": 1503,
-      "sha256": "63352ece4bd1ee82b225bb4cb4fa2ea4f0dbf57a308845fa30f2c8d7f1d291d1"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/references/upgrading-to-gpt-6-astra.md",
-      "bytes": 19676,
-      "sha256": "cacacdfe0b516f7420af51df10dfa0829bf67c4a670544d58992f6ce4ac22583"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/scripts/fetch-codex-manual.mjs",
-      "bytes": 15668,
-      "sha256": "1ea0ca869e3fdf06e83a9972fc4c602b0505a96b22e4b0d9629656f5b545e5ff"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/scripts/resolve-latest-model-info",
-      "bytes": 1038,
-      "sha256": "7354dbb030ca0736dd633a7ca1b930cf640abd40370725dea3a458cb51d49523"
-    },
-    {
-      "path": "external-skills/codex-system/openai-docs/scripts/resolve-latest-model-info.cjs",
-      "bytes": 3916,
-      "sha256": "589b89515ab63fff87efde0b9c76eb72e674582aebc3afbc29ceae09abddafe3"
     },
     {
       "path": "external-skills/codex-system/skill-creator/SKILL.md",
@@ -5887,8 +5652,8 @@
     },
     {
       "path": "migrate-to-codex/SKILL.md",
-      "bytes": 4553,
-      "sha256": "5be8b908adb3dc5b55e8e4c4add2cce7d543af1b90f4cc4ff2dc48b7a52e0515"
+      "bytes": 4584,
+      "sha256": "a6a36fb60ad7b7f02cb2bed3a38912f6d9a7d686c4a017ea18c3fb2a4d570214"
     },
     {
       "path": "migrate-to-codex/agents/openai.yaml",
@@ -6367,8 +6132,8 @@
     },
     {
       "path": "project-init/references/acceptance-rules.md",
-      "bytes": 1560,
-      "sha256": "da1faead24fbdc97968edf164d3ada8a61103795627958398f355c91194230ce"
+      "bytes": 1504,
+      "sha256": "57312bcdbd08b95e691f7e57eabb23158fe787a9424c7429f15694a23aa664a2"
     },
     {
       "path": "project-init/references/claude_md_preamble.md",
@@ -6576,106 +6341,6 @@
       "sha256": "5980ec6de9049b9bc6897fd8da7b5caf9ac01bb2b144d0aac339175aea641807"
     },
     {
-      "path": "question-gap-analyzer/SKILL.md",
-      "bytes": 9697,
-      "sha256": "04c7ae2b4ba752b393f14967ac4a492d62b65eaa221949fad5c582ef69b02370"
-    },
-    {
-      "path": "question-gap-analyzer/agents/openai.yaml",
-      "bytes": 254,
-      "sha256": "da10489482125dff4c0b39ec8d2c3208f23b0bd605b4462cb8406dfa15f86d48"
-    },
-    {
-      "path": "question-gap-analyzer/evals/evals.json",
-      "bytes": 2542,
-      "sha256": "cf612e142b5241af6748c19c5830423adafe8dd0777f98db88bb0f9bf6f7293f"
-    },
-    {
-      "path": "question-gap-analyzer/evals/fixtures/candidate-review-confirmed-sample.md",
-      "bytes": 582,
-      "sha256": "9ab9a3a19ad3a631ee15a7ab33950b53c86daf4317f65f59a5c8bdf5b165acc4"
-    },
-    {
-      "path": "question-gap-analyzer/evals/fixtures/existing-questions-sample.md",
-      "bytes": 360,
-      "sha256": "04fae5fc8d2549b234b7a54255a2fc67107a3aaff9c8b3b2d4cd13df9d5bdbcf"
-    },
-    {
-      "path": "question-gap-analyzer/evals/fixtures/personal-profile-sample.md",
-      "bytes": 263,
-      "sha256": "51910df896a727c34b897b3f7ec85f86d6e25caebeba1d1e2cb207f130219520"
-    },
-    {
-      "path": "question-gap-analyzer/evals/fixtures/roadmap-sample.md",
-      "bytes": 635,
-      "sha256": "d21fa423b94dae2104fa87752bcc9af4403d1ae240de438a6f5b26ecb8fcae20"
-    },
-    {
-      "path": "question-gap-analyzer/references/candidate-review-template.md",
-      "bytes": 2581,
-      "sha256": "abecdcbc89b76e2e208b04fbb0661a3c7865628a27ac9aebfaa2192065b39afb"
-    },
-    {
-      "path": "question-gap-analyzer/references/coverage-rubric.md",
-      "bytes": 2755,
-      "sha256": "d31d39a3e1d4472c1e8014b8b624307957eaafe930527c3cdca045bcfdceb2aa"
-    },
-    {
-      "path": "question-gap-analyzer/references/personalization-profile.md",
-      "bytes": 2169,
-      "sha256": "15c95b31bb623509dbe500587aa6882cf461f6aed46323e38c5fc04ea3bba07c"
-    },
-    {
-      "path": "question-gap-analyzer/references/question-template.md",
-      "bytes": 1226,
-      "sha256": "63264881177304a11d26fb976811b9ddea182685caedef0ca5ec2a5d51771de9"
-    },
-    {
-      "path": "scenario-question-designer/SKILL.md",
-      "bytes": 9320,
-      "sha256": "e0563f9a7faad972b9d9e16b939542603d319b81443a86ea56725ee24a01ecfe"
-    },
-    {
-      "path": "scenario-question-designer/agents/openai.yaml",
-      "bytes": 285,
-      "sha256": "b649624bf061ec56834f865b1c69bd53f8223fdbeae5e5b8de1b5e95b88339da"
-    },
-    {
-      "path": "scenario-question-designer/evals/evals.json",
-      "bytes": 2393,
-      "sha256": "703e2868085d0f50435eff557302d475051206588e17b1f041739dc04de90230"
-    },
-    {
-      "path": "scenario-question-designer/evals/fixtures/confirmed-scenario-brief-sample.md",
-      "bytes": 536,
-      "sha256": "cc418d3378a45788e7eb496b3041a0f127f873ebef1fc4eb98943a291747253e"
-    },
-    {
-      "path": "scenario-question-designer/evals/fixtures/scenario-candidate-sample.md",
-      "bytes": 432,
-      "sha256": "3d3b3ec01fa94d1a9e86d13413da0d6a7bed4429e7353a672a4b4a7deffe90f2"
-    },
-    {
-      "path": "scenario-question-designer/references/personalization-profile.md",
-      "bytes": 1642,
-      "sha256": "1128e98a38b181cd192d621b17aa7f7bf6f7878f5a5c17d706126fe3ca3a7505"
-    },
-    {
-      "path": "scenario-question-designer/references/question-template.md",
-      "bytes": 1526,
-      "sha256": "d4bb79a882c489994a2300abc85c14d3933e65a645a4a6f20c63db2c809ab21c"
-    },
-    {
-      "path": "scenario-question-designer/references/scenario-brief-template.md",
-      "bytes": 3324,
-      "sha256": "6dd417cedb383f48b006ae4426ad82489d06651a4eca09c25099d98b5351d6d3"
-    },
-    {
-      "path": "scenario-question-designer/references/scenario-quality-rubric.md",
-      "bytes": 2597,
-      "sha256": "05dd51cdd473e58706fac3c57d1ddbcb82822e5726a4c01f2e5c21e94b6b3de5"
-    },
-    {
       "path": "scripts/devops-skillctl.ps1",
       "bytes": 687,
       "sha256": "4fa0f9205a2c2c08d2c3d07e10f98605d3611caed14a3805582f6e6f546898d5"
@@ -6722,13 +6387,13 @@
     },
     {
       "path": "skill-catalog.json",
-      "bytes": 22420,
-      "sha256": "37cb1e7a8a4951ee7398b4dadc13677151f7da4012dc4c91f7db1d8ae21ececc"
+      "bytes": 18171,
+      "sha256": "205eedf6970a21acd7448010cc67da98f3bf7c9277853c37f9cca4f498483b3c"
     },
     {
       "path": "skill-router-zh/SKILL.md",
-      "bytes": 1261,
-      "sha256": "59aa38f36e948305ec1b26e8b3c08ed116c47aeb1dc4fb6d67624b498152c149"
+      "bytes": 1154,
+      "sha256": "d855f0c556abceb4fb2f760a1ba980146e18ff0e7e241c0cfe9d5b434df455a0"
     },
     {
       "path": "skill-router-zh/agents/openai.yaml",
@@ -6737,8 +6402,8 @@
     },
     {
       "path": "skill-router-zh/references/skills-zh-index.md",
-      "bytes": 3070,
-      "sha256": "051fdcf300fa13b2c56eab751252acdb192c0736a7d195d25cb5bf9359cdf4bd"
+      "bytes": 2593,
+      "sha256": "f3c88e05cd6dfc5c7a254a3012cd7e98858fdac94a3ba8d3fcf6852d8291c29d"
     },
     {
       "path": "ssh-remote-ops/README.md",
@@ -6816,36 +6481,6 @@
       "sha256": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a"
     },
     {
-      "path": "teach/GLOSSARY-FORMAT.md",
-      "bytes": 2131,
-      "sha256": "d177def491519d97873291f2e860d8f1d60ead78feecb82eee022177958069c6"
-    },
-    {
-      "path": "teach/LEARNING-RECORD-FORMAT.md",
-      "bytes": 2777,
-      "sha256": "855f81017625256584bbf62bd5edb9b0c86605c4cc1139c56acc36b802595d17"
-    },
-    {
-      "path": "teach/MISSION-FORMAT.md",
-      "bytes": 1553,
-      "sha256": "8da6d3ac84eb2eb19f17c260b6acf01c560d3ac7a4501c415eea0e985602f4d7"
-    },
-    {
-      "path": "teach/RESOURCES-FORMAT.md",
-      "bytes": 1926,
-      "sha256": "2bc634a64b0d0daa10904f9222e7aa0d361420dfacabbf092fbe3a72222edc08"
-    },
-    {
-      "path": "teach/SKILL.md",
-      "bytes": 9520,
-      "sha256": "d7dd388f879d0d3a2dbdfa82515c62a3c11a5b5dfcf710cfc62e2395bccda59c"
-    },
-    {
-      "path": "teach/agents/openai.yaml",
-      "bytes": 139,
-      "sha256": "5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f"
-    },
-    {
       "path": "to-spec/SKILL.md",
       "bytes": 3086,
       "sha256": "8b19ac63b658acd47da1bda5b1fff3503c813e038a78ec0eca075cc699b3686e"
@@ -6877,8 +6512,8 @@
     },
     {
       "path": "tools/readme_builder.py",
-      "bytes": 6096,
-      "sha256": "9a326ea4d95951bef8d1db8243c2c7afe6525950bae4500f9a660b52ba8e64be"
+      "bytes": 6054,
+      "sha256": "50313f0c1fda6fafebb9b94cf5673b01f34c20fad9c4ae1b49329d77cb992239"
     },
     {
       "path": "ui-ux-pro-max/LICENSE",

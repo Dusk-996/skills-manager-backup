@@ -1,8 +1,8 @@
 {
   "snapshot_date": "2026-11-21",
-  "total_skills": 81,
-  "files": 72,
-  "inventory_only": 9,
+  "total_skills": 68,
+  "files": 64,
+  "inventory_only": 4,
   "skills": [
     {
       "name": "aliyun-asr",
@@ -61,13 +61,6 @@
       "path": "codex-agent-config"
     },
     {
-      "name": "codex-config-manager",
-      "purpose": "检查和最小修改 Codex 个人或项目配置，保留注释与无关字段，提供验证和回滚。",
-      "source_group": "central",
-      "status": "files",
-      "path": "codex-config-manager"
-    },
-    {
       "name": "codex-project-rules",
       "purpose": "创建和维护 Codex 的项目、目录或个人 AGENTS.md，保留规则作用域和现有约定。",
       "source_group": "central",
@@ -75,27 +68,11 @@
       "path": "codex-project-rules"
     },
     {
-      "name": "computer-use",
-      "purpose": "通过当前可用的电脑操作工具读取和控制 Windows 应用、浏览器界面。",
-      "source_group": "plugins",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Codex 应用插件：openai-bundled/computer-use/26.1111.21308",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
-    },
-    {
       "name": "darwin-skill",
       "purpose": "按结构和效果评分，迭代优化 SKILL.md，并验证优化结果。",
       "source_group": "central",
       "status": "files",
       "path": "darwin-skill"
-    },
-    {
-      "name": "deployment-packager",
-      "purpose": "生成 Dockerfile、Compose、K8s、systemd、Nginx 配置及部署、验证、回滚文档。",
-      "source_group": "central",
-      "status": "files",
-      "path": "deployment-packager-2"
     },
     {
       "name": "design-taste-frontend",
@@ -112,25 +89,11 @@
       "path": "devops-brainstorming"
     },
     {
-      "name": "devops-production-hardening",
-      "purpose": "给现有脚本、服务和部署补健康检查、日志、安全配置、备份及回滚。",
-      "source_group": "central",
-      "status": "files",
-      "path": "devops-production-hardening"
-    },
-    {
       "name": "devops-requesting-code-review",
       "purpose": "从运维实现、计划和生产约束等角度组织代码审查。",
       "source_group": "central",
       "status": "files",
       "path": "devops-requesting-code-review"
-    },
-    {
-      "name": "devops-skill-router-zh",
-      "purpose": "面向中文运维任务选择最相关的 1～3 个技能。",
-      "source_group": "central",
-      "status": "files",
-      "path": "devops-skill-router-zh"
     },
     {
       "name": "devops-writing-plans",
@@ -161,15 +124,6 @@
       "path": "external-skills/superpowers/skills/dispatching-parallel-agents"
     },
     {
-      "name": "documents",
-      "purpose": "创建、编辑、批注和修订 Word/DOCX，并渲染检查排版。",
-      "source_group": "plugins",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Codex 应用插件：openai-primary-runtime/documents/26.1112.11217",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
-    },
-    {
       "name": "domain-modeling",
       "purpose": "维护项目领域术语、领域模型和架构决策记录。",
       "source_group": "central",
@@ -182,15 +136,6 @@
       "source_group": "central",
       "status": "files",
       "path": "draw-io-diagram-generator"
-    },
-    {
-      "name": "excel-live-control",
-      "purpose": "通过已连接的 Excel 会话，直接操作打开的工作簿。",
-      "source_group": "plugins",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Codex 应用插件：openai-primary-runtime/spreadsheets/26.1112.11217",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
     },
     {
       "name": "executing-plans",
@@ -312,27 +257,11 @@
       "path": "migrate-to-codex"
     },
     {
-      "name": "openai-docs",
-      "purpose": "为 OpenAI API 入门及 Codex/Work 的用法、配置和行为提供官方资料入口。",
-      "source_group": "codex-system",
-      "status": "files",
-      "path": "external-skills/codex-system/openai-docs"
-    },
-    {
       "name": "ops-readiness-review",
       "purpose": "上线前检查危险操作、鉴权、Secret、任务可靠性、观测性和恢复能力，给出就绪结论。",
       "source_group": "central",
       "status": "files",
       "path": "ops-readiness-review"
-    },
-    {
-      "name": "pdf",
-      "purpose": "读取、生成、渲染和检查 PDF，包括表单与版面。",
-      "source_group": "plugins",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Codex 应用插件：openai-primary-runtime/pdf/26.1112.11217",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
     },
     {
       "name": "playwright-cli",
@@ -386,13 +315,6 @@
       "path": "prototype-parity-review"
     },
     {
-      "name": "question-gap-analyzer",
-      "purpose": "结合 Roadmap、岗位和已有题库，分析普通面试题、场景题的覆盖缺口。",
-      "source_group": "central",
-      "status": "files",
-      "path": "question-gap-analyzer"
-    },
-    {
       "name": "receiving-code-review",
       "purpose": "核查评审意见是否成立，再落实修改和验证。",
       "source_group": "superpowers",
@@ -414,13 +336,6 @@
       "path": "docs/RESTORE.md",
       "restore_source": "Codex 应用内置系统技能",
       "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
-    },
-    {
-      "name": "scenario-question-designer",
-      "purpose": "从知识点和生产经验设计场景面试题，先出题目简报再完善。",
-      "source_group": "central",
-      "status": "files",
-      "path": "scenario-question-designer"
     },
     {
       "name": "setup-matt-pocock-skills",
@@ -500,22 +415,6 @@
       "source_group": "central",
       "status": "files",
       "path": "tdd"
-    },
-    {
-      "name": "teach",
-      "purpose": "在工作区内维护学习目标、课程状态和跨会话教学记录。",
-      "source_group": "central",
-      "status": "files",
-      "path": "teach"
-    },
-    {
-      "name": "template-creator",
-      "purpose": "把用户认可的产物和流程整理为可复用的个人模板技能。",
-      "source_group": "plugins",
-      "status": "inventory_only",
-      "path": "docs/RESTORE.md",
-      "restore_source": "Codex 应用插件：openai-primary-runtime/template-creator/26.1112.11217",
-      "reason": "未确认公开再分发授权；仅登记名称、中文用途和官方应用恢复途径"
     },
     {
       "name": "test-driven-development",

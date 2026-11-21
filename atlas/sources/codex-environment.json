@@ -2,13 +2,13 @@
   "schema_version": 2,
   "diagram_type": "workflow",
   "meta": {
-    "title": "怎样迁移旧规则、配置 Codex 和专用代理？",
+    "title": "怎样迁移旧规则、记录约定和配置专用代理？",
     "locale": "zh-CN",
     "output": "docs/atlas/codex-environment.html",
     "quality_profile": "showcase",
     "repository": {
       "url": "https://github.com/Dusk-996/skills-manager-backup.git",
-      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+      "revision": "0bcc2be18d6ea1f3512511d66a93bfd3ddc72da4"
     },
     "legend": {
       "entries": {
@@ -31,7 +31,7 @@
     },
     {
       "id": "lane1",
-      "label": "配置与角色"
+      "label": "定义专用代理"
     }
   ],
   "mainPath": [
@@ -100,39 +100,9 @@
       ]
     },
     {
-      "id": "case2",
-      "lane": "lane1",
-      "col": 0,
-      "type": "external",
-      "label": "已有配置需求",
-      "sublabel": "要更改可支持的设置",
-      "sources": [
-        {
-          "path": "codex-config-manager/SKILL.md",
-          "line": 2,
-          "end_line": 8
-        }
-      ]
-    },
-    {
-      "id": "skill2",
-      "lane": "lane1",
-      "col": 1,
-      "type": "backend",
-      "label": "codex-config-manager",
-      "sublabel": "校验 config.toml 并留回滚方式",
-      "sources": [
-        {
-          "path": "codex-config-manager/SKILL.md",
-          "line": 2,
-          "end_line": 8
-        }
-      ]
-    },
-    {
       "id": "case3",
       "lane": "lane1",
-      "col": 2,
+      "col": 0,
       "type": "external",
       "label": "明确的代理职责",
       "sublabel": "专用审查、排障或实现角色",
@@ -147,7 +117,7 @@
     {
       "id": "skill3",
       "lane": "lane1",
-      "col": 3,
+      "col": 1,
       "type": "backend",
       "label": "codex-agent-config",
       "sublabel": "生成与验证代理 TOML",
@@ -172,11 +142,6 @@
       "label": "持久规则"
     },
     {
-      "from": "case2",
-      "to": "skill2",
-      "label": "设置变更"
-    },
-    {
       "from": "case3",
       "to": "skill3",
       "label": "配置角色"
@@ -194,7 +159,7 @@
       "dot": "amber",
       "title": "验证",
       "items": [
-        "配置与角色定义各自核对改动和加载方式，保留可复原的原始配置。"
+        "核对专用代理的职责与 TOML 定义，确认 Codex 能加载该角色。"
       ]
     }
   ]

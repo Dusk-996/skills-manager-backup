@@ -1,6 +1,6 @@
 # 按场景查找技能
 
-从手里的材料选择入口。共 27 个场景，覆盖 81 项技能。标有「附图」的场景提供静态预览与可交互的横向流程图。
+从手里的材料选择入口。共 26 个场景，覆盖 68 项技能。标有「附图」的场景提供静态预览与可交互的横向流程图。
 
 [查看全部技能及原始说明](../../README.md)
 
@@ -13,7 +13,7 @@
 - **[确定做 Shell 工具或服务后，怎么开工？](bootstrap.md)**　**附图**<br>
   已确认需求、语言和交付形态 → 可运行和验证的初始工程<br>
   `project-init`<br>
-  后续可选　[拿到开发任务，怎么拆模块并用测试实现？](build-feature.md) · [巡检工具准备上线，怎么打包、加固和审查？](package.md)
+  后续可选　[拿到开发任务，怎么拆模块并用测试实现？](build-feature.md) · [巡检工具准备上线，怎样审查运行条件？](package.md)
 - **[还没有页面，怎么确定运维平台原型？](ui-prototype.md)**　**附图**<br>
   用户任务、核心操作和页面要求 → 可供评审的页面原型<br>
   `frontend-design`、`ui-ux-pro-max`、`design-taste-frontend`<br>
@@ -40,11 +40,11 @@
   后续可选　[有了可运行页面，怎么验证关键用户路径？](browser-check.md) · [准备收尾或换人，怎么验证并交接？](release-branch.md)
 - **[有了可运行页面，怎么验证关键用户路径？](browser-check.md)**　**附图**<br>
   可访问的环境、测试账号或页面与业务路径 → 浏览器验证证据或正式 E2E 报告<br>
-  `playwright-cli`、`playwright-e2e-debug-report`、`computer-use`<br>
-  后续可选　[巡检工具准备上线，怎么打包、加固和审查？](package.md) · [准备收尾或换人，怎么验证并交接？](release-branch.md)
-- **[巡检工具准备上线，怎么打包、加固和审查？](package.md)**　**附图**<br>
-  服务入口、部署目标、现有配置与测试结果 → 交付部署包，或得到上线就绪结论<br>
-  `deployment-packager`、`devops-production-hardening`、`ops-readiness-review`<br>
+  `playwright-cli`、`playwright-e2e-debug-report`<br>
+  后续可选　[巡检工具准备上线，怎样审查运行条件？](package.md) · [准备收尾或换人，怎么验证并交接？](release-branch.md)
+- **[巡检工具准备上线，怎样审查运行条件？](package.md)**　**附图**<br>
+  服务入口、部署目标、现有配置与测试结果 → 上线就绪结论、风险与证据缺口<br>
+  `ops-readiness-review`<br>
   后续可选　[有了可运行页面，怎么验证关键用户路径？](browser-check.md) · [准备收尾或换人，怎么验证并交接？](release-branch.md)
 
 ## 协作开发与交接
@@ -71,19 +71,15 @@
   已确认的数据源、指标、标签与查询目标 → 可导入的看板及对应查询<br>
   `grafana-dashboards`
 
-## 学习、复习与面试
+## 学习与复习
 
 - **[课程录音和资料怎么整理成可复习的路线图？](notes-roadmap.md)**　**附图**<br>
   可访问的录音 URL 或已有同主题文本 → 结构化笔记或可跟踪学习进度的网页<br>
-  `aliyun-asr`、`learning-notes-builder`、`learning-roadmap`<br>
-  后续可选　[怎样把笔记或故障经验变成面试题？](interview.md)
-- **[正在学一门课，怎么读懂这一章并接着学？](course-study.md)**　**附图**<br>
-  FDE 章节材料或个人学习目标 → 章节讲解，或可跨会话延续的教学记录<br>
-  `fde-creator`、`teach`<br>
-  后续可选　[课程录音和资料怎么整理成可复习的路线图？](notes-roadmap.md) · [怎样把笔记或故障经验变成面试题？](interview.md)
-- **[怎样把笔记或故障经验变成面试题？](interview.md)**　**附图**<br>
-  笔记、目标岗位、可选已有题库或脱敏案例 → 确认后的普通题或场景题及追问<br>
-  `question-gap-analyzer`、`scenario-question-designer`
+  `aliyun-asr`、`learning-notes-builder`、`learning-roadmap`
+- **[怎么读懂 FDE 课程的这一章？](course-study.md)**　**附图**<br>
+  FDE 章节材料、相关代码或具体疑问 → 有材料依据的章节讲解与答疑<br>
+  `fde-creator`<br>
+  后续可选　[课程录音和资料怎么整理成可复习的路线图？](notes-roadmap.md)
 
 ## 技术表达与办公交付
 
@@ -98,28 +94,28 @@
 - **[项目材料要做技术分享，交付网页还是 PPT？](slides.md)**　**附图**<br>
   文档、已有幻灯片、受众与目标格式 → 网页演示、图片型 PPTX 或可编辑幻灯片<br>
   `project-to-open-slide`、`frontend-slides`、`pptx`、`Presentations`
-- **[收到工作簿或文档，怎么分析和交付？](office-files.md)**　**附图**<br>
-  Excel、CSV、Word、PDF 或已打开的工作簿 → 处理后的工作簿、报告或经检查的文档<br>
-  `Spreadsheets`、`excel-live-control`、`documents`、`pdf`<br>
+- **[收到工作簿，怎么分析数据并交付？](office-files.md)**　**附图**<br>
+  Excel、CSV 或受支持的在线表格 → 带有分析结果、公式或图表的工作簿<br>
+  `Spreadsheets`<br>
   后续可选　[项目材料要做技术分享，交付网页还是 PPT？](slides.md)
 
 ## 维护个人技能库和 Codex 环境
 
 - **[这件事有现成 skill 吗，缺的怎么补？](find-install.md)**　**附图**<br>
   自然语言任务，或已选定的技能来源 → 可用技能推荐或安装结果<br>
-  `devops-skill-router-zh`、`skill-router-zh`、`find-skills`、`skill-installer`<br>
+  `skill-router-zh`、`find-skills`、`skill-installer`<br>
   后续可选　[怎么把重复工作变成技能并改进效果？](author-skill.md) · [本地技能有官方更新，怎样保留定制并备份到 GitHub？](update-backup.md)
 - **[本地技能有官方更新，怎样保留定制并备份到 GitHub？](update-backup.md)**<br>
   已安装的技能及其官方来源 → 经过验证的本地更新、回滚方法和 GitHub 备份提交<br>
   `skill-upstream-sync`
 - **[怎么把重复工作变成技能并改进效果？](author-skill.md)**　**附图**<br>
-  可重复的任务或已认可的成品、已有技能 → 可复用技能、个人模板或优化报告<br>
-  `skill-creator`、`writing-skills`、`template-creator`、`darwin-skill`
-- **[怎样迁移旧规则、配置 Codex 和专用代理？](codex-environment.md)**　**附图**<br>
-  旧规则或明确的工作习惯与配置目标 → 在正确作用域生效的规则、配置或代理定义<br>
-  `migrate-to-codex`、`codex-project-rules`、`codex-config-manager`、`codex-agent-config`<br>
-  后续可选　[会话为什么重复劳动，怎样核实工具行为？](diagnose-workflow.md)
-- **[会话为什么重复劳动，怎样核实工具行为？](diagnose-workflow.md)**　**附图**<br>
-  Superpowers 会话记录或 OpenAI 产品使用问题 → 有证据的工作流诊断或官方使用依据<br>
-  `diagnosing-superpowers`、`openai-docs`<br>
-  后续可选　[怎样迁移旧规则、配置 Codex 和专用代理？](codex-environment.md)
+  可重复的任务或已有技能 → 可复用技能、测试结果或优化报告<br>
+  `skill-creator`、`writing-skills`、`darwin-skill`
+- **[怎样迁移旧规则、记录约定和配置专用代理？](codex-environment.md)**　**附图**<br>
+  旧规则、长期工作约定或明确的代理职责 → 在正确作用域生效的规则或代理定义<br>
+  `migrate-to-codex`、`codex-project-rules`、`codex-agent-config`<br>
+  后续可选　[怎样复盘 Superpowers 会话中的重复劳动？](diagnose-workflow.md)
+- **[怎样复盘 Superpowers 会话中的重复劳动？](diagnose-workflow.md)**　**附图**<br>
+  出现重复工作或技能未触发的 Superpowers 会话记录 → 带出处的诊断记录与复盘报告<br>
+  `diagnosing-superpowers`<br>
+  后续可选　[怎样迁移旧规则、记录约定和配置专用代理？](codex-environment.md)

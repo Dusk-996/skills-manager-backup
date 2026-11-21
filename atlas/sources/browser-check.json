@@ -8,7 +8,7 @@
     "quality_profile": "showcase",
     "repository": {
       "url": "https://github.com/Dusk-996/skills-manager-backup.git",
-      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+      "revision": "0bcc2be18d6ea1f3512511d66a93bfd3ddc72da4"
     },
     "legend": {
       "entries": {
@@ -34,7 +34,7 @@
     },
     {
       "id": "alt",
-      "label": "独立验证界面"
+      "label": "快速核对页面"
     }
   ],
   "mainPath": [
@@ -125,42 +125,22 @@
       ]
     },
     {
-      "id": "desktop",
-      "lane": "alt",
-      "col": 1,
-      "type": "frontend",
-      "label": "computer-use",
-      "sublabel": "需要控制已连接的界面时",
-      "sources": [
-        {
-          "path": "docs/RESTORE.md",
-          "line": 55,
-          "end_line": 59
-        }
-      ]
-    },
-    {
       "id": "evidence",
       "lane": "alt",
       "col": 2,
       "type": "database",
-      "label": "界面检查结果",
-      "sublabel": "状态、截图或交互记录",
+      "label": "页面快照或截图",
+      "sublabel": "留存单项检查的页面状态",
       "sources": [
         {
-          "path": "docs/RESTORE.md",
-          "line": 55,
-          "end_line": 59
+          "path": "playwright-cli/SKILL.md",
+          "line": 91,
+          "end_line": 95
         },
         {
           "path": "playwright-cli/SKILL.md",
-          "line": 234,
-          "end_line": 246
-        },
-        {
-          "path": "playwright-e2e-debug-report/SKILL.md",
-          "line": 38,
-          "end_line": 48
+          "line": 247,
+          "end_line": 255
         }
       ]
     }
@@ -190,12 +170,6 @@
       "label": "单项验证",
       "role": "branch",
       "variant": "dashed"
-    },
-    {
-      "from": "desktop",
-      "to": "evidence",
-      "label": "界面操作",
-      "role": "main"
     }
   ],
   "cards": [
@@ -210,7 +184,7 @@
       "dot": "amber",
       "title": "哪些动作另行约定",
       "items": [
-        "自动修复、清理数据与破坏性流程分别按测试任务中的批准范围执行。computer-use 需要应用提供对应连接。"
+        "测试任务中分别约定自动修复、清理测试数据和执行破坏性流程的权限。"
       ]
     }
   ]

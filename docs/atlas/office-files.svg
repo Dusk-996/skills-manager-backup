@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 893 404" data-layout-contract="readable-v2" role="img" lang="zh-CN" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" data-node-ui="" style="--flow-cycle: 3.600s; width: 893px; height: 404px; min-width: 0px;" width="893" height="404" xmlns="http://www.w3.org/2000/svg"><style>
+<svg viewBox="0 0 957 280" data-layout-contract="readable-v2" role="img" lang="zh-CN" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" data-node-ui="" style="--flow-cycle: 3.600s; width: 957px; height: 280px; min-width: 0px;" width="957" height="280" xmlns="http://www.w3.org/2000/svg"><style>
 /*
 JetBrains Mono variable WOFF2 subsets from Google Fonts service revision v24.
 These fixed bytes are shared by the viewer and its SVG/raster exports.
@@ -423,28 +423,6 @@ svg[data-preset="editorial"] { --flow-halo-peak: 0.07; --flow-glow-peak: 0.28; -
   11.667% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
   36.667%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
-@keyframes archify-relay-comet-2 { 
-  0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  2.333% { opacity: var(--flow-peak, 0.9); }
-  11.667% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  16.111%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
-}
-@keyframes archify-relay-wake-2 { 
-  0% { stroke-dashoffset: var(--flow-len, 0px); opacity: var(--flow-peak, 0.3); animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  11.667% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
-  36.667%, 100% { stroke-dashoffset: 0px; opacity: 0; }
-}
-@keyframes archify-relay-comet-3 { 
-  0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  2.333% { opacity: var(--flow-peak, 0.9); }
-  11.667% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  16.111%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
-}
-@keyframes archify-relay-wake-3 { 
-  0% { stroke-dashoffset: var(--flow-len, 0px); opacity: var(--flow-peak, 0.3); animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  11.667% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
-  36.667%, 100% { stroke-dashoffset: 0px; opacity: 0; }
-}
 @keyframes archify-relay-node-0 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   0% { filter: var(--ambient-node-base-filter, none); }
@@ -453,45 +431,15 @@ svg[data-preset="editorial"] { --flow-halo-peak: 0.07; --flow-glow-peak: 0.28; -
 }
 @keyframes archify-relay-node-1 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  0% { filter: var(--ambient-node-base-filter, none); }
-  3.333%, 11.667% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  33.333% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-2 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  0% { filter: var(--ambient-node-base-filter, none); }
-  3.333%, 11.667% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  33.333% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-3 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  0% { filter: var(--ambient-node-base-filter, none); }
-  3.333%, 11.667% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  33.333% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-4 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
   11.667% { filter: var(--ambient-node-base-filter, none); }
   15%, 23.333% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
   45% { filter: var(--ambient-node-base-filter, none); }
 }
-@keyframes archify-relay-node-5 { 
+@keyframes archify-relay-node-2 {
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  11.667% { filter: var(--ambient-node-base-filter, none); }
-  15%, 23.333% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  45% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-6 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  11.667% { filter: var(--ambient-node-base-filter, none); }
-  15%, 23.333% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  45% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-7 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  11.667% { filter: var(--ambient-node-base-filter, none); }
-  15%, 23.333% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  45% { filter: var(--ambient-node-base-filter, none); }
+  26.111% { filter: var(--ambient-node-base-filter, none); }
+  29.444%, 37.778% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  59.444% { filter: var(--ambient-node-base-filter, none); }
 }
 svg[data-node-ui] [data-node-id] &gt; rect:not(.c-mask) { stroke-width: 1.25px; }
 :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] &gt; rect:not(.c-mask).c-frontend { fill: color-mix(in srgb, var(--frontend-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--frontend-stroke) 72%, var(--mask)); }
@@ -517,8 +465,8 @@ svg[data-node-ui][data-preset="editorial"] :is([data-graph-role="structural-fram
 svg[data-theme="light"] { --bg: #f4f5f7; --grid: #e9edf2; --canvas-dot: #e2e7ec; --text: #111827; --text-muted: #5b6474; --text-dim: #9aa3b2; --text-faint: #6b7280; --panel: #ffffff; --panel-border: #e5e7eb; --lane-fill: rgba(248, 250, 252, 0.65); --lane-stroke: #cbd5e1; --arrow: #64748b; --arrow-emphasis: #059669; --mask: #ffffff; --frontend-fill: rgba(34, 211, 238, 0.15); --frontend-stroke: #0891b2; --backend-fill: rgba(52, 211, 153, 0.18); --backend-stroke: #059669; --database-fill: rgba(167, 139, 250, 0.2); --database-stroke: #7c3aed; --cloud-fill: rgba(251, 191, 36, 0.18); --cloud-stroke: #d97706; --security-fill: rgba(251, 113, 133, 0.15); --security-stroke: #e11d48; --messagebus-fill: rgba(251, 146, 60, 0.15); --messagebus-stroke: #ea580c; --external-fill: rgba(148, 163, 184, 0.18); --external-stroke: #64748b; --toolbar-bg: rgba(255, 255, 255, 0.92); --toolbar-border: #cbd5e1; --toolbar-text: #334155; --toolbar-hover: #ffffff; --toolbar-menu-bg: #ffffff; --flow-cycle: ; --flow-halo-peak: ; --flow-glow-peak: ; --flow-tail-peak: ; --flow-head-peak: ; --flow-wake-peak: ; --flow-ripple-peak: ; --flow-peak: ; }
 svg[data-theme="dark"] { --bg: #020617; --grid: #1e293b; --canvas-dot: rgba(148, 163, 184, 0.16); --text: #ffffff; --text-muted: #94a3b8; --text-dim: #475569; --text-faint: #7d8da1; --panel: rgba(15, 23, 42, 0.5); --panel-border: #1e293b; --lane-fill: rgba(15, 23, 42, 0.22); --lane-stroke: #334155; --arrow: #94a3b8; --arrow-emphasis: #34d399; --mask: #0f172a; --frontend-fill: rgba(8, 51, 68, 0.4); --frontend-stroke: #22d3ee; --backend-fill: rgba(6, 78, 59, 0.4); --backend-stroke: #34d399; --database-fill: rgba(76, 29, 149, 0.4); --database-stroke: #a78bfa; --cloud-fill: rgba(120, 53, 15, 0.3); --cloud-stroke: #fbbf24; --security-fill: rgba(136, 19, 55, 0.4); --security-stroke: #fb7185; --messagebus-fill: rgba(251, 146, 60, 0.3); --messagebus-stroke: #fb923c; --external-fill: rgba(30, 41, 59, 0.5); --external-stroke: #94a3b8; --toolbar-bg: rgba(15, 23, 42, 0.8); --toolbar-border: #334155; --toolbar-text: #e2e8f0; --toolbar-hover: rgba(15, 23, 42, 0.95); --toolbar-menu-bg: #0f172a; --flow-cycle: ; --flow-halo-peak: ; --flow-glow-peak: ; --flow-tail-peak: ; --flow-head-peak: ; --flow-wake-peak: ; --flow-ripple-peak: ; --flow-peak: ; }
 rect.c-bg-rect { fill: var(--bg); }
-</style><rect x="0" y="0" width="893" height="404" class="c-bg-rect"/>
-        <title id="archify-diagram-title">收到工作簿或文档，怎么分析和交付？</title>
+</style><rect x="0" y="0" width="957" height="280" class="c-bg-rect"/>
+        <title id="archify-diagram-title">收到工作簿，怎么分析数据并交付？</title>
         <desc id="archify-diagram-description">由 Archify 生成的工作流图。</desc>
         <!-- Definitions -->
         <defs>
@@ -564,11 +512,8 @@ rect.c-bg-rect { fill: var(--bg); }
         <rect width="100%" height="100%" fill="url(#grid)"/>
 
         <!-- Swimlanes -->
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="837" height="104" rx="10" class="c-lane" stroke-width="1"/>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="901" height="104" rx="10" class="c-lane" stroke-width="1"/>
         <text x="54" y="74" class="t-muted" font-size="10" font-weight="600">01 / 处理工作簿</text>
-
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="176" width="837" height="104" rx="10" class="c-lane" stroke-width="1"/>
-        <text x="54" y="198" class="t-muted" font-size="10" font-weight="600">02 / 撰写与核对文档</text>
 
         <!-- Phase headers -->
 
@@ -577,132 +522,71 @@ rect.c-bg-rect { fill: var(--bg); }
 
 
         <!-- Edge paths -->
-        <path data-edge-from="case0" data-edge-to="skill0" data-edge-label="分析数据" data-edge-key="0" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="152,119;208.39999999999998,119" d="M 152 119 L 208.39999999999998 119" class="a-default" data-animate="edge" style="--step: 0;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="case1" data-edge-to="skill1" data-edge-label="就地操作" data-edge-key="1" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="462.4,119;518.8,119" d="M 462.4 119 L 518.8 119" class="a-default" data-animate="edge" style="--step: 3;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="case2" data-edge-to="skill2" data-edge-label="编辑文档" data-edge-key="2" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="146,243;202.39999999999998,243" d="M 146 243 L 202.39999999999998 243" class="a-default" data-animate="edge" style="--step: 4;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="case3" data-edge-to="skill3" data-edge-label="检查版面" data-edge-key="3" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="462.4,243;532.8,243" d="M 462.4 243 L 532.8 243" class="a-default" data-animate="edge" style="--step: 5;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="case0" data-edge-to="skill0" data-edge-label="分析数据" data-edge-key="0" data-composition-routing="workflow-v2-auto" data-edge-role="main" data-composition-points="212,119;268.4,119" d="M 212 119 L 268.4 119" class="a-default" data-animate="edge" style="--step: 0;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="skill0" data-edge-to="workbook" data-edge-label="输出表格" data-edge-key="1" data-composition-routing="workflow-v2-auto" data-edge-role="main" data-composition-points="404.4,119;460.79999999999995,119" d="M 404.4 119 L 460.79999999999995 119" class="a-default" data-animate="edge" style="--step: 1;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
 
         <!-- Nodes -->
-        <g id="node-case0" data-node-id="case0" data-node-label="表格文件或在线表" tabindex="0" role="button" aria-label="聚焦表格文件或在线表，Excel、CSV 或已连接表格, 处理工作簿" aria-pressed="false" data-node-kind="external" data-node-sublabel="Excel、CSV 或已连接表格" data-node-context="处理工作簿">
-          <title>表格文件或在线表 · Excel、CSV 或已连接表格 · 处理工作簿</title>
-          <rect x="48" y="93" width="104" height="52" rx="8" class="c-mask"/>
-          <rect x="48" y="93" width="104" height="52" rx="8" class="c-external" data-animate="node" style="--step: 0; --flow-node-name: archify-relay-node-0;" stroke-width="1.5"/>
+        <g id="node-case0" data-node-id="case0" data-node-label="表格文件或在线表" tabindex="0" role="button" aria-label="聚焦表格文件或在线表，Excel、CSV、TSV 或 Google Sheets, 处理工作簿" aria-pressed="false" data-node-kind="external" data-node-sublabel="Excel、CSV、TSV 或 Google Sheets" data-node-context="处理工作簿">
+          <title>表格文件或在线表 · Excel、CSV、TSV 或 Google Sheets · 处理工作簿</title>
+          <rect x="48" y="93" width="164" height="52" rx="8" class="c-mask"/>
+          <rect x="48" y="93" width="164" height="52" rx="8" class="c-external" data-animate="node" style="--step: 0; --flow-node-name: archify-relay-node-0;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(54 99) scale(0.6875)">
             <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
             <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
           </g>
-          <text data-node-label="" x="100" y="126" class="t-primary" font-size="10" font-weight="600" text-anchor="middle">表格文件或在线表</text>
-          <text x="100" y="139.3" class="t-muted" font-size="6.9" text-anchor="middle">Excel、CSV 或已连接表格</text>
+          <text data-node-label="" x="130" y="125" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">表格文件或在线表</text>
+          <text x="130" y="137.3" class="t-muted" font-size="8" text-anchor="middle">Excel、CSV、TSV 或 Google Sheets</text>
         </g>
 
-        <g id="node-skill0" data-node-id="skill0" data-node-label="Spreadsheets" tabindex="0" role="button" aria-label="聚焦Spreadsheets，计算、分析、图表或工作簿, 处理工作簿" aria-pressed="false" data-node-kind="backend" data-node-sublabel="计算、分析、图表或工作簿" data-node-context="处理工作簿">
-          <title>Spreadsheets · 计算、分析、图表或工作簿 · 处理工作簿</title>
-          <rect x="208.39999999999998" y="93" width="124" height="52" rx="8" class="c-mask"/>
-          <rect x="208.39999999999998" y="93" width="124" height="52" rx="8" class="c-backend" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-4;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(214.39999999999998 99) scale(0.6875)">
+        <g id="node-skill0" data-node-id="skill0" data-node-label="Spreadsheets" tabindex="0" role="button" aria-label="聚焦Spreadsheets，用公式、汇总或图表分析数据, 处理工作簿" aria-pressed="false" data-node-kind="backend" data-node-sublabel="用公式、汇总或图表分析数据" data-node-context="处理工作簿">
+          <title>Spreadsheets · 用公式、汇总或图表分析数据 · 处理工作簿</title>
+          <rect x="268.4" y="93" width="136" height="52" rx="8" class="c-mask"/>
+          <rect x="268.4" y="93" width="136" height="52" rx="8" class="c-backend" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(274.4 99) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" x="270.4" y="125" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Spreadsheets</text>
-          <text x="270.4" y="137.3" class="t-muted" font-size="8" text-anchor="middle">计算、分析、图表或工作簿</text>
+          <text data-node-label="" x="336.4" y="125" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Spreadsheets</text>
+          <text x="336.4" y="137.3" class="t-muted" font-size="8" text-anchor="middle">用公式、汇总或图表分析数据</text>
         </g>
 
-        <g id="node-case1" data-node-id="case1" data-node-label="当前工作簿" tabindex="0" role="button" aria-label="聚焦当前工作簿，已打开并连接 Excel 会话, 处理工作簿" aria-pressed="false" data-node-kind="external" data-node-sublabel="已打开并连接 Excel 会话" data-node-context="处理工作簿">
-          <title>当前工作簿 · 已打开并连接 Excel 会话 · 处理工作簿</title>
-          <rect x="370.4" y="93" width="92" height="52" rx="8" class="c-mask"/>
-          <rect x="370.4" y="93" width="92" height="52" rx="8" class="c-external" data-animate="node" style="--step: 4; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(376.4 99) scale(0.6875)">
-            <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
-            <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
+        <g id="node-workbook" data-node-id="workbook" data-node-label="分析工作簿" tabindex="0" role="button" aria-label="聚焦分析工作簿，保留数据、计算结果或图表, 处理工作簿" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="保留数据、计算结果或图表" data-node-context="处理工作簿">
+          <title>分析工作簿 · 保留数据、计算结果或图表 · 处理工作簿</title>
+          <rect x="460.79999999999995" y="93" width="124" height="52" rx="8" class="c-mask"/>
+          <rect x="460.79999999999995" y="93" width="124" height="52" rx="8" class="c-frontend" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-2;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(466.79999999999995 99) scale(0.6875)">
+            <rect x="2" y="3" width="12" height="10" rx="2"/>
+            <path d="M2 6.5h12"/>
+            <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
+            <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
           </g>
-          <text data-node-label="" x="416.4" y="127.2" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">当前工作簿</text>
-          <text x="416.4" y="139.7" class="t-muted" font-size="6" text-anchor="middle">已打开并连接 Excel 会话</text>
-        </g>
-
-        <g id="node-skill1" data-node-id="skill1" data-node-label="excel-live-control" tabindex="0" role="button" aria-label="聚焦excel-live-control，在当前会话中更新工作簿, 处理工作簿" aria-pressed="false" data-node-kind="backend" data-node-sublabel="在当前会话中更新工作簿" data-node-context="处理工作簿">
-          <title>excel-live-control · 在当前会话中更新工作簿 · 处理工作簿</title>
-          <rect x="518.8" y="93" width="120" height="52" rx="8" class="c-mask"/>
-          <rect x="518.8" y="93" width="120" height="52" rx="8" class="c-backend" data-animate="node" style="--step: 5; --flow-node-name: archify-relay-node-5;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(524.8 99) scale(0.6875)">
-            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
-          </g>
-          <text data-node-label="" x="578.8" y="124.3" class="t-primary" font-size="10.3" font-weight="600" text-anchor="middle">excel-live-control</text>
-          <text x="578.8" y="136.4" class="t-muted" font-size="8" text-anchor="middle">在当前会话中更新工作簿</text>
-        </g>
-
-        <g id="node-case2" data-node-id="case2" data-node-label="可编辑报告" tabindex="0" role="button" aria-label="聚焦可编辑报告，需交付 DOCX 或修订稿, 撰写与核对文档" aria-pressed="false" data-node-kind="external" data-node-sublabel="需交付 DOCX 或修订稿" data-node-context="撰写与核对文档">
-          <title>可编辑报告 · 需交付 DOCX 或修订稿 · 撰写与核对文档</title>
-          <rect x="54" y="217" width="92" height="52" rx="8" class="c-mask"/>
-          <rect x="54" y="217" width="92" height="52" rx="8" class="c-external" data-animate="node" style="--step: 6; --flow-node-name: archify-relay-node-2;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(60 223) scale(0.6875)">
-            <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
-            <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
-          </g>
-          <text data-node-label="" x="100" y="251.2" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">可编辑报告</text>
-          <text x="100" y="264.9" class="t-muted" font-size="7" text-anchor="middle">需交付 DOCX 或修订稿</text>
-        </g>
-
-        <g id="node-skill2" data-node-id="skill2" data-node-label="documents" tabindex="0" role="button" aria-label="聚焦documents，可编辑 Word 文档与排版检查, 撰写与核对文档" aria-pressed="false" data-node-kind="backend" data-node-sublabel="可编辑 Word 文档与排版检查" data-node-context="撰写与核对文档">
-          <title>documents · 可编辑 Word 文档与排版检查 · 撰写与核对文档</title>
-          <rect x="202.39999999999998" y="217" width="136" height="52" rx="8" class="c-mask"/>
-          <rect x="202.39999999999998" y="217" width="136" height="52" rx="8" class="c-backend" data-animate="node" style="--step: 7; --flow-node-name: archify-relay-node-6;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(208.39999999999998 223) scale(0.6875)">
-            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
-          </g>
-          <text data-node-label="" x="266.7" y="238" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">documents</text>
-          <text x="270.4" y="255" class="t-muted" font-size="8" text-anchor="middle">可编辑 Word 文档与排版检查</text>
-        </g>
-
-        <g id="node-case3" data-node-id="case3" data-node-label="PDF 成品" tabindex="0" role="button" aria-label="聚焦PDF 成品，要核对页面、表单或版式, 撰写与核对文档" aria-pressed="false" data-node-kind="external" data-node-sublabel="要核对页面、表单或版式" data-node-context="撰写与核对文档">
-          <title>PDF 成品 · 要核对页面、表单或版式 · 撰写与核对文档</title>
-          <rect x="370.4" y="217" width="92" height="52" rx="8" class="c-mask"/>
-          <rect x="370.4" y="217" width="92" height="52" rx="8" class="c-external" data-animate="node" style="--step: 8; --flow-node-name: archify-relay-node-3;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(376.4 223) scale(0.6875)">
-            <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
-            <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
-          </g>
-          <text data-node-label="" x="416.4" y="251.2" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">PDF 成品</text>
-          <text x="416.4" y="264.1" class="t-muted" font-size="6.3" text-anchor="middle">要核对页面、表单或版式</text>
-        </g>
-
-        <g id="node-skill3" data-node-id="skill3" data-node-label="pdf" tabindex="0" role="button" aria-label="聚焦pdf，渲染检查或生成 PDF, 撰写与核对文档" aria-pressed="false" data-node-kind="backend" data-node-sublabel="渲染检查或生成 PDF" data-node-context="撰写与核对文档">
-          <title>pdf · 渲染检查或生成 PDF · 撰写与核对文档</title>
-          <rect x="532.8" y="217" width="92" height="52" rx="8" class="c-mask"/>
-          <rect x="532.8" y="217" width="92" height="52" rx="8" class="c-backend" data-animate="node" style="--step: 9; --flow-node-name: archify-relay-node-7;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(538.8 223) scale(0.6875)">
-            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
-          </g>
-          <text data-node-label="" x="572.9" y="238" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">pdf</text>
-          <text x="578.8" y="255" class="t-muted" font-size="7.7" text-anchor="middle">渲染检查或生成 PDF</text>
+          <text data-node-label="" x="522.8" y="125" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">分析工作簿</text>
+          <text x="522.8" y="137.3" class="t-muted" font-size="8" text-anchor="middle">保留数据、计算结果或图表</text>
         </g>
 
         <!-- Edge labels -->
         <g data-edge-from="case0" data-edge-to="skill0" data-edge-label="分析数据" data-edge-key="0">
-          <rect x="156" y="99" width="48.4" height="14" rx="3" class="c-mask"/>
-          <text x="180.2" y="109" class="t-muted" font-size="8" text-anchor="middle">分析数据</text>
+          <rect x="216" y="99" width="48.4" height="14" rx="3" class="c-mask"/>
+          <text x="240.2" y="109" class="t-muted" font-size="8" text-anchor="middle">分析数据</text>
         </g>
-        <g data-edge-from="case1" data-edge-to="skill1" data-edge-label="就地操作" data-edge-key="1">
-          <rect x="466.4" y="99" width="48.4" height="14" rx="3" class="c-mask"/>
-          <text x="490.59999999999997" y="109" class="t-muted" font-size="8" text-anchor="middle">就地操作</text>
-        </g>
-        <g data-edge-from="case2" data-edge-to="skill2" data-edge-label="编辑文档" data-edge-key="2">
-          <rect x="150" y="223" width="48.4" height="14" rx="3" class="c-mask"/>
-          <text x="174.2" y="233" class="t-muted" font-size="8" text-anchor="middle">编辑文档</text>
-        </g>
-        <g data-edge-from="case3" data-edge-to="skill3" data-edge-label="检查版面" data-edge-key="3">
-          <rect x="473.4" y="223" width="48.4" height="14" rx="3" class="c-mask"/>
-          <text x="497.59999999999997" y="233" class="t-muted" font-size="8" text-anchor="middle">检查版面</text>
+        <g data-edge-from="skill0" data-edge-to="workbook" data-edge-label="输出表格" data-edge-key="1">
+          <rect x="408.4" y="99" width="48.4" height="14" rx="3" class="c-mask"/>
+          <text x="432.59999999999997" y="109" class="t-muted" font-size="8" text-anchor="middle">输出表格</text>
         </g>
 
         <!-- Legend -->
         <g data-legend="">
-          <text x="20" y="304" class="t-primary" font-size="12" font-weight="650">图例</text>
-          <g data-legend-semantic-kind="backend" data-legend-x="20" data-legend-baseline="324" data-legend-width="62">
-            <rect x="20" y="316" width="14" height="9" rx="2" class="c-backend" stroke-width="1"/>
-            <text x="42" y="324" class="t-muted" font-size="7.5" font-weight="500">技能</text>
+          <text x="20" y="180" class="t-primary" font-size="12" font-weight="650">图例</text>
+          <g data-legend-semantic-kind="frontend" data-legend-x="20" data-legend-baseline="200" data-legend-width="81">
+            <rect x="20" y="192" width="14" height="9" rx="2" class="c-frontend" stroke-width="1"/>
+            <text x="42" y="200" class="t-muted" font-size="7.5" font-weight="500">工作产物</text>
           </g>
-          <g data-legend-semantic-kind="external" data-legend-x="89" data-legend-baseline="324" data-legend-width="109">
-            <rect x="89" y="316" width="14" height="9" rx="2" class="c-external" stroke-width="1"/>
-            <text x="111" y="324" class="t-muted" font-size="7.5" font-weight="500">起点或使用条件</text>
+          <g data-legend-semantic-kind="backend" data-legend-x="108" data-legend-baseline="200" data-legend-width="62">
+            <rect x="108" y="192" width="14" height="9" rx="2" class="c-backend" stroke-width="1"/>
+            <text x="130" y="200" class="t-muted" font-size="7.5" font-weight="500">技能</text>
+          </g>
+          <g data-legend-semantic-kind="external" data-legend-x="177" data-legend-baseline="200" data-legend-width="109">
+            <rect x="177" y="192" width="14" height="9" rx="2" class="c-external" stroke-width="1"/>
+            <text x="199" y="200" class="t-muted" font-size="7.5" font-weight="500">起点或使用条件</text>
           </g>
         </g>
       </svg>

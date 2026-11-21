@@ -2,13 +2,13 @@
   "schema_version": 2,
   "diagram_type": "workflow",
   "meta": {
-    "title": "会话为什么重复劳动，怎样核实工具行为？",
+    "title": "怎样复盘 Superpowers 会话中的重复劳动？",
     "locale": "zh-CN",
     "output": "docs/atlas/diagnose-workflow.html",
     "quality_profile": "showcase",
     "repository": {
       "url": "https://github.com/Dusk-996/skills-manager-backup.git",
-      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+      "revision": "0bcc2be18d6ea1f3512511d66a93bfd3ddc72da4"
     },
     "legend": {
       "entries": {
@@ -27,12 +27,13 @@
   "lanes": [
     {
       "id": "lane0",
-      "label": "选择证据来源"
+      "label": "从会话记录追溯重复步骤"
     }
   ],
   "mainPath": [
     "case0",
-    "skill0"
+    "skill0",
+    "report"
   ],
   "nodes": [
     {
@@ -66,32 +67,17 @@
       ]
     },
     {
-      "id": "case1",
+      "id": "report",
       "lane": "lane0",
       "col": 2,
-      "type": "external",
-      "label": "产品行为疑问",
-      "sublabel": "功能、配置或工具可用性",
+      "type": "frontend",
+      "label": "会话复盘报告",
+      "sublabel": "按时间列出重复步骤及其出处",
       "sources": [
         {
-          "path": "external-skills/codex-system/openai-docs/SKILL.md",
+          "path": "external-skills/superpowers/skills/diagnosing-superpowers/SKILL.md",
           "line": 8,
-          "end_line": 18
-        }
-      ]
-    },
-    {
-      "id": "skill1",
-      "lane": "lane0",
-      "col": 3,
-      "type": "backend",
-      "label": "openai-docs",
-      "sublabel": "依据对应版本的官方资料作答",
-      "sources": [
-        {
-          "path": "external-skills/codex-system/openai-docs/SKILL.md",
-          "line": 8,
-          "end_line": 18
+          "end_line": 17
         }
       ]
     }
@@ -103,9 +89,9 @@
       "label": "查会话"
     },
     {
-      "from": "case1",
-      "to": "skill1",
-      "label": "核实用法"
+      "from": "skill0",
+      "to": "report",
+      "label": "记录证据"
     }
   ],
   "cards": [
@@ -118,9 +104,9 @@
     },
     {
       "dot": "amber",
-      "title": "核实产品行为",
+      "title": "定位记录",
       "items": [
-        "结论依赖某个界面或版本时，核对该产品对应的官方说明与更新记录。"
+        "先核对会话和时间段，再在原始记录中定位每一次重复执行。"
       ]
     }
   ]

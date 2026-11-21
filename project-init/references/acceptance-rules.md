@@ -1,6 +1,6 @@
 # DevOps Skill 统一验收规则
 
-这些规则适用于 `project-init`、`stack-selector`、`deployment-packager`、`devops-production-hardening`、`html-to-mui-react` 的输出审查。
+这些规则适用于 `project-init`、`stack-selector`、`html-to-mui-react` 的输出审查。
 
 ## 固定输出要求
 

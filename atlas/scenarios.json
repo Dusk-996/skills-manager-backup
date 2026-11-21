@@ -229,35 +229,20 @@
         "name": "playwright-e2e-debug-report",
         "when": "明确要求 Playwright E2E、冒烟、回归或完整的人工确认测试报告时",
         "result": "先给测试计划，确认后执行并交付问题与报告"
-      },
-      {
-        "name": "computer-use",
-        "when": "必须通过已连接的桌面或浏览器操作时可独立使用",
-        "result": "得到界面操作结果；需要应用会话"
       }
     ]
   },
   {
     "group": "Vibe Coding · 构建和交付运维工具",
     "id": "package",
-    "title": "巡检工具准备上线，怎么打包、加固和审查？",
+    "title": "巡检工具准备上线，怎样审查运行条件？",
     "input": "服务入口、部署目标、现有配置与测试结果",
-    "output": "交付部署包，或得到上线就绪结论",
+    "output": "上线就绪结论、风险与证据缺口",
     "next": [
       "browser-check",
       "release-branch"
     ],
     "skills": [
-      {
-        "name": "deployment-packager",
-        "when": "缺少交付包",
-        "result": "得到部署文件、验证命令与回滚步骤"
-      },
-      {
-        "name": "devops-production-hardening",
-        "when": "已有项目，需补齐具体生产运行缺口",
-        "result": "得到加固改动、验证与恢复方法"
-      },
       {
         "name": "ops-readiness-review",
         "when": "要独立判断是否具备上线条件",
@@ -398,14 +383,12 @@
     ]
   },
   {
-    "group": "学习、复习与面试",
+    "group": "学习与复习",
     "id": "notes-roadmap",
     "title": "课程录音和资料怎么整理成可复习的路线图？",
     "input": "可访问的录音 URL 或已有同主题文本",
     "output": "结构化笔记或可跟踪学习进度的网页",
-    "next": [
-      "interview"
-    ],
+    "next": [],
     "skills": [
       {
         "name": "aliyun-asr",
@@ -425,45 +408,19 @@
     ]
   },
   {
-    "group": "学习、复习与面试",
+    "group": "学习与复习",
     "id": "course-study",
-    "title": "正在学一门课，怎么读懂这一章并接着学？",
-    "input": "FDE 章节材料或个人学习目标",
-    "output": "章节讲解，或可跨会话延续的教学记录",
+    "title": "怎么读懂 FDE 课程的这一章？",
+    "input": "FDE 章节材料、相关代码或具体疑问",
+    "output": "有材料依据的章节讲解与答疑",
     "next": [
-      "notes-roadmap",
-      "interview"
+      "notes-roadmap"
     ],
     "skills": [
       {
         "name": "fde-creator",
         "when": "需要理解 FDE 章节里的材料、代码与判断依据",
         "result": "得到章节导学和有材料依据的答疑"
-      },
-      {
-        "name": "teach",
-        "when": "希望按目标持续学习并记录进度",
-        "result": "维护教学工作区和下一次学习任务"
-      }
-    ]
-  },
-  {
-    "group": "学习、复习与面试",
-    "id": "interview",
-    "title": "怎样把笔记或故障经验变成面试题？",
-    "input": "笔记、目标岗位、可选已有题库或脱敏案例",
-    "output": "确认后的普通题或场景题及追问",
-    "next": [],
-    "skills": [
-      {
-        "name": "question-gap-analyzer",
-        "when": "需要从知识点筛选候选，手头有题库时还可查缺口",
-        "result": "形成候选清单；普通题候选确认后可生成完整题目"
-      },
-      {
-        "name": "scenario-question-designer",
-        "when": "已有候选或脱敏故障素材",
-        "result": "先给场景确认稿，确认后交付题目与追问"
       }
     ]
   },
@@ -564,9 +521,9 @@
   {
     "group": "技术表达与办公交付",
     "id": "office-files",
-    "title": "收到工作簿或文档，怎么分析和交付？",
-    "input": "Excel、CSV、Word、PDF 或已打开的工作簿",
-    "output": "处理后的工作簿、报告或经检查的文档",
+    "title": "收到工作簿，怎么分析数据并交付？",
+    "input": "Excel、CSV 或受支持的在线表格",
+    "output": "带有分析结果、公式或图表的工作簿",
     "next": [
       "slides"
     ],
@@ -575,21 +532,6 @@
         "name": "Spreadsheets",
         "when": "操作表格文件或已支持的在线表格",
         "result": "得到分析、公式、图表或工作簿"
-      },
-      {
-        "name": "excel-live-control",
-        "when": "必须在当前打开且已连接的 Excel 会话操作",
-        "result": "把修改应用到该工作簿"
-      },
-      {
-        "name": "documents",
-        "when": "报告需交付可编辑 Word 文档",
-        "result": "生成、修订并渲染检查 DOCX"
-      },
-      {
-        "name": "pdf",
-        "when": "要求 PDF 版面、表单或成品检查",
-        "result": "读取、生成或验证 PDF"
       }
     ]
   },
@@ -605,13 +547,8 @@
     ],
     "skills": [
       {
-        "name": "devops-skill-router-zh",
-        "when": "先从已安装技能中选运维入口",
-        "result": "得到最多三个相关技能及分工"
-      },
-      {
         "name": "skill-router-zh",
-        "when": "需要通用内容或技术技能时",
+        "when": "需要从已安装的运维、开发或内容技能中选择",
         "result": "按任务匹配当前会话技能"
       },
       {
@@ -645,8 +582,8 @@
     "group": "维护个人技能库和 Codex 环境",
     "id": "author-skill",
     "title": "怎么把重复工作变成技能并改进效果？",
-    "input": "可重复的任务或已认可的成品、已有技能",
-    "output": "可复用技能、个人模板或优化报告",
+    "input": "可重复的任务或已有技能",
+    "output": "可复用技能、测试结果或优化报告",
     "next": [],
     "skills": [
       {
@@ -660,11 +597,6 @@
         "result": "形成经场景验证的技能指令"
       },
       {
-        "name": "template-creator",
-        "when": "想把认可的成品变为个人模板",
-        "result": "在支持的应用中产出模板技能"
-      },
-      {
         "name": "darwin-skill",
         "when": "已有技能要比较多个改进版本",
         "result": "得到评估、版本改动与优化结论"
@@ -674,9 +606,9 @@
   {
     "group": "维护个人技能库和 Codex 环境",
     "id": "codex-environment",
-    "title": "怎样迁移旧规则、配置 Codex 和专用代理？",
-    "input": "旧规则或明确的工作习惯与配置目标",
-    "output": "在正确作用域生效的规则、配置或代理定义",
+    "title": "怎样迁移旧规则、记录约定和配置专用代理？",
+    "input": "旧规则、长期工作约定或明确的代理职责",
+    "output": "在正确作用域生效的规则或代理定义",
     "next": [
       "diagnose-workflow"
     ],
@@ -692,11 +624,6 @@
         "result": "形成相应作用域的 AGENTS.md"
       },
       {
-        "name": "codex-config-manager",
-        "when": "需要管理个人或项目支持的设置",
-        "result": "得到已验证的配置和回滚方式"
-      },
-      {
         "name": "codex-agent-config",
         "when": "需要可复用的专门代理角色",
         "result": "生成或更新代理 TOML 定义"
@@ -706,9 +633,9 @@
   {
     "group": "维护个人技能库和 Codex 环境",
     "id": "diagnose-workflow",
-    "title": "会话为什么重复劳动，怎样核实工具行为？",
-    "input": "Superpowers 会话记录或 OpenAI 产品使用问题",
-    "output": "有证据的工作流诊断或官方使用依据",
+    "title": "怎样复盘 Superpowers 会话中的重复劳动？",
+    "input": "出现重复工作或技能未触发的 Superpowers 会话记录",
+    "output": "带出处的诊断记录与复盘报告",
     "next": [
       "codex-environment"
     ],
@@ -717,11 +644,6 @@
         "name": "diagnosing-superpowers",
         "when": "需要复盘技能未触发、重复执行等问题",
         "result": "形成带出处的会话证据与复盘报告，供维护者判断"
-      },
-      {
-        "name": "openai-docs",
-        "when": "需要核实 Codex 或 OpenAI 产品的行为和配置时",
-        "result": "定位当前官方资料与用法"
       }
     ]
   }

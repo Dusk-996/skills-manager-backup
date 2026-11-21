@@ -7,15 +7,15 @@ import re
 from urllib.parse import quote, urlsplit
 
 
-EXPECTED_SKILL_COUNT = 81
+EXPECTED_SKILL_COUNT = 68
 REPOSITORY_URL = "https://github.com/Dusk-996/skills-manager-backup"
 ATLAS_NAVIGATION = (
     ("Vibe Coding · 构建运维工具", (("原型转 React Mock", "prototype-to-mock"), ("从 Mock 确认后端选型", "mock-to-architecture"))),
     ("协作开发与交接", (("执行既有计划", "execute-plan"), ("验证与交接", "release-branch"))),
     ("值班排障与观测", (("从异常定位故障", "incident"), ("制作 Grafana 看板", "observability"))),
-    ("学习、复习与面试", (("从材料到学习路线图", "notes-roadmap"), ("从笔记到面试题", "interview"))),
+    ("学习与复习", (("从材料到学习路线图", "notes-roadmap"),)),
     ("技术表达与办公交付", (("挑选图稿形式", "explain-visually"), ("准备技术分享", "slides"))),
-    ("维护个人技能库和 Codex 环境", (("查找和安装技能", "find-install"), ("迁移规则和配置", "codex-environment"))),
+    ("维护个人技能库和 Codex 环境", (("查找和安装技能", "find-install"), ("迁移规则与配置代理", "codex-environment"))),
 )
 REPLACED_ENTRY_NAMES = frozenset({
     "create-rule", "create-skill", "create-subagent", "migrate-to-skills", "update-cursor-settings",

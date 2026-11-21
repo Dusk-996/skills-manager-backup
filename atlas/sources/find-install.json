@@ -8,7 +8,7 @@
     "quality_profile": "showcase",
     "repository": {
       "url": "https://github.com/Dusk-996/skills-manager-backup.git",
-      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+      "revision": "0bcc2be18d6ea1f3512511d66a93bfd3ddc72da4"
     },
     "legend": {
       "entries": {
@@ -27,7 +27,7 @@
   "lanes": [
     {
       "id": "lane0",
-      "label": "运维或一般任务"
+      "label": "从已安装技能中选择"
     },
     {
       "id": "lane1",
@@ -42,62 +42,32 @@
   ],
   "nodes": [
     {
-      "id": "ops",
+      "id": "other",
       "lane": "lane0",
       "col": 0,
       "type": "external",
-      "label": "运维任务",
-      "sublabel": "主机、部署与故障排查",
-      "sources": [
-        {
-          "path": "devops-skill-router-zh/SKILL.md",
-          "line": 2,
-          "end_line": 8
-        }
-      ]
-    },
-    {
-      "id": "opsroute",
-      "lane": "lane0",
-      "col": 1,
-      "type": "backend",
-      "label": "devops-skill-router-zh",
-      "sublabel": "按任务选 1～3 个可用技能",
-      "sources": [
-        {
-          "path": "devops-skill-router-zh/SKILL.md",
-          "line": 6,
-          "end_line": 11
-        }
-      ]
-    },
-    {
-      "id": "other",
-      "lane": "lane0",
-      "col": 2,
-      "type": "external",
-      "label": "文档或学习任务",
-      "sublabel": "内容、可视化和通用技术任务",
+      "label": "当前任务",
+      "sublabel": "运维、开发或内容整理",
       "sources": [
         {
           "path": "skill-router-zh/SKILL.md",
-          "line": 2,
-          "end_line": 8
+          "line": 10,
+          "end_line": 14
         }
       ]
     },
     {
       "id": "route",
       "lane": "lane0",
-      "col": 3,
+      "col": 1,
       "type": "backend",
       "label": "skill-router-zh",
       "sublabel": "在当前会话里查找入口",
       "sources": [
         {
           "path": "skill-router-zh/SKILL.md",
-          "line": 6,
-          "end_line": 11
+          "line": 10,
+          "end_line": 14
         }
       ]
     },
@@ -164,14 +134,9 @@
   ],
   "edges": [
     {
-      "from": "ops",
-      "to": "opsroute",
-      "label": "运维场景"
-    },
-    {
       "from": "other",
       "to": "route",
-      "label": "一般任务"
+      "label": "匹配任务"
     },
     {
       "from": "missing",
@@ -194,7 +159,7 @@
       "dot": "cyan",
       "title": "已安装",
       "items": [
-        "先根据任务类型选择一个中文路由。找到合适且已加载的技能后即可使用。"
+        "在当前会话中核对已安装的技能，按任务选出最多三个相关入口。"
       ]
     },
     {

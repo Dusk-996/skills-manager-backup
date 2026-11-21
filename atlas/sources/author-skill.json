@@ -8,7 +8,7 @@
     "quality_profile": "showcase",
     "repository": {
       "url": "https://github.com/Dusk-996/skills-manager-backup.git",
-      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+      "revision": "0bcc2be18d6ea1f3512511d66a93bfd3ddc72da4"
     },
     "legend": {
       "entries": {
@@ -31,7 +31,7 @@
     },
     {
       "id": "lane1",
-      "label": "模板与优化"
+      "label": "优化已有技能"
     }
   ],
   "mainPath": [
@@ -102,39 +102,9 @@
       ]
     },
     {
-      "id": "sample",
-      "lane": "lane1",
-      "col": 0,
-      "type": "external",
-      "label": "认可的成品",
-      "sublabel": "需要在应用里复用同类模板",
-      "sources": [
-        {
-          "path": "docs/RESTORE.md",
-          "line": 65,
-          "end_line": 65
-        }
-      ]
-    },
-    {
-      "id": "template",
-      "lane": "lane1",
-      "col": 1,
-      "type": "backend",
-      "label": "template-creator",
-      "sublabel": "在模板插件中创建个人模板",
-      "sources": [
-        {
-          "path": "docs/RESTORE.md",
-          "line": 65,
-          "end_line": 65
-        }
-      ]
-    },
-    {
       "id": "old",
       "lane": "lane1",
-      "col": 2,
+      "col": 0,
       "type": "external",
       "label": "已有技能",
       "sublabel": "希望比较多个改进版本",
@@ -149,7 +119,7 @@
     {
       "id": "opt",
       "lane": "lane1",
-      "col": 3,
+      "col": 1,
       "type": "backend",
       "label": "darwin-skill",
       "sublabel": "评分、迭代并检验改进",
@@ -181,11 +151,6 @@
       "label": "测试记录"
     },
     {
-      "from": "sample",
-      "to": "template",
-      "label": "复用成品"
-    },
-    {
       "from": "old",
       "to": "opt",
       "label": "比较版本"
@@ -194,9 +159,9 @@
   "cards": [
     {
       "dot": "cyan",
-      "title": "已有成品",
+      "title": "创建技能",
       "items": [
-        "需要把已认可文档或演示的做法变成个人模板时，先启用对应模板插件。"
+        "写明技能的触发条件，使用真实任务样例验证它能否按预期执行。"
       ]
     },
     {

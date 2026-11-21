@@ -445,17 +445,6 @@ svg[data-preset="editorial"] { --flow-halo-peak: 0.07; --flow-glow-peak: 0.28; -
   11.17% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
   35.106%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
-@keyframes archify-relay-comet-4 { 
-  0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  2.234% { opacity: var(--flow-peak, 0.9); }
-  11.17% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  15.426%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
-}
-@keyframes archify-relay-wake-4 { 
-  0% { stroke-dashoffset: var(--flow-len, 0px); opacity: var(--flow-peak, 0.3); animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  11.17% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
-  35.106%, 100% { stroke-dashoffset: 0px; opacity: 0; }
-}
 @keyframes archify-relay-node-0 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   0% { filter: var(--ambient-node-base-filter, none); }
@@ -464,29 +453,23 @@ svg[data-preset="editorial"] { --flow-halo-peak: 0.07; --flow-glow-peak: 0.28; -
 }
 @keyframes archify-relay-node-1 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  0% { filter: var(--ambient-node-base-filter, none); }
-  3.191%, 11.17% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  31.915% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-2 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
   11.17% { filter: var(--ambient-node-base-filter, none); }
   14.362%, 22.34% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
   43.085% { filter: var(--ambient-node-base-filter, none); }
 }
-@keyframes archify-relay-node-3 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  11.17% { filter: var(--ambient-node-base-filter, none); }
-  14.362%, 22.34% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  43.085% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-4 { 
+@keyframes archify-relay-node-2 {
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   25% { filter: var(--ambient-node-base-filter, none); }
   28.191%, 36.17% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
   56.915% { filter: var(--ambient-node-base-filter, none); }
 }
-@keyframes archify-relay-node-5 { 
+@keyframes archify-relay-node-3 {
+  0%, 100% { filter: var(--ambient-node-base-filter, none); }
+  38.83% { filter: var(--ambient-node-base-filter, none); }
+  42.021%, 50% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  70.745% { filter: var(--ambient-node-base-filter, none); }
+}
+@keyframes archify-relay-node-4 {
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   38.83% { filter: var(--ambient-node-base-filter, none); }
   42.021%, 50% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
@@ -567,7 +550,7 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="54" y="74" class="t-muted" font-size="10" font-weight="600">01 / 需要正式测试报告</text>
 
         <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="176" width="943" height="104" rx="10" class="c-lane" stroke-width="1"/>
-        <text x="54" y="198" class="t-muted" font-size="10" font-weight="600">02 / 独立验证界面</text>
+        <text x="54" y="198" class="t-muted" font-size="10" font-weight="600">02 / 快速核对页面</text>
 
         <!-- Phase headers -->
 
@@ -578,15 +561,14 @@ rect.c-bg-rect { fill: var(--bg); }
         <!-- Edge paths -->
         <path data-edge-from="cli" data-edge-to="evidence" data-edge-label="单项验证" data-edge-key="0" data-composition-routing="workflow-v2-auto" data-edge-role="branch" data-composition-points="520.4,145;520.4,217" d="M 520.4 145 L 520.4 217" class="a-dashed" data-animate="edge" style="--step: 4;" stroke-width="1.4" marker-end="url(#arrowhead-dashed)"/>
         <path data-edge-from="cli" data-edge-to="report" data-edge-label="测试记录" data-edge-key="1" data-composition-routing="workflow-v2-auto" data-edge-role="main" data-composition-points="566.4,119;622.8,119" d="M 566.4 119 L 622.8 119" class="a-default" data-animate="edge" style="--step: 2;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="desktop" data-edge-to="evidence" data-edge-label="界面操作" data-edge-key="2" data-composition-routing="workflow-v2-auto" data-edge-role="main" data-composition-points="394.4,243;474.4,243" d="M 394.4 243 L 474.4 243" class="a-default" data-animate="edge" style="--step: 6;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="gate" data-edge-to="cli" data-edge-label="已确认任务" data-edge-key="3" data-composition-routing="workflow-v2-auto" data-edge-role="main" data-composition-points="408.4,119;474.4,119" d="M 408.4 119 L 474.4 119" class="a-default" data-animate="edge" style="--step: 1;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="plan" data-edge-to="gate" data-edge-label="测试矩阵" data-edge-key="4" data-composition-routing="workflow-v2-auto" data-edge-role="main" data-composition-points="228,119;284.4,119" d="M 228 119 L 284.4 119" class="a-default" data-animate="edge" style="--step: 0;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="gate" data-edge-to="cli" data-edge-label="已确认任务" data-edge-key="2" data-composition-routing="workflow-v2-auto" data-edge-role="main" data-composition-points="408.4,119;474.4,119" d="M 408.4 119 L 474.4 119" class="a-default" data-animate="edge" style="--step: 1;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="plan" data-edge-to="gate" data-edge-label="测试矩阵" data-edge-key="3" data-composition-routing="workflow-v2-auto" data-edge-role="main" data-composition-points="228,119;284.4,119" d="M 228 119 L 284.4 119" class="a-default" data-animate="edge" style="--step: 0;" stroke-width="1.4" marker-end="url(#arrowhead)"/>
 
         <!-- Nodes -->
         <g id="node-plan" data-node-id="plan" data-node-label="playwright-e2e-debug-report" tabindex="0" role="button" aria-label="聚焦playwright-e2e-debug-report，从设计与任务拟订测试范围, 需要正式测试报告" aria-pressed="false" data-node-kind="backend" data-node-sublabel="从设计与任务拟订测试范围" data-node-context="需要正式测试报告">
           <title>playwright-e2e-debug-report · 从设计与任务拟订测试范围 · 需要正式测试报告</title>
           <rect x="48" y="93" width="180" height="52" rx="8" class="c-mask"/>
-          <rect x="48" y="93" width="180" height="52" rx="8" class="c-backend" data-animate="node" style="--step: 0; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
+          <rect x="48" y="93" width="180" height="52" rx="8" class="c-backend" data-animate="node" style="--step: 0; --flow-node-name: archify-relay-node-0;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(54 99) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
@@ -597,7 +579,7 @@ rect.c-bg-rect { fill: var(--bg); }
         <g id="node-gate" data-node-id="gate" data-node-label="确认测试任务" tabindex="0" role="button" aria-label="聚焦确认测试任务，对齐路径、目标环境与授权, 需要正式测试报告" aria-pressed="false" data-node-kind="security" data-node-sublabel="对齐路径、目标环境与授权" data-node-context="需要正式测试报告">
           <title>确认测试任务 · 对齐路径、目标环境与授权 · 需要正式测试报告</title>
           <rect x="284.4" y="93" width="124" height="52" rx="8" class="c-mask"/>
-          <rect x="284.4" y="93" width="124" height="52" rx="8" class="c-security" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-3;" stroke-width="1.5"/>
+          <rect x="284.4" y="93" width="124" height="52" rx="8" class="c-security" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(290.4 99) scale(0.6875)">
             <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
             <path d="m5.8 8 1.5 1.5 3-3"/>
@@ -609,7 +591,7 @@ rect.c-bg-rect { fill: var(--bg); }
         <g id="node-cli" data-node-id="cli" data-node-label="playwright-cli" tabindex="0" role="button" aria-label="聚焦playwright-cli，操作浏览器并采集证据, 需要正式测试报告" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="操作浏览器并采集证据" data-node-context="需要正式测试报告">
           <title>playwright-cli · 操作浏览器并采集证据 · 需要正式测试报告</title>
           <rect x="474.4" y="93" width="92" height="52" rx="8" class="c-mask"/>
-          <rect x="474.4" y="93" width="92" height="52" rx="8" class="c-frontend" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-4;" stroke-width="1.5"/>
+          <rect x="474.4" y="93" width="92" height="52" rx="8" class="c-frontend" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-2;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(480.4 99) scale(0.6875)">
             <rect x="2" y="3" width="12" height="10" rx="2"/>
             <path d="M2 6.5h12"/>
@@ -623,7 +605,7 @@ rect.c-bg-rect { fill: var(--bg); }
         <g id="node-report" data-node-id="report" data-node-label="E2E 验证报告" tabindex="0" role="button" aria-label="聚焦E2E 验证报告，记录结果、失败原因与复验, 需要正式测试报告" aria-pressed="false" data-node-kind="database" data-node-sublabel="记录结果、失败原因与复验" data-node-context="需要正式测试报告">
           <title>E2E 验证报告 · 记录结果、失败原因与复验 · 需要正式测试报告</title>
           <rect x="622.8" y="93" width="124" height="52" rx="8" class="c-mask"/>
-          <rect x="622.8" y="93" width="124" height="52" rx="8" class="c-database" data-animate="node" style="--step: 3; --flow-node-name: archify-relay-node-5;" stroke-width="1.5"/>
+          <rect x="622.8" y="93" width="124" height="52" rx="8" class="c-database" data-animate="node" style="--step: 3; --flow-node-name: archify-relay-node-4;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(628.8 99) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
@@ -632,30 +614,16 @@ rect.c-bg-rect { fill: var(--bg); }
           <text x="684.8" y="137.3" class="t-muted" font-size="8" text-anchor="middle">记录结果、失败原因与复验</text>
         </g>
 
-        <g id="node-desktop" data-node-id="desktop" data-node-label="computer-use" tabindex="0" role="button" aria-label="聚焦computer-use，需要控制已连接的界面时, 独立验证界面" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="需要控制已连接的界面时" data-node-context="独立验证界面">
-          <title>computer-use · 需要控制已连接的界面时 · 独立验证界面</title>
-          <rect x="298.4" y="217" width="96" height="52" rx="8" class="c-mask"/>
-          <rect x="298.4" y="217" width="96" height="52" rx="8" class="c-frontend" data-animate="node" style="--step: 8; --flow-node-name: archify-relay-node-0;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(304.4 223) scale(0.6875)">
-            <rect x="2" y="3" width="12" height="10" rx="2"/>
-            <path d="M2 6.5h12"/>
-            <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
-            <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
-          </g>
-          <text data-node-label="" x="346.4" y="251.2" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">computer-use</text>
-          <text x="346.4" y="264.5" class="t-muted" font-size="6.6" text-anchor="middle">需要控制已连接的界面时</text>
-        </g>
-
-        <g id="node-evidence" data-node-id="evidence" data-node-label="界面检查结果" tabindex="0" role="button" aria-label="聚焦界面检查结果，状态、截图或交互记录, 独立验证界面" aria-pressed="false" data-node-kind="database" data-node-sublabel="状态、截图或交互记录" data-node-context="独立验证界面">
-          <title>界面检查结果 · 状态、截图或交互记录 · 独立验证界面</title>
-          <rect x="474.4" y="217" width="92" height="52" rx="8" class="c-mask"/>
-          <rect x="474.4" y="217" width="92" height="52" rx="8" class="c-database" data-animate="node" style="--step: 9; --flow-node-name: archify-relay-node-2;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(480.4 223) scale(0.6875)">
+        <g id="node-evidence" data-node-id="evidence" data-node-label="页面快照或截图" tabindex="0" role="button" aria-label="聚焦页面快照或截图，留存单项检查的页面状态, 快速核对页面" aria-pressed="false" data-node-kind="database" data-node-sublabel="留存单项检查的页面状态" data-node-context="快速核对页面">
+          <title>页面快照或截图 · 留存单项检查的页面状态 · 快速核对页面</title>
+          <rect x="472.4" y="217" width="96" height="52" rx="8" class="c-mask"/>
+          <rect x="472.4" y="217" width="96" height="52" rx="8" class="c-database" data-animate="node" style="--step: 8; --flow-node-name: archify-relay-node-3;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(478.4 223) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
           </g>
-          <text data-node-label="" x="520.4" y="251.2" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">界面检查结果</text>
-          <text x="520.4" y="264.9" class="t-muted" font-size="7" text-anchor="middle">状态、截图或交互记录</text>
+          <text data-node-label="" x="520.4" y="250.5" class="t-primary" font-size="10.4" font-weight="600" text-anchor="middle">页面快照或截图</text>
+          <text x="520.4" y="263.6" class="t-muted" font-size="6.6" text-anchor="middle">留存单项检查的页面状态</text>
         </g>
 
         <!-- Edge labels -->
@@ -667,15 +635,11 @@ rect.c-bg-rect { fill: var(--bg); }
           <rect x="570.3999999999999" y="99" width="48.4" height="14" rx="3" class="c-mask"/>
           <text x="594.5999999999999" y="109" class="t-muted" font-size="8" text-anchor="middle">测试记录</text>
         </g>
-        <g data-edge-from="desktop" data-edge-to="evidence" data-edge-label="界面操作" data-edge-key="2">
-          <rect x="410.2" y="223" width="48.4" height="14" rx="3" class="c-mask"/>
-          <text x="434.4" y="233" class="t-muted" font-size="8" text-anchor="middle">界面操作</text>
-        </g>
-        <g data-edge-from="gate" data-edge-to="cli" data-edge-label="已确认任务" data-edge-key="3">
+        <g data-edge-from="gate" data-edge-to="cli" data-edge-label="已确认任务" data-edge-key="2">
           <rect x="412.4" y="99" width="58" height="14" rx="3" class="c-mask"/>
           <text x="441.4" y="109" class="t-muted" font-size="8" text-anchor="middle">已确认任务</text>
         </g>
-        <g data-edge-from="plan" data-edge-to="gate" data-edge-label="测试矩阵" data-edge-key="4">
+        <g data-edge-from="plan" data-edge-to="gate" data-edge-label="测试矩阵" data-edge-key="3">
           <rect x="232" y="99" width="48.4" height="14" rx="3" class="c-mask"/>
           <text x="256.2" y="109" class="t-muted" font-size="8" text-anchor="middle">测试矩阵</text>
         </g>

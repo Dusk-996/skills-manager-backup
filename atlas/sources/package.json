@@ -2,16 +2,19 @@
   "schema_version": 2,
   "diagram_type": "workflow",
   "meta": {
-    "title": "巡检工具准备上线，怎么打包、加固和审查？",
+    "title": "巡检工具准备上线，怎样审查运行条件？",
     "locale": "zh-CN",
     "output": "docs/atlas/package.html",
     "quality_profile": "showcase",
     "repository": {
       "url": "https://github.com/Dusk-996/skills-manager-backup.git",
-      "revision": "eb6a6f9e8834f26559a95e79453595812b0f339a"
+      "revision": "0bcc2be18d6ea1f3512511d66a93bfd3ddc72da4"
     },
     "legend": {
       "entries": {
+        "external": {
+          "label": "已有材料"
+        },
         "backend": {
           "label": "技能操作"
         },
@@ -24,59 +27,34 @@
   "lanes": [
     {
       "id": "main",
-      "label": "部署交付与上线审查"
-    },
-    {
-      "id": "alt",
-      "label": "补齐发现的运行缺口"
+      "label": "上线就绪审查"
     }
   ],
   "mainPath": [
-    "pack",
-    "bundle",
+    "inputs",
     "review",
     "decision"
   ],
   "nodes": [
     {
-      "id": "pack",
+      "id": "inputs",
       "lane": "main",
       "col": 0,
-      "type": "backend",
-      "label": "deployment-packager",
-      "sublabel": "按入口和环境准备部署文件",
+      "type": "external",
+      "label": "现有上线材料",
+      "sublabel": "代码、部署配置和测试记录",
       "sources": [
         {
-          "path": "deployment-packager-2/SKILL.md",
-          "line": 16,
-          "end_line": 26
-        }
-      ]
-    },
-    {
-      "id": "bundle",
-      "lane": "main",
-      "col": 1,
-      "type": "database",
-      "label": "可交付的部署包",
-      "sublabel": "配置、验证命令与回滚步骤",
-      "sources": [
-        {
-          "path": "deployment-packager-2/SKILL.md",
+          "path": "ops-readiness-review/SKILL.md",
           "line": 23,
-          "end_line": 31
-        },
-        {
-          "path": "deployment-packager-2/SKILL.md",
-          "line": 38,
-          "end_line": 47
+          "end_line": 33
         }
       ]
     },
     {
       "id": "review",
       "lane": "main",
-      "col": 2,
+      "col": 1,
       "type": "backend",
       "label": "ops-readiness-review",
       "sublabel": "结合代码与运行证据审查",
@@ -96,7 +74,7 @@
     {
       "id": "decision",
       "lane": "main",
-      "col": 3,
+      "col": 2,
       "type": "database",
       "label": "上线就绪审查报告",
       "sublabel": "给出结论与风险依据",
@@ -107,90 +85,35 @@
           "end_line": 117
         }
       ]
-    },
-    {
-      "id": "fix",
-      "lane": "alt",
-      "col": 2,
-      "type": "backend",
-      "label": "devops-production-hardening",
-      "sublabel": "按已明确的缺口实施加固",
-      "sources": [
-        {
-          "path": "devops-production-hardening/SKILL.md",
-          "line": 16,
-          "end_line": 33
-        },
-        {
-          "path": "ops-readiness-review/SKILL.md",
-          "line": 142,
-          "end_line": 147
-        }
-      ]
-    },
-    {
-      "id": "evidence",
-      "lane": "alt",
-      "col": 3,
-      "type": "database",
-      "label": "加固与验证记录",
-      "sublabel": "交付修改、验证和回滚方法",
-      "sources": [
-        {
-          "path": "devops-production-hardening/SKILL.md",
-          "line": 36,
-          "end_line": 46
-        }
-      ]
     }
   ],
   "edges": [
     {
-      "from": "pack",
-      "to": "bundle",
-      "label": "部署文件",
-      "role": "main"
-    },
-    {
-      "from": "bundle",
+      "from": "inputs",
       "to": "review",
-      "label": "需判断上线",
-      "role": "branch",
-      "variant": "dashed"
+      "label": "审查依据",
+      "role": "main"
     },
     {
       "from": "review",
       "to": "decision",
       "label": "审查结论",
       "role": "main"
-    },
-    {
-      "from": "review",
-      "to": "fix",
-      "label": "决定修复",
-      "role": "branch",
-      "variant": "dashed"
-    },
-    {
-      "from": "fix",
-      "to": "evidence",
-      "label": "修复结果",
-      "role": "main"
     }
   ],
   "cards": [
     {
       "dot": "cyan",
-      "title": "从现状进入",
+      "title": "证据缺口",
       "items": [
-        "缺部署包时先打包。已有代码、部署文件与实测记录时，直接审查。已有明确缺口并需要修改时，可直接进入加固。"
+        "标明哪些结论来自代码、配置、测试或实际运行，记录尚未验证的关键控制。"
       ]
     },
     {
       "dot": "amber",
-      "title": "复核与上线",
+      "title": "审查结论",
       "items": [
-        "只需打包即可在交付部署包后结束。加固完成后携新证据复核；审查报告与实际上线执行分别处理。"
+        "报告给出 PASS、PASS_WITH_RISKS 或 FAIL。接受剩余风险时，记录责任人、依据与复审条件。"
       ]
     }
   ]

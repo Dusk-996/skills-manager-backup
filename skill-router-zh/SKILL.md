@@ -5,7 +5,7 @@ description: Use when a Chinese-speaking user needs to choose among installed sk
 
 # 中文技能导航
 
-按真实任务选择最多 1～3 个相关技能，说明各自承担的工作后继续执行。运维任务以 `devops-skill-router-zh` 为首选；通用内容任务使用本索引中的对应入口。
+按真实任务选择最多 1～3 个相关技能，说明各自承担的工作后继续执行。
 
 1. 读取 [已安装技能中文索引](references/skills-zh-index.md)，并与当前会话提供的技能目录核对。
 2. 运维项目优先 DevOps 定制流程；通用开发才选择相应 Superpowers 流程。
