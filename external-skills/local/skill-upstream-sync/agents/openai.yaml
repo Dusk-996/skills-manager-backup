@@ -1,0 +1,4 @@
+interface:
+  display_name: "技能官网核对与更新"
+  short_description: "核对技能官网并保留本地定制，将验证通过的更新推送到 GitHub 备份仓库"
+  default_prompt: "用 $skill-upstream-sync 对照官网更新本地技能，把验证通过的变更推送到我的 GitHub 备份库并给出提交链接。"

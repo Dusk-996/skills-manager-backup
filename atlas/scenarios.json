@@ -600,7 +600,8 @@
     "input": "自然语言任务，或已选定的技能来源",
     "output": "可用技能推荐或安装结果",
     "next": [
-      "author-skill"
+      "author-skill",
+      "update-backup"
     ],
     "skills": [
       {
@@ -622,6 +623,21 @@
         "name": "skill-installer",
         "when": "已选定要安装的技能或 GitHub 路径",
         "result": "安装后可在适当会话验证"
+      }
+    ]
+  },
+  {
+    "group": "维护个人技能库和 Codex 环境",
+    "id": "update-backup",
+    "title": "本地技能有官方更新，怎样保留定制并备份到 GitHub？",
+    "input": "已安装的技能及其官方来源",
+    "output": "经过验证的本地更新、回滚方法和 GitHub 备份提交",
+    "next": [],
+    "skills": [
+      {
+        "name": "skill-upstream-sync",
+        "when": "需要按官方版本检查或更新本地技能",
+        "result": "核对来源与本地差异，按更新模式合入变更并将已验证的结果推送到备份仓库"
       }
     ]
   },

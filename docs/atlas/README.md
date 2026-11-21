@@ -1,6 +1,6 @@
 # 按场景查找技能
 
-从手里的材料选择入口。共 26 个场景，覆盖 80 项技能。标有「附图」的场景提供静态预览与可交互的横向流程图。
+从手里的材料选择入口。共 27 个场景，覆盖 81 项技能。标有「附图」的场景提供静态预览与可交互的横向流程图。
 
 [查看全部技能及原始说明](../../README.md)
 
@@ -108,7 +108,10 @@
 - **[这件事有现成 skill 吗，缺的怎么补？](find-install.md)**　**附图**<br>
   自然语言任务，或已选定的技能来源 → 可用技能推荐或安装结果<br>
   `devops-skill-router-zh`、`skill-router-zh`、`find-skills`、`skill-installer`<br>
-  后续可选　[怎么把重复工作变成技能并改进效果？](author-skill.md)
+  后续可选　[怎么把重复工作变成技能并改进效果？](author-skill.md) · [本地技能有官方更新，怎样保留定制并备份到 GitHub？](update-backup.md)
+- **[本地技能有官方更新，怎样保留定制并备份到 GitHub？](update-backup.md)**<br>
+  已安装的技能及其官方来源 → 经过验证的本地更新、回滚方法和 GitHub 备份提交<br>
+  `skill-upstream-sync`
 - **[怎么把重复工作变成技能并改进效果？](author-skill.md)**　**附图**<br>
   可重复的任务或已认可的成品、已有技能 → 可复用技能、个人模板或优化报告<br>
   `skill-creator`、`writing-skills`、`template-creator`、`darwin-skill`

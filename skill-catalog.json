@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-11-15",
-  "total_skills": 80,
-  "files": 71,
+  "snapshot_date": "2026-11-21",
+  "total_skills": 81,
+  "files": 72,
   "inventory_only": 9,
   "skills": [
     {
@@ -449,6 +449,13 @@
       "source_group": "central",
       "status": "files",
       "path": "skill-router-zh"
+    },
+    {
+      "name": "skill-upstream-sync",
+      "purpose": "对照官方来源更新本地技能，保留个人定制，把验证通过的变更自动推送到 GitHub 备份仓库。",
+      "source_group": "local",
+      "status": "files",
+      "path": "external-skills/local/skill-upstream-sync"
     },
     {
       "name": "Spreadsheets",

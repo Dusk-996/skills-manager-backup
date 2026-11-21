@@ -1,8 +1,8 @@
 # Codex 技能目录与中文用途
 
-更新日期：2026-11-15。仓库：[skills-manager-backup](https://github.com/Dusk-996/skills-manager-backup)。
+更新日期：2026-11-21。仓库：[skills-manager-backup](https://github.com/Dusk-996/skills-manager-backup)。
 
-本目录汇总 **80 个 Codex 技能**。点击技能名称查看对应指令或使用说明。
+本目录汇总 **81 个 Codex 技能**。点击技能名称查看对应指令或使用说明。
 
 安装、恢复、运行条件与许可说明见 [使用说明](docs/RESTORE.md)。
 
@@ -85,6 +85,7 @@
 | [skill-creator](external-skills/codex-system/skill-creator/SKILL.md) | 创建或更新 Codex 技能，整理触发条件、指令和配套资源。 |
 | [skill-installer](external-skills/codex-system/skill-installer/SKILL.md) | 从指定 GitHub 仓库或 OpenAI 技能目录安装技能。 |
 | [skill-router-zh](skill-router-zh/SKILL.md) | 按中文场景为文档、前端、运维、图像等任务选择技能。 |
+| [skill-upstream-sync](external-skills/local/skill-upstream-sync/SKILL.md) | 对照官方来源更新本地技能，保留个人定制，把验证通过的变更自动推送到 GitHub 备份仓库。 |
 | [Spreadsheets](docs/RESTORE.md) | 读取、创建、分析和修改 Excel、CSV、TSV 或 Google Sheets，处理公式、表格和图表。 |
 | [ssh-remote-ops](ssh-remote-ops/SKILL.md) | 通过 SSH 巡检 Linux 主机，分析进程、日志、网络和磁盘；按授权执行受控变更。 |
 | [stack-selector](stack-selector/SKILL.md) | 从 React Mock 和运行约束推导后端、Worker、Agent 等组件及技术栈，输出选型确认单。 |
