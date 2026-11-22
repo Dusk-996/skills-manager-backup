@@ -7,7 +7,7 @@ import re
 from urllib.parse import quote, urlsplit
 
 
-EXPECTED_SKILL_COUNT = 68
+EXPECTED_SKILL_COUNT = 69
 REPOSITORY_URL = "https://github.com/Dusk-996/skills-manager-backup"
 ATLAS_NAVIGATION = (
     ("Vibe Coding · 构建运维工具", (("原型转 React Mock", "prototype-to-mock"), ("从 Mock 确认后端选型", "mock-to-architecture"))),
