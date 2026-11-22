@@ -1,12 +1,12 @@
 # Codex 技能安装与恢复说明
 
-本目录汇总 68 个 Codex 技能，其中 64 个包含技能文件，4 个依赖应用提供，仅登记使用清单。本仓库没有包含账号、令牌、SSH 私钥、应用安装包、Python/Node.js 依赖环境或在线连接状态。
+本目录汇总 69 个 Codex 技能，其中 65 个包含技能文件，4 个依赖应用提供，仅登记使用清单。本仓库没有包含账号、令牌、SSH 私钥、应用安装包、Python/Node.js 依赖环境或在线连接状态。
 
-## 包含技能文件的 64 项
+## 包含技能文件的 65 项
 
 | 来源 | 数量 | 位置 | 安装与恢复方式 |
 |---|---:|---|---|
-| 中央技能库 | 44 | 仓库根目录各技能文件夹 | 使用 Skills Manager 导入并按需部署到 Codex；保留 profile、scripts 公共资源与相对目录关系 |
+| 中央技能库 | 45 | 仓库根目录各技能文件夹 | 使用 Skills Manager 导入并按需部署到 Codex；保留 profile、scripts 公共资源与相对目录关系 |
 | 个人技能 | 2 | external-skills/local 下的 fde-creator、skill-upstream-sync | 将所需技能的完整目录恢复到 Codex 个人技能目录 |
 | Apache-2.0 系统技能 | 3 | external-skills/codex-system | 优先由 Codex 更新或恢复；手动恢复时保留许可证及所有支持文件 |
 | Superpowers 7.0.2 | 15 | external-skills/superpowers | 按包内安装文档恢复完整结构；保留 skills、scripts、hooks 等相对位置 |

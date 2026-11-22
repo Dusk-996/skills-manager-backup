@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-11-21",
-  "total_skills": 68,
-  "files": 64,
+  "snapshot_date": "2026-11-22",
+  "total_skills": 69,
+  "files": 65,
   "inventory_only": 4,
   "skills": [
     {
@@ -394,6 +394,13 @@
       "source_group": "central",
       "status": "files",
       "path": "stack-selector"
+    },
+    {
+      "name": "stage-artifact-review",
+      "purpose": "复查一个版本的阶段产物，按项目细则给出十分制评分、封顶原因、修订建议和独立的门禁状态。",
+      "source_group": "central",
+      "status": "files",
+      "path": "stage-artifact-review"
     },
     {
       "name": "subagent-driven-development",

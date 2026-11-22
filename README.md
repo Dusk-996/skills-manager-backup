@@ -1,8 +1,8 @@
 # Codex 技能目录与中文用途
 
-更新日期：2026-11-21。仓库：[skills-manager-backup](https://github.com/Dusk-996/skills-manager-backup)。
+更新日期：2026-11-22。仓库：[skills-manager-backup](https://github.com/Dusk-996/skills-manager-backup)。
 
-本目录汇总 **68 个 Codex 技能**。点击技能名称查看对应指令或使用说明。
+本目录汇总 **69 个 Codex 技能**。点击技能名称查看对应指令或使用说明。
 
 安装、恢复、运行条件与许可说明见 [使用说明](docs/RESTORE.md)。
 
@@ -78,6 +78,7 @@
 | [Spreadsheets](docs/RESTORE.md) | 读取、创建、分析和修改 Excel、CSV、TSV 或 Google Sheets，处理公式、表格和图表。 |
 | [ssh-remote-ops](ssh-remote-ops/SKILL.md) | 通过 SSH 巡检 Linux 主机，分析进程、日志、网络和磁盘；按授权执行受控变更。 |
 | [stack-selector](stack-selector/SKILL.md) | 从 React Mock 和运行约束推导后端、Worker、Agent 等组件及技术栈，输出选型确认单。 |
+| [stage-artifact-review](stage-artifact-review/SKILL.md) | 复查一个版本的阶段产物，按项目细则给出十分制评分、封顶原因、修订建议和独立的门禁状态。 |
 | [subagent-driven-development](external-skills/superpowers/skills/subagent-driven-development/SKILL.md) | 按计划分派实现和审查子任务，适用于授权使用子代理的开发工作。 |
 | [systematic-debugging](external-skills/superpowers/skills/systematic-debugging/SKILL.md) | 通用系统化排障流程：先调查根因，再验证假设和修复。 |
 | [tdd](tdd/SKILL.md) | 另一套测试驱动开发指引，强调集成测试及按行为推进的实现过程。 |

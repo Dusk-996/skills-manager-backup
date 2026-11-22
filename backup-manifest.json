@@ -1,7 +1,7 @@
 {
-  "snapshot_date": "2026-11-21",
-  "skills": 68,
-  "files_skills": 64,
+  "snapshot_date": "2026-11-22",
+  "skills": 69,
+  "files_skills": 65,
   "inventory_only": 4,
   "hash_scope": "Git提交中的文件内容，不含backup-manifest.json自身；Git可能规范文本换行",
   "files": [
@@ -49,6 +49,11 @@
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/23ecabbc-88c0-4ee8-b797-a5fd1eb65870.json",
       "bytes": 287,
       "sha256": "1b5ca00fb68fe4f5dacae6f214cfab47907c29505d9d1a09bfccd109f3c3a01b"
+    },
+    {
+      "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/2c7b17d3-f324-42ed-b2e8-1410bfdf2988.json",
+      "bytes": 288,
+      "sha256": "32a5ad80a8f16a38872637c0874dec173c64e790532b31f712be56963745f389"
     },
     {
       "path": ".skills-manager/scenario-skills/397379cf-f070-416c-a37b-d73739770131/2e589d3c-aa2f-4738-b790-2e50b0d60455.json",
@@ -266,6 +271,11 @@
       "sha256": "ebc04ba7907c9d768cdd84304bbbf13914b895e00bfd1444373b32b1afc138c2"
     },
     {
+      "path": ".skills-manager/skills/2c7b17d3-f324-42ed-b2e8-1410bfdf2988.json",
+      "bytes": 352,
+      "sha256": "00b621f3c1e8753e785679817cffd58f20d291a74236834a98e5c4ca3d5e99df"
+    },
+    {
       "path": ".skills-manager/skills/2e589d3c-aa2f-4738-b790-2e50b0d60455.json",
       "bytes": 376,
       "sha256": "6e44966412a5a9e80e0984165f5a13882f04f2d471b766d094ea6f199b12ccda"
@@ -442,8 +452,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11262,
-      "sha256": "cc7ff4d24d00e83528ee70fd0552f18b7eda4d41ba67651fd781d9ee19b157cc"
+      "bytes": 11454,
+      "sha256": "123f7e78219e8cfd87fd74cfdcd0f357815e07c0d64873f3b440466f7c6e3310"
     },
     {
       "path": "aliyun-asr/README.md",
@@ -2532,8 +2542,8 @@
     },
     {
       "path": "atlas/scenarios.json",
-      "bytes": 21062,
-      "sha256": "bb4aa73296865be01d21c1ace2f2a83953d266b7f9cd8a822a0837bc5a311720"
+      "bytes": 21662,
+      "sha256": "d9a8792cc47707da4fb91786ae29419f20847ebd38671ded0988d4bf74d2a816"
     },
     {
       "path": "atlas/sources/author-skill.json",
@@ -3218,12 +3228,12 @@
     {
       "path": "docs/RESTORE.md",
       "bytes": 6229,
-      "sha256": "8c9cbb5b21a935d2a1deac32f8b99beba823110bb1726a03150b1b6fdf25957a"
+      "sha256": "daec6369f0ce4a1b4e5763506e5749f1047952f65738eb328d8786f6cc106b2a"
     },
     {
       "path": "docs/atlas/README.md",
-      "bytes": 9556,
-      "sha256": "65aea46e68d549c0646ad44c86e7dfb7f2afbe2a7c03b058be9477507b94c122"
+      "bytes": 9795,
+      "sha256": "a873894c236e8298093d74aab42fca4d1673abeb99d533203f2938106048b7eb"
     },
     {
       "path": "docs/atlas/author-skill.html",
@@ -3556,6 +3566,11 @@
       "sha256": "6ec8f8777fce49fdc746c30699eb670c675701ecb3a1c50644cd465468220c52"
     },
     {
+      "path": "docs/atlas/review-stage-artifact.md",
+      "bytes": 581,
+      "sha256": "cfa74a5396c0974692da70082375d96693c5fc0c2f7d7cb1a9df5df337444fab"
+    },
+    {
       "path": "docs/atlas/slides.html",
       "bytes": 817794,
       "sha256": "33268eb03e8f2727bf224887a97c3a4fb444c9231dd332d14f3608a01f2ab0b9"
@@ -3608,7 +3623,7 @@
     {
       "path": "docs/index.html",
       "bytes": 14835,
-      "sha256": "4ce574c33994090398f08bdb5ef022578f330de0a54fdef799ff59e07c9b8275"
+      "sha256": "349a03380bc6e545ca6e0fc5730f53d133f10ff78e1cd3ac1f0bccd609037085"
     },
     {
       "path": "domain-modeling/ADR-FORMAT.md",
@@ -6387,8 +6402,8 @@
     },
     {
       "path": "skill-catalog.json",
-      "bytes": 18171,
-      "sha256": "205eedf6970a21acd7448010cc67da98f3bf7c9277853c37f9cca4f498483b3c"
+      "bytes": 18469,
+      "sha256": "4d480f6d1ae413a7ee21066baf447c4cbd2274eafee6ad7c5ae9b596e4309e03"
     },
     {
       "path": "skill-router-zh/SKILL.md",
@@ -6461,6 +6476,11 @@
       "sha256": "8b8ecd6412e0200eadf058e16214416ae820369f90c884a86847e4871232bed1"
     },
     {
+      "path": "stage-artifact-review/SKILL.md",
+      "bytes": 3106,
+      "sha256": "30623deea803ffcffa407d7fba0353a9a67dc5e47f6657cba923b40455c1965f"
+    },
+    {
       "path": "tdd/SKILL.md",
       "bytes": 3213,
       "sha256": "5363bb2775679fe9311fbb67947f95359169c6e7f1fac77c0f25e190bca6cf2f"
@@ -6513,7 +6533,7 @@
     {
       "path": "tools/readme_builder.py",
       "bytes": 6054,
-      "sha256": "50313f0c1fda6fafebb9b94cf5673b01f34c20fad9c4ae1b49329d77cb992239"
+      "sha256": "60cfb1af97ff75e3bf57fc7045ce2a7f1404a25088ebd284cfa8d87d5e762272"
     },
     {
       "path": "ui-ux-pro-max/LICENSE",

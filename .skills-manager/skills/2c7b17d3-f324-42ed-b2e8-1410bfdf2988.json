@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "2c7b17d3-f324-42ed-b2e8-1410bfdf2988",
+  "path": "stage-artifact-review",
+  "path_key": "stage-artifact-review",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Dusk-996/skills-manager-backup.git",
+    "subpath": "stage-artifact-review",
+    "branch": null
+  }
+}
